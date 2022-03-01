@@ -1,9 +1,9 @@
-\babel@toc {british}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {british}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {czech}{}\relax 
+\babel@toc {british}{}
+\babel@toc {czech}{}
+\babel@toc {british}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
 \contentsline {chapter}{\numberline {1}Úvod}{6}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Komerčně úspěšné PHP frameworky}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Laravel}{7}{section.2.1}%
