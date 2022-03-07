@@ -91,13 +91,14 @@
 
 V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
 \chapter{Úvod}
+\chapter{}
 \section{Motivace}
 	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět Týmový softwarový projekt (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
 	\par Zvláštností předmětu je doba pro řešení projektu, 2 semestry. Pro předmět takového rozsahu bylo rozhodnuto o vytvoření webové aplikace, která všem zúčastněným stranám zjednoduší prohlížení obsahu a evidenci postupu projektu. Cílem aplikace je umožnit lepší informovanost a zapojení studentů, řešení evidence vyučujících a možnosti sdílení mezi mentorem a garantem. Aplikace tak má nahradit způsob evidence Excel tabulkou jako je tak tomu u jiných obdobných předmětů.
 \section{Organizace předmětů TSP}
 	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučován v letním semestru a KIV/TSP2 v zimním semestru. Řešení týmového projektu tedy bude překračovat hranice ročníku a v některých částech se organizace předmětů bude i překrývat.
 \section{PHP frameworky}
-\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symphony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí´.
+\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symphony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 \par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
 \subsection{Komerčně úspěšné PHP frameworky}
 \subsubsection{Laravel}
@@ -118,13 +119,20 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \subsubsection{Plánování úkolů}
 \par Sytém GitLab také využíváme pro i v rámci stanovení cílů, kdy si na každý týden stanovíme úkoly, které následně plníme.
 \subsubsection{Issues}
-\par Jednotlivé požadavky sepistujeme do issues přímo v GitLabu, to nám umožňuje prioritizovat jednotlivé požadavky a zefektivnit jejich řešení. Těmto issues přiřazujeme různé labely, abychom je mohli jednoduše třídit a organizovat.
+\par Různé požadavky evidujeme jako jednotlivé issues. Issues je záznam o požadavku na aplikaci nebo úkolu, který je potřeba vykonat. Issue tak eviduje přiřazení k člověku, který daný požadavek řeší, kompletní historii řešení požadavku, termíny pro jeho splnění, atd.
+\par Systém také poskytuje štítkování těchto issues a tím pomáhá v jejich řazení, filtrování, seskupování i výběru. Díky štítkům můžeme totiž přiřazovat prioritu, závažnost, druh požadavku na aplikaci a jiné označení.
+\par Issues nám pomáhají ve fragmentaci  jednotlivých požadavků na aplikaci do přibližně stejně náročných dílů, které se poté ve vývoji dobře plní a je tak zajištěna přehlednost. Zároveň má tento princip i pozitivní psychologický dopad, kdy vývojáři mají dobrý pocit z dokončeného úkolu a mají tak chuť pokračovat dalším issue.
+\par V systém GitLab tyto issues používáme také ve funkci Board, který využívá principy kanbanu.
 \subsubsection{Kanban}
-\par Zároveň tak využíváme další funkci na způsob kanbanu.
-\par Kanban je systém pro organizaci úkolů, kde úkol dle jednotlivých procesů přemisťujeme mezi předpřipravenými sloupci. Každý sloupec představuje jednotlivé stavy, ve kterých se může daný úkol nacházet.
-\par Systém kanban využíváme pro přehled, zda na požadavku někdo již pracuje nebo zda je úkol již implementován připraven k testování nebo nahrán na veřejný hosting.
+\par Systém kanban je strategie řízení projektu, kdy si mezi sebou části výroby předávají výrobek. Cílem je využívat pouze ty nejnutnější zdroje.
+\par V praxi se tento systém zobrazuje jako tabule, kde jsou rozvržené jednotlivé sloupce dle možných stavů vývoje. Následně zde máme rámečky představující výrobek, které obsahují popis jak má být produkt upraven. Podstatou věci je, že tyto rámečky následně přemisťujeme mezi jednotlivými sloupci v závislosti na reálném stavu produktu.
+\par V informačních technologií se kanban používá ve velké míře pro organizaci různých úkolů a požadavků. Různé řásti vývoje si mezi sebou požadavek vyměňují a tím mění jeho stav.
+\par Například když vývojář dokončí práci na nové funkcionalitě, tak přesune příslušný rámeček ze sloupce \uv{Ve vývoji} do sloupce \uv{Připraveno k testování}. Tím se tester dozví, že je daný úkol připraven k testování a může si úkol přiřadit a pracovat na něm.
+\par V GitLabu je systém kanbanu implementován v souvislosti s issues a jejich štítky. Každý issue je zobrazen jeden rámeček na tabuli kanban, kam se automaticky po vytvoření issue promítne a po přidělení štítků zařadí do připravených sloupců.
+\par Propojenost s issue nám ulehčí práci s přepisováním jednotlivých požadavků do jiných nástrojů, které mají obdobné funkce.
 \subsubsection{MantisBT}
-\par Další nástroj, který používáme je systém Mantis Bug Tracker (MantisBT). Ten používáme pro nahlašování nalezených chyb objevených zejména, ale ne výhradně pomocí připraveného testování. Tento nástroj umožňuje vkládání detailního popisu incidentů, štítkování, prioritizace a další funkce. Na základě těchto reportovaných chyb budou chyby postupně opravovány a následně postižené sekce znovu testovány.
+\par Mantis Bug Tracker je webová aplikace pro nahlašování a evidenci chyb (defektů) vytvořených v průběhu vývoje aplikace. Přidávané defekty lze velmi podrobně popsat, určit prioritu a štítkovat.
+\par MantisBT využíváme pro nahlašování objevených chyb nalezené především, ale ne výhradně pomocí komplexního testování aplikace. Na základě reportování defektů jsou následně žádány opravy jednotlivých chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \section{Návrh aplikace} 
 	\subsection{Požadavky na aplikaci}
 	\subsection{Rozdělení aplikace dle způsobu užití}
