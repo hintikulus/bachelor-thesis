@@ -89,21 +89,51 @@
 \maketitle
 \tableofcontents
 
-\chapter{Úvod}
 V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
- 
-\chapter{Komerčně úspěšné PHP frameworky}
+\chapter{Úvod}
+\section{Motivace}
+	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět Týmový softwarový projekt (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
+	\par Zvláštností předmětu je doba pro řešení projektu, 2 semestry. Pro předmět takového rozsahu bylo rozhodnuto o vytvoření webové aplikace, která všem zúčastněným stranám zjednoduší prohlížení obsahu a evidenci postupu projektu. Cílem aplikace je umožnit lepší informovanost a zapojení studentů, řešení evidence vyučujících a možnosti sdílení mezi mentorem a garantem. Aplikace tak má nahradit způsob evidence Excel tabulkou jako je tak tomu u jiných obdobných předmětů.
+\section{Organizace předmětů TSP}
+	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučován v letním semestru a KIV/TSP2 v zimním semestru. Řešení týmového projektu tedy bude překračovat hranice ročníku a v některých částech se organizace předmětů bude i překrývat.
+\section{PHP frameworky}
 \par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symphony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí´.
-\par Součástí těchto frameworků jsou šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
-\section{Laravel}
+\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
+\subsection{Komerčně úspěšné PHP frameworky}
+\subsubsection{Laravel}
 \par Framework Laravel je možné považovat jako za ten nejrozšířenější. Mezi jeho hlavní východy patří jeho jednoduchost používání a rychlost. Pro svůj přístup k jednoduchému použití je Laravel doporučován jako vhodný pro začátečníky ale i pro profesionály. Framework se hodí pro vytváření méně komplexních projektů.
-\par Laravel využívá šablonovací engine Blade, který je standardně dodáván společně se samotný frameworkem. Tento engine umožňuje oproti jiným rozšiřovat PHP kód, a tak provádět různé jednoduché operace pro přizpůsobení dat k samotnému front-endu.
-\section{Symphony}
+\par Laravel využívá šablonovací engine Blade, který je standardně dodáván společně se samotným frameworkem. Tento engine umožňuje oproti jiným rozšiřovat PHP kód, a tak provádět různé jednoduché operace pro přizpůsobení dat k samotnému front-endu.
+\subsubsection{Symphony}
 \par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symphony více náročný na naučení.
 \par Jako výchozí šablonovací engine je využíván Twig, který se také řadí mezi nejpoužívanější šablonovací systémy. Oproti systému Blade obsahuje navíc další bezpečnostní vrstvu a další funkce. Twig je často využíván i samostatně, tedy bez použití back-end frameworku. To podtrhuje jeho flexibilitu.
-\section{Nette}
+\subsubsection{Nette}
 \par 
 \par S frameworkem společně přichází i šablonovací engine Latte.
+
+\section{Nástroje pro řízení projektu}
+\par Aplikace, kterou vyvijíme bude patřit rozsahově náročnější, proto je rozdělena do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladném otestování aplikace a tím ověřit její kvalitu a spolehlivost.
+\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba vytvořit takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním, vedoucím práce a budoucích mentorů.
+\subsubsection{Verzovací systém}
+\par Aplikace je ukládána na katedrálním verzovacím systému GitLab. To nám umožňuje mezi sebou sdílet samotnou aplikaci a různé další soubory s vývojem a testováním spojené.
+\subsubsection{Plánování úkolů}
+\par Sytém GitLab také využíváme pro i v rámci stanovení cílů, kdy si na každý týden stanovíme úkoly, které následně plníme.
+\subsubsection{Issues}
+\par Jednotlivé požadavky sepistujeme do issues přímo v GitLabu, to nám umožňuje prioritizovat jednotlivé požadavky a zefektivnit jejich řešení. Těmto issues přiřazujeme různé labely, abychom je mohli jednoduše třídit a organizovat.
+\subsubsection{Kanban}
+\par Zároveň tak využíváme další funkci na způsob kanbanu.
+\par Kanban je systém pro organizaci úkolů, kde úkol dle jednotlivých procesů přemisťujeme mezi předpřipravenými sloupci. Každý sloupec představuje jednotlivé stavy, ve kterých se může daný úkol nacházet.
+\par Systém kanban využíváme pro přehled, zda na požadavku někdo již pracuje nebo zda je úkol již implementován připraven k testování nebo nahrán na veřejný hosting.
+\subsubsection{MantisBT}
+\par Další nástroj, který používáme je systém Mantis Bug Tracker (MantisBT). Ten používáme pro nahlašování nalezených chyb objevených zejména, ale ne výhradně pomocí připraveného testování. Tento nástroj umožňuje vkládání detailního popisu incidentů, štítkování, prioritizace a další funkce. Na základě těchto reportovaných chyb budou chyby postupně opravovány a následně postižené sekce znovu testovány.
+\section{Návrh aplikace} 
+	\subsection{Požadavky na aplikaci}
+	\subsection{Rozdělení aplikace dle způsobu užití}
+	\subsection{Návrh databázové struktury}
+	\subsection{Návrh uživatelského rozhraní}
+\section{Realizace}
+	\subsection{Architektura aplikace}
+		\subsubsection{MVC architektura}
+		\subsubsection{Komponenty aplikace}
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
