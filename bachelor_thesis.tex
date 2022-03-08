@@ -115,9 +115,20 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \par Aplikace, kterou vyvijíme bude patřit rozsahově náročnější, proto je rozdělena do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladném otestování aplikace a tím ověřit její kvalitu a spolehlivost.
 \par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba vytvořit takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním, vedoucím práce a budoucích mentorů.
 \subsubsection{Verzovací systém}
-\par Aplikace je ukládána na katedrálním verzovacím systému GitLab. To nám umožňuje mezi sebou sdílet samotnou aplikaci a různé další soubory s vývojem a testováním spojené.
+\par V oblasti vývoje informačních projektů se hojně a poctivě využívají verzovací systémy Git.
+\par Tato technologie totiž umožňují práci více vývojářů na jednom projektu současně. Jednotlivé změny v repozitáři vývojáři seskupují do tzv. commitů. Ty totiž v systémech Git představují nejmenší jednotku změny v úložišti. Commit v sobě obsahuje informace o upravených řádkách textových a změny dalších souborů.
+\par Další důležitou funkcí je větvení. V základu je v repozitáři hlavní větev \uv{main} nebo \uv{master}, který obsahuje centrální vývoj projektu. Od této větve se se oddělují další větve, dle určení. Typicky se do jednotlivých větví postupně commitují úpravy rozsáhlejší funkcionality aplikace. Díky tomu ostatní vývojáři nejsou těmito změnami zasaženi a tak si nepřekážení.
+\par Po dokončení úprav nebo přidávání funkcionality jsou commity větve sloučeny do rodičovské větve, kde tvoří větší celek. Tato funkce se jmenuje Merge request a její starostí je commity jedné větve přemístit do jiné větve tak, aby byly změny zaneseny. Může se stát, že se změny v obou větvích dostanou do konfliktu, poté záleží na uživateli jak konflikt vyřeší.
+\par Dostupných verzovacích systémů existuje celá řada. Mezi nejvýznamnější na trhu patří GitHub a GitLab.
+\par GitHub je pravděpodobně nejúspěšnější systém pro tvorbu projektů od jednotlivců nebo malých skupin. Obsahu však výrazná omezení, která jsou odstraněny g prémiovém plánu, a jsou pro naše potřeby důležité.
+\par Z tohoto důvodu se zdá být přínosnější použít systém GitLab, který pokrývá veškeré naše požadavky. 
+\par Důležitou zmínkou je, že projekt GitLab je veden jako open-source. Díky tomu Katedra informatiky a výpočetní techniky provozuje svoji vlastní kopii tohoto verzovacího nástroje na katedrálním serveru.
+\par To má pro nás nesmírnou výhodu, protože jsme všichni již této možnosti katedrálního serveru využili a máme s ním zkušenosti. Navíc všichni zúčastnění mají na této platformě vytvořené své účty, nemusíme tedy organizačně řešit vstup na novou platformu.
+\par Z těchto důvodů jsme se v naší volbě verzovacího systému rozhodli zvolit právě variantu s katedrálním serverem.
 \subsubsection{Plánování úkolů}
-\par Sytém GitLab také využíváme pro i v rámci stanovení cílů, kdy si na každý týden stanovíme úkoly, které následně plníme.
+\par S rozsahem práce přichází i potřeba rozvržení práce po časové úseky a stanovení cílů. Zároveň je žádoucí, aby k plánu měli přístup všechny zúčastněné osoby. Tyto požadavky sice splňuje spoustu známých nástrojů nebo sdílených úložišť. My jsme se ale rozhodli v využít již námi používaný nástroj GitLab.
+\par Tento nástroj obsahuje možnosti vytváření dokumentace ve formátu MarkDown, který navíc zajišťuje základní formátování.
+\par V této dokumentátorské sekci máme vytvořenou jednu stránku, ve které je po týdnech rozdělena struktura naplánovaných úkolů a vzniklých dotazů.
 \subsubsection{Issues}
 \par Různé požadavky evidujeme jako jednotlivé issues. Issues je záznam o požadavku na aplikaci nebo úkolu, který je potřeba vykonat. Issue tak eviduje přiřazení k člověku, který daný požadavek řeší, kompletní historii řešení požadavku, termíny pro jeho splnění, atd.
 \par Systém také poskytuje štítkování těchto issues a tím pomáhá v jejich řazení, filtrování, seskupování i výběru. Díky štítkům můžeme totiž přiřazovat prioritu, závažnost, druh požadavku na aplikaci a jiné označení.

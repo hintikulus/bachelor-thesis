@@ -1,9 +1,9 @@
-\babel@toc {british}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {british}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {czech}{}\relax 
-\babel@toc {czech}{}\relax 
+\babel@toc {british}{}
+\babel@toc {czech}{}
+\babel@toc {british}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
 \contentsline {chapter}{\numberline {1}Úvod}{6}{chapter.1}%
 \contentsline {chapter}{\numberline {2}}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Motivace}{7}{section.2.1}%
@@ -15,17 +15,17 @@
 \contentsline {subsubsection}{Nette}{8}{section*.7}%
 \contentsline {section}{\numberline {2.4}Nástroje pro řízení projektu}{9}{section.2.4}%
 \contentsline {subsubsection}{Verzovací systém}{9}{section*.8}%
-\contentsline {subsubsection}{Plánování úkolů}{9}{section*.9}%
-\contentsline {subsubsection}{Issues}{9}{section*.10}%
-\contentsline {subsubsection}{Kanban}{9}{section*.11}%
-\contentsline {subsubsection}{MantisBT}{10}{section*.12}%
-\contentsline {section}{\numberline {2.5}Návrh aplikace}{11}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Požadavky na aplikaci}{11}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Rozdělení aplikace dle způsobu užití}{11}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Návrh databázové struktury}{11}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Návrh uživatelského rozhraní}{11}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Realizace}{11}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Architektura aplikace}{11}{subsection.2.6.1}%
-\contentsline {subsubsection}{MVC architektura}{11}{section*.13}%
-\contentsline {subsubsection}{Komponenty aplikace}{11}{section*.14}%
-\contentsline {chapter}{Literatura}{12}{chapter*.15}%
+\contentsline {subsubsection}{Plánování úkolů}{10}{section*.9}%
+\contentsline {subsubsection}{Issues}{10}{section*.10}%
+\contentsline {subsubsection}{Kanban}{10}{section*.11}%
+\contentsline {subsubsection}{MantisBT}{11}{section*.12}%
+\contentsline {section}{\numberline {2.5}Návrh aplikace}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Požadavky na aplikaci}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Rozdělení aplikace dle způsobu užití}{12}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Návrh databázové struktury}{12}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Návrh uživatelského rozhraní}{12}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Realizace}{12}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Architektura aplikace}{12}{subsection.2.6.1}%
+\contentsline {subsubsection}{MVC architektura}{12}{section*.13}%
+\contentsline {subsubsection}{Komponenty aplikace}{12}{section*.14}%
+\contentsline {chapter}{Literatura}{13}{chapter*.15}%
