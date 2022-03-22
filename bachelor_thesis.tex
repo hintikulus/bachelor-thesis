@@ -94,9 +94,20 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \chapter{}
 \section{Motivace}
 	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět Týmový softwarový projekt (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
-	\par Zvláštností předmětu je doba pro řešení projektu, 2 semestry. Pro předmět takového rozsahu bylo rozhodnuto o vytvoření webové aplikace, která všem zúčastněným stranám zjednoduší prohlížení obsahu a evidenci postupu projektu. Cílem aplikace je umožnit lepší informovanost a zapojení studentů, řešení evidence vyučujících a možnosti sdílení mezi mentorem a garantem. Aplikace tak má nahradit způsob evidence Excel tabulkou jako je tak tomu u jiných obdobných předmětů.
+	\par Zvláštností předmětu je doba pro řešení projektu, dva semestry rozdělené do dvou předmětů. Budou zapojeny čtyři skupiny lidí. Garant, zadavatelé, mentoři a studenti, což bude klást poměrně značné nároky na organizaci předmětu. Pro takový rozsah bylo rozhodnuto o vytvoření webové aplikace, která všem zúčastněným stranám zjednoduší prohlížení obsahu a evidenci postupu prací projektu. Cílem aplikace je umožnit lepší informovanost a zapojení studentů, řešení evidence zadavatelů a možnosti sdílení mezi mentorem a garantem. Aplikace tak má nahradit způsob organizace pomocí Excel tabulky, jako je tak tomu u jiných obdobných předmětů.
 \section{Organizace předmětů TSP}
-	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučován v letním semestru a KIV/TSP2 v zimním semestru. Řešení týmového projektu tedy bude překračovat hranice ročníku a v některých částech se organizace předmětů bude i překrývat.
+	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučovaného v letním semestru 1. ročníku a KIV/TSP2 v zimním semestru 2. ročníku. Řešení týmového projektu tedy bude překračovat hranice ročníku a v mnoha částech se organizace předmětů bude překrývat.
+	\par Jednotlivý cyklus se v nejčastějším případě bude probíhat následovně. 
+	\begin{itemize}
+		\item Garant přijímá od domluvených zadavatelů jejich témata, která mají studentské týmy řešit. Toto zadání společně s možným PDF souborem vloží do podpůrného softwaru pro zvolené období předmětu.
+		\item Před začátkem TSP budoucí vedoucí týmu zažádá garanta o založení účtu v podpůrném softwaru s rolí \uv{Vedoucí}. Vedoucí týmu společně s dalšími studenty sestaví tým a vloží informace o týmu do této podpory.
+		\item Poté co jsou témata zadání projektů zveřejněny, vedoucí týmu (na základě rozhodnutí v týmu) projeví zájem o zvolené téma.
+		\item Mentor ohodnotí vhodnost zvoleného tématu pro daný tým na základě zájmu, který vedoucí týmu učinil.
+		\item Garant následně podle rozhodnutí mentora a zájmu týmu definitivně přiřadí nebo nepřiřadí téma týmu. Přiřazením tématu vzniká projekt.
+		\item Tým řeší projekt a postup řešení vkládá do softwarové podpory
+		\item Mentor na základě postupu řešení týmu kontroluje a potvrzuje postup týmu
+		\item Na závěru předmětu TSP se koná obhajoba projektu, jejíž výsledek se zapíše do softwarové podpory.
+	\end{itemize}
 \section{PHP frameworky}
 \par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symphony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 \par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
@@ -112,38 +123,38 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \par S frameworkem společně přichází i šablonovací engine Latte.
 
 \section{Nástroje pro řízení projektu}
-\par Aplikace, kterou vyvijíme bude patřit rozsahově náročnější, proto je rozdělena do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladném otestování aplikace a tím ověřit její kvalitu a spolehlivost.
-\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba vytvořit takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním, vedoucím práce a budoucích mentorů.
+\par Aplikace, kterou vyvíjíme, bude patřit mezi rozsahově náročnější, proto je její řešení rozděleno do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladné otestování aplikace, čímž má být zajištěna její kvalita spolehlivost.
+\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba využít takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním a vedoucím práce.
 \subsubsection{Verzovací systém}
-\par V oblasti vývoje informačních projektů se hojně a poctivě využívají verzovací systémy Git.
+\par V oblasti vývoje informačních projektů je častým nástrojem pro efektivní a produktivní vývoj verzovací systém ze skupiny Git.
 \par Tato technologie totiž umožňují práci více vývojářů na jednom projektu současně. Jednotlivé změny v repozitáři vývojáři seskupují do tzv. commitů. Ty totiž v systémech Git představují nejmenší jednotku změny v úložišti. Commit v sobě obsahuje informace o upravených řádkách textových a změny dalších souborů.
-\par Další důležitou funkcí je větvení. V základu je v repozitáři hlavní větev \uv{main} nebo \uv{master}, který obsahuje centrální vývoj projektu. Od této větve se se oddělují další větve, dle určení. Typicky se do jednotlivých větví postupně commitují úpravy rozsáhlejší funkcionality aplikace. Díky tomu ostatní vývojáři nejsou těmito změnami zasaženi a tak si nepřekážení.
-\par Po dokončení úprav nebo přidávání funkcionality jsou commity větve sloučeny do rodičovské větve, kde tvoří větší celek. Tato funkce se jmenuje Merge request a její starostí je commity jedné větve přemístit do jiné větve tak, aby byly změny zaneseny. Může se stát, že se změny v obou větvích dostanou do konfliktu, poté záleží na uživateli jak konflikt vyřeší.
-\par Dostupných verzovacích systémů existuje celá řada. Mezi nejvýznamnější na trhu patří GitHub a GitLab.
-\par GitHub je pravděpodobně nejúspěšnější systém pro tvorbu projektů od jednotlivců nebo malých skupin. Obsahu však výrazná omezení, která jsou odstraněny g prémiovém plánu, a jsou pro naše potřeby důležité.
+\par Další důležitou funkcí je větvení. V základu je v repozitáři hlavní větev \uv{main} nebo \uv{master}, který obsahuje centrální vývoj projektu. Od této větve se se oddělují další větve, dle určení. Typicky se do jednotlivých větví postupně commitují úpravy rozsáhlejší funkcionality aplikace. Díky tomu ostatní vývojáři nejsou těmito změnami zasaženi a tak si nepřekážejí.
+\par Po dokončení úprav nebo přidávání funkcionality jsou commity větve sloučeny do rodičovské větve, kde tvoří větší celek. Tato funkce se jmenuje Merge request a její starostí je přemístit commity jedné větve do jiné větve tak, aby byly změny zaneseny. Může se stát, že se změny v obou větvích dostanou do konfliktu, poté záleží na uživateli jak konflikt vyřeší.
+\par Dostupných nadstaveb verzovacích systémů existuje celá řada. Mezi nejvýznamnější na trhu patří GitHub a GitLab.
+\par GitHub je pravděpodobně nejúspěšnější systém pro tvorbu projektů od jednotlivců nebo malých skupin. Obsahuje však výrazná omezení, která jsou sice odstraněny v prémiovém plánu, ale v našem případě výhody ostatních nadstaveb převažují nad výhodami GitHubu.
 \par Z tohoto důvodu se zdá být přínosnější použít systém GitLab, který pokrývá veškeré naše požadavky. 
-\par Důležitou zmínkou je, že projekt GitLab je veden jako open-source. Díky tomu Katedra informatiky a výpočetní techniky provozuje svoji vlastní kopii tohoto verzovacího nástroje na katedrálním serveru.
-\par To má pro nás nesmírnou výhodu, protože jsme všichni již této možnosti katedrálního serveru využili a máme s ním zkušenosti. Navíc všichni zúčastnění mají na této platformě vytvořené své účty, nemusíme tedy organizačně řešit vstup na novou platformu.
+\par Důležitou zmínkou je, že projekt GitLab je veden jako open-source. Díky tomu Katedra informatiky a výpočetní techniky provozuje svoji vlastní instalaci tohoto verzovacího nástroje na katedrálním serveru.
+\par To má pro studenty nesmírnou výhodu, protože během dosavadního studia již GitLab používali a mají s ním zkušenosti. Navíc všichni zúčastnění mají na této platformě vytvořené své účty, nemusíme tedy organizačně řešit vstup na novou platformu.
 \par Z těchto důvodů jsme se v naší volbě verzovacího systému rozhodli zvolit právě variantu s katedrálním serverem.
 \subsubsection{Plánování úkolů}
-\par S rozsahem práce přichází i potřeba rozvržení práce po časové úseky a stanovení cílů. Zároveň je žádoucí, aby k plánu měli přístup všechny zúčastněné osoby. Tyto požadavky sice splňuje spoustu známých nástrojů nebo sdílených úložišť. My jsme se ale rozhodli v využít již námi používaný nástroj GitLab.
-\par Tento nástroj obsahuje možnosti vytváření dokumentace ve formátu MarkDown, který navíc zajišťuje základní formátování.
+\par S rozsahem práce přichází i potřeba rozvržení práce na časové úseky a stanovení cílů. Zároveň je žádoucí, aby k plánu měli přístup všechny zúčastněné osoby. Tyto požadavky sice splňuje množství známých nástrojů nebo sdílených úložišť. My jsme se ale rozhodli využít již námi používaný nástroj GitLab.
+\par Tento nástroj obsahuje možnosti vytváření wiki dokumentace ve formátu MarkDown, který navíc zajišťuje základní formátování.
 \par V této dokumentátorské sekci máme vytvořenou jednu stránku, ve které je po týdnech rozdělena struktura naplánovaných úkolů a vzniklých dotazů.
 \subsubsection{Issues}
 \par Různé požadavky evidujeme jako jednotlivé issues. Issues je záznam o požadavku na aplikaci nebo úkolu, který je potřeba vykonat. Issue tak eviduje přiřazení k člověku, který daný požadavek řeší, kompletní historii řešení požadavku, termíny pro jeho splnění, atd.
 \par Systém také poskytuje štítkování těchto issues a tím pomáhá v jejich řazení, filtrování, seskupování i výběru. Díky štítkům můžeme totiž přiřazovat prioritu, závažnost, druh požadavku na aplikaci a jiné označení.
 \par Issues nám pomáhají ve fragmentaci  jednotlivých požadavků na aplikaci do přibližně stejně náročných dílů, které se poté ve vývoji dobře plní a je tak zajištěna přehlednost. Zároveň má tento princip i pozitivní psychologický dopad, kdy vývojáři mají dobrý pocit z dokončeného úkolu a mají tak chuť pokračovat dalším issue.
-\par V systém GitLab tyto issues používáme také ve funkci Board, který využívá principy kanbanu.
+\par V systému GitLab tyto issues používáme také ve funkci Board, který využívá principy kanbanu.
 \subsubsection{Kanban}
 \par Systém kanban je strategie řízení projektu, kdy si mezi sebou části výroby předávají výrobek. Cílem je využívat pouze ty nejnutnější zdroje.
 \par V praxi se tento systém zobrazuje jako tabule, kde jsou rozvržené jednotlivé sloupce dle možných stavů vývoje. Následně zde máme rámečky představující výrobek, které obsahují popis jak má být produkt upraven. Podstatou věci je, že tyto rámečky následně přemisťujeme mezi jednotlivými sloupci v závislosti na reálném stavu produktu.
-\par V informačních technologií se kanban používá ve velké míře pro organizaci různých úkolů a požadavků. Různé řásti vývoje si mezi sebou požadavek vyměňují a tím mění jeho stav.
+\par V informačních technologiích se kanban používá ve velké míře pro organizaci různých úkolů a požadavků. Různé části vývoje si mezi sebou požadavek vyměňují a tím mění jeho stav.
 \par Například když vývojář dokončí práci na nové funkcionalitě, tak přesune příslušný rámeček ze sloupce \uv{Ve vývoji} do sloupce \uv{Připraveno k testování}. Tím se tester dozví, že je daný úkol připraven k testování a může si úkol přiřadit a pracovat na něm.
 \par V GitLabu je systém kanbanu implementován v souvislosti s issues a jejich štítky. Každý issue je zobrazen jeden rámeček na tabuli kanban, kam se automaticky po vytvoření issue promítne a po přidělení štítků zařadí do připravených sloupců.
 \par Propojenost s issue nám ulehčí práci s přepisováním jednotlivých požadavků do jiných nástrojů, které mají obdobné funkce.
 \subsubsection{MantisBT}
 \par Mantis Bug Tracker je webová aplikace pro nahlašování a evidenci chyb (defektů) vytvořených v průběhu vývoje aplikace. Přidávané defekty lze velmi podrobně popsat, určit prioritu a štítkovat.
-\par MantisBT využíváme pro nahlašování objevených chyb nalezené především, ale ne výhradně pomocí komplexního testování aplikace. Na základě reportování defektů jsou následně žádány opravy jednotlivých chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
+\par MantisBT využíváme pro nahlašování objevených selhání nalezených především, ale ne výhradně pomocí komplexního automatizovaného testování aplikace. Na základě reportování defektů jsou následně žádány jejich opravy chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \section{Návrh aplikace} 
 	\subsection{Požadavky na aplikaci}
 	\subsection{Rozdělení aplikace dle způsobu užití}

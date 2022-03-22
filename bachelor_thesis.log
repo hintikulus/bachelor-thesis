@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.2.23)  9 MAR 2022 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.2.23)  22 MAR 2022 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,9 +469,14 @@ Kapitola 1.
 
 ]
 Kapitola 2.
-[7
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+02.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [7
 
-] [8] [9] [10] (./bachelor_thesis.bbl [11] [12]
+] [8] [9] [10] [11]
+(./bachelor_thesis.bbl [12]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 13.
 ) [13
@@ -481,23 +486,24 @@ Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 2D5C6C31513571D0DCD53C99224E0933;2316.
  ) 
 Here is how much of TeX's memory you used:
- 10607 strings out of 480432
- 153407 string characters out of 5891250
+ 10640 strings out of 480432
+ 154223 string characters out of 5891250
  466763 words of memory out of 5000000
- 27414 multiletter control sequences out of 15000+600000
- 465106 words of font info for 58 fonts, out of 8000000 for 9000
+ 27443 multiletter control sequences out of 15000+600000
+ 465481 words of font info for 59 fonts, out of 8000000 for 9000
  428 hyphenation exceptions out of 8191
  83i,5n,88p,757b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-tt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (13 pages, 223433 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmtt12.pfb>
+Output written on bachelor_thesis.pdf (13 pages, 224960 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  46 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
