@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  22 MAR 2022 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  22 MAR 2022 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,28 +539,20 @@ Package rerunfilecheck Warning: File `bachelor_thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `bachelor_thesis.out':
-(rerunfilecheck)             Before: 16407DE22C43DA2ADF22968CD03B4A09;3945
-(rerunfilecheck)             After:  3E671BAE6B4B245C24EAC7F531443DE8;3916.
+(rerunfilecheck)             Before: 3E671BAE6B4B245C24EAC7F531443DE8;3916
+(rerunfilecheck)             After:  9869316EAB6B9FE7EA16BB578A314EEF;4240.
  ) 
 Here is how much of TeX's memory you used:
- 10851 strings out of 478659
- 175370 string characters out of 2845447
- 491000 words of memory out of 3000000
+ 10849 strings out of 478659
+ 175335 string characters out of 2845447
+ 490997 words of memory out of 3000000
  28721 multiletter control sequences out of 15000+600000
  465481 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,76p,770b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-pdfTeX warning (dest): name{subsection.3.0.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.0.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.0.1} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter*.8} has been referenced but does not exist,
+ replaced by a fixed one
 
 {C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:
 /Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
@@ -573,9 +565,9 @@ Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C
 C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
 <C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb
 >
-Output written on bachelor_thesis.pdf (19 pages, 272192 bytes).
+Output written on bachelor_thesis.pdf (19 pages, 271974 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
