@@ -9,32 +9,36 @@
 \contentsline {section}{\numberline {2.1}Motivace}{8}{section.2.1}%
 \contentsline {chapter}{\numberline {3}Specifikace požadavků}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Organizace předmětů TSP}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Uživatelé}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Případy užití}{9}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Dostupné technologie}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}PHP frameworky}{10}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Laravel}{10}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Symphony}{10}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Nette}{11}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Front-end}{11}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}HTML a CSS}{11}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Bootstrap}{11}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}AdminLTE}{11}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Nástroje pro řízení projektu}{11}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Verzovací systém}{11}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Plánování úkolů}{12}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Issues}{13}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Kanban}{13}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}MantisBT}{14}{subsection.4.3.5}%
-\contentsline {chapter}{\numberline {5}Návrh aplikace}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Architektura aplikace}{15}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}MVC architektura}{15}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Komponenty aplikace}{15}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Rozdělení aplikace dle způsobu užití}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Databázová struktura}{15}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Uživatelské rozhraní}{15}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Realizace}{16}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Adresářová struktura}{16}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Testování}{17}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Závěr}{18}{chapter.8}%
-\contentsline {chapter}{Literatura}{19}{chapter*.5}%
+\contentsline {section}{\numberline {3.2}Uživatelé}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Nepřihlášený uživatel}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Vedoucí týmu}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Mentor}{10}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Garant}{10}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Případy užití}{10}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Dostupné technologie}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}PHP frameworky}{11}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Laravel}{11}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Symphony}{11}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Nette}{12}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Front-end}{12}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}HTML a CSS}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Bootstrap}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}AdminLTE}{13}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Nástroje pro řízení projektu}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Verzovací systém}{13}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Plánování úkolů}{14}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Issues}{14}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Kanban}{15}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}MantisBT}{15}{subsection.4.3.5}%
+\contentsline {chapter}{\numberline {5}Návrh aplikace}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Architektura aplikace}{16}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}MVC architektura}{16}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Komponenty aplikace}{16}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Rozdělení aplikace dle způsobu užití}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Databázová struktura}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Uživatelské rozhraní}{16}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Realizace}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Adresářová struktura}{17}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Testování}{18}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Závěr}{19}{chapter.8}%
+\contentsline {chapter}{Literatura}{20}{chapter*.5}%

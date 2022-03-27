@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  22 MAR 2022 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  27 MAR 2022 03:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,66 +508,57 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9
 
 ]
+[10]
 Kapitola 4.
-[10
+[11
 
-] [11] [12] [13] [14]
+] [12] [13] [14] [15]
 Kapitola 5.
-[15
-
-]
-Kapitola 6.
 [16
 
 ]
-Kapitola 7.
+Kapitola 6.
 [17
 
 ]
+Kapitola 7.
+[18
+
+]
 Kapitola 8.
-(bachelor_thesis.bbl [18
+(bachelor_thesis.bbl [19
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 13.
-) [19
+) [20
 
 ] (bachelor_thesis.aux)
-
-Package rerunfilecheck Warning: File `bachelor_thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bachelor_thesis.out':
-(rerunfilecheck)             Before: 3E671BAE6B4B245C24EAC7F531443DE8;3916
-(rerunfilecheck)             After:  9869316EAB6B9FE7EA16BB578A314EEF;4240.
+Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: F32DE6A393FB95BABA247317D4A5BB21;4736.
  ) 
 Here is how much of TeX's memory you used:
- 10849 strings out of 478659
- 175335 string characters out of 2845447
- 490997 words of memory out of 3000000
- 28721 multiletter control sequences out of 15000+600000
+ 10860 strings out of 478659
+ 175522 string characters out of 2845447
+ 492003 words of memory out of 3000000
+ 28728 multiletter control sequences out of 15000+600000
  465481 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,5n,76p,770b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-pdfTeX warning (dest): name{chapter*.8} has been referenced but does not exist,
- replaced by a fixed one
-
-{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:
-/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
-sers/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/
-Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb
->
-Output written on bachelor_thesis.pdf (19 pages, 271974 bytes).
+ 70i,6n,76p,770b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:
+/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
+:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pf
+b><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
+fb>
+Output written on bachelor_thesis.pdf (20 pages, 278872 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
