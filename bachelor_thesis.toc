@@ -1,9 +1,9 @@
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
 \contentsline {chapter}{\numberline {1}Úvod}{7}{chapter.1}%
 \contentsline {chapter}{\numberline {2}}{8}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Motivace}{8}{section.2.1}%
@@ -32,8 +32,8 @@
 \contentsline {chapter}{\numberline {5}Návrh aplikace}{17}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Případy užití}{17}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Architektura aplikace}{17}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}MVC architektura}{17}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Komponenty aplikace}{17}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.1}MVP architektura}{17}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Komponenty aplikace}{18}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Rozdělení aplikace dle způsobu užití}{18}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Zadání}{18}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Tým}{18}{subsection.5.3.2}%

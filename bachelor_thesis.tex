@@ -187,7 +187,9 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 			\caption{Schéma případů užití}
 		\end{figure}
 	\section{Architektura aplikace}
-		\subsection{MVC architektura}
+		\subsection{MVP architektura}
+		\par Architektura MVP (Model-View-Presenter) je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
+		\par Mezi další velice rozšířenou architekturou patří MVC architektura. Hlavním rozdílem mezi MVP a MVC architekturami je, zpracovávání vstupů od uživatele. V MVP architektuře jsou vstupy obsluhovány prezentovací vrstvou.
 		\subsection{Komponenty aplikace}
 		\par PHP framework nám dovoluje vytvářet komponenty, které mohou být na různých částech aplikace znovu použity. Takový přístup je pro nás výhodný zejména ve tvorbě formulářů.
 	\section{Rozdělení aplikace dle způsobu užití}
