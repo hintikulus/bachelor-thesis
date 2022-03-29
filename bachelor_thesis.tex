@@ -79,6 +79,8 @@
 % lze snadno modifikovat vzhled citací v textu
 \usepackage[numbers,sort&compress]{natbib}
 
+\usepackage{float}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % VLASTNÍ TEXT PRÁCE
@@ -111,12 +113,13 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\end{itemize}
 \section{Uživatelé}
 	\subsection{Nepřihlášený uživatel}
+		\par Nepřihlášený uživatel je každý návštěvník aplikace, který se neprokáže svými přihlašovacími údaji. Takový uživatel může ve skutečnosti být student předmětu TSP, proto je mu umožněno zobrazovat vypsaná témata a týmy, které hledají nové členy.
 	\subsection{Vedoucí týmu}
+		\par Student předmětů TSP, který zažádal garanta o vytvoření konta. Tento uživatel je pověřen tvorbou týmu. Je mu umožněno vyjadřovat zájmy o volná zadání, které následně ohodnocuje mentor a na základě zájmu je garantem téma přiděleno. Také má možnost evidovat v projektu splnění kritérií, postupu a využitých zkušeností. Vedoucí vyplňuje údaje o týmu do softwarové podpory a eviduje postup projektu.
 	\subsection{Mentor}
-		Mentor je osoba, která kontroluje plnění postupu týmu.
+		\par Vyučující předmětů TSP, který má v softwarové podpoře založený účet- Jeho úkolem je evidovat postup a kontrolovat výstupy z týmu. Uživateli dále bude umožněno převzít si téma, které bude mentorovat a určovat vhodnost tématu dle vytvořených zájmů týmů o konkrétní téma, které mentoruje.
 	\subsection{Garant}
-		
-\section{Případy užití}
+		\par Garant je osoba, která koordinuje činnost všech ostatních skupin uživatelů. Mezi jeho hlavní náplní patří také přidávání nových témat, správa uživatelů a dalších nastavení softwarové podpory.
 
 \chapter{Dostupné technologie}
 \section{PHP frameworky}
@@ -138,6 +141,9 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\subsection{Bootstrap}
 		\par Bootstrap představuje nadstavbu nad CSS styly. Umožňuje upravovat prvky pomocí tříd a dát jim tak moderní vzhled bez potřeby upravovat styly ručně. Při správném použití tohoto frameworku je velice snadno zajištěna responzivita webu.
 	\subsection{AdminLTE}
+		Ačkoli Bootstrap přichází již s hotovou sadou stylů pro určité prvky a pro responzivitu, tak stavba celé webové aplikace by se neobešla bez četného přidávání vlastních stylů. Existují však nástavby nad technologií Boostrap a nabízejí kompletní sadu stylů k vytvoření informačních systémů. Jedním z takových projektů je front-endový framework AdminLTE. 
+		\par Tento framework nabízí celou řadu placených šablon, ale poskytuje i jednu velmi oblíbenou šablonu zdarma. Součástí tohoto frameworku jsou příklady použití stylů jednotlivých elementů a také předpřipravené šablony pro celé stránky.
+		\par Framework využívá Bootstrap, je tedy stejně jednoduché využívat responzivitu a čerpat jeho dalších výhod. Stylování stránek tedy vypadá tak, že na hotovou HTML strukturu aplikujeme třídy, na které se následně navazují styly těchto frameworků. 
 
 \section{Nástroje pro řízení projektu}
 	\par Aplikace, kterou vyvíjíme, bude patřit mezi rozsahově náročnější, proto je její řešení rozděleno do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladné otestování aplikace, čímž má být zajištěna její kvalita spolehlivost.
@@ -173,11 +179,66 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par Mantis Bug Tracker je webová aplikace pro nahlašování a evidenci chyb (defektů) vytvořených v průběhu vývoje aplikace. Přidávané defekty lze velmi podrobně popsat, určit prioritu a štítkovat.
 	\par MantisBT využíváme pro nahlašování objevených selhání nalezených především, ale ne výhradně pomocí komplexního automatizovaného testování aplikace. Na základě reportování defektů jsou následně žádány jejich opravy chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \chapter{Návrh aplikace}
+	\section{Případy užití}
+		Ze specifikace požadavků vycházejí následující případy užití.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{img/use_case/use_case_diagram}
+			\caption{Schéma případů užití}
+		\end{figure}
 	\section{Architektura aplikace}
 		\subsection{MVC architektura}
 		\subsection{Komponenty aplikace}
+		\par PHP framework nám dovoluje vytvářet komponenty, které mohou být na různých částech aplikace znovu použity. Takový přístup je pro nás výhodný zejména ve tvorbě formulářů.
 	\section{Rozdělení aplikace dle způsobu užití}
+		\subsection{Zadání}
+			
+		\subsection{Tým}
+		\subsection{Projekt}
+			
 	\section{Databázová struktura}
+		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využivá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
+		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování řádek. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyla porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\textwidth]{img/database/database_model}
+			\caption{Schéma databázové struktury}
+		\end{figure}
+		\subsection{Základní tabulky}
+			\begin{itemize}
+				\item USER -- Tabulka pro ukládání uživatelů, kteří mají/měli přístup do aplikace. Součástí této tabulky jsou přihlašovací údaje, role uživatele a následné propojení na další informace dle role uživatele.
+				\item STUDENT -- Uživatelé s rolí \uv{Vedoucí} vycházejí ze záznamu tabulky \uv{STUDENT}, která obsahuje seznam všech studentů studujících předměty TSP.
+				\item TEAM -- Tabulka pro evidenci týmů s jejich vedoucích.
+				\item PROJECT -- Tabulka propojuje zadání z tabulky \uv{ASSIGNMENT} a týmu z tabulky \uv{TEAM}, tím vzniká projekt.
+				\item CONTACT -- Tabulka pro evidenci informací a kontaktů na mentory a zadavatele.
+				\item ASSIGNMENT -- Tabulka pro ukládání jednotlivých zadání.
+				\item ASSIGNMENT\_INTEREST -- Tabulka pro evidenci zájmů o témata.
+			\end{itemize}
+		\subsection{Číselníkové tabulky}
+		\par Tabulky sloužící jako číselník.
+		\begin{itemize}
+			\item TEAM\_ROLE -- Tabulka dostupných rolí v týmu.
+			\item TAG -- Tabulka profilů pro použití v týmu a zadání.
+			\item PROGRESS -- Tabulka se seznamem bodů, které tým v projektu plní.
+			\item REQUIREMENT -- Tabulka se seznamem kritérií, která musí tým splnit.
+			\item EXPERIENCE -- Tabulka využitých zkušeností
+			\item PERIOD -- Tabulka jednotlivých cyklů aplikace a předmětů TSP.
+		\end{itemize}
+		\subsection{Spojovací tabulky}
+			\begin{itemize}
+				\item
+				\item TEAM\_ROLE\_STUDENT -- Propojení mezi tabulkami \uv{TEAM\_ROLE} a \uv{STUDENT} pro realizaci N:M relace. 
+				\item TEAM\_SKILL -- Propojení mezi tabulkami \uv{TAG} a \uv{TEAM} pro realizaci N:M relace. Tabulka specifikuje jaký tým má zvolenou jaký profil týmu.
+				\item ASSIGNMENT\_TAG -- Propojení mezi tabulkami \uv{TAG} a \uv{ASSIGNMENT} pro realizaci N:M relace. Tabulka specifikuje jaké schopnosti bude tým potřebovat pro řešení tématu.
+				\item PROGRESS\_STATE -- Propojení mezi tabulkami \uv{PROGRESS} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje postup v řešení projektu.
+				\item REQUIREMENT\_STATE -- Propojení mezi tabulkami \uv{REQUIREMENT} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje plnění kritérií při řešení projektu.
+				\item EXPERIENCE\_STATE -- Propojení mezi tabulkami \uv{EXPERIENCE} a \uv{PROJECt} pro realizaci N:M relace. Tabulka eviduje stav potvrzení využitých zkušeností.
+			\end{itemize}
+		\subsection{Další tabulky}
+			\begin{itemize}
+				\item ASSIGNMENT\_FILE -- Tabulka sloužící pro uložení PDF souborů s příslušnými informacemi.
+			\end{itemize}
 	\section{Uživatelské rozhraní}
 \chapter{Realizace}
 	\section{Adresářová struktura}
