@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  29 MAR 2022 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  5 APR 2022 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,32 +328,80 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box51
 )
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count276
+\lst@gtempboxa=\box52
+\lst@token=\toks22
+\lst@length=\count277
+\lst@currlwidth=\dimen154
+\lst@column=\count278
+\lst@pos=\count279
+\lst@lostspace=\dimen155
+\lst@width=\dimen156
+\lst@newlines=\count280
+\lst@lineno=\count281
+\lst@maxwidth=\dimen157
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count282
+\lst@skipnumbers=\count283
+\lst@framebox=\box53
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.st
+y
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count276
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count284
+\l__pdf_internal_box=\box54
 ) (bachelor_thesis.aux)
 \openout1 = `bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -393,17 +441,17 @@ LaTeX Font Info:    ... okay on input line 89.
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen154
-\scratchbox=\box53
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen155
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count285
+\scratchdimen=\dimen158
+\scratchbox=\box55
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen159
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks24
 )
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
 base.sty
@@ -415,15 +463,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2021/10/11 v1.3b Standard LaTeX Color (DPC)
-
-(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-)
-Package hyperref Info: Link coloring ON on input line 89.
+Package hyperref Info: Link coloring ON on input line 126.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -435,50 +475,51 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count283
+\c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 126.
+LaTeX Info: Redefining \pageref on input line 126.
+LaTeX Info: Redefining \nameref on input line 126.
  (bachelor_thesis.out) (bachelor_thesis.out)
 \@outlinefile=\write3
 \openout3 = `bachelor_thesis.out'.
 
+\c@lstlisting=\count292
  [1
 
 {C:/Users/hintik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+29.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+29.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-92.
+129.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-92.
+129.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 92.
+(Font)              <12> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 92.
+(Font)              <6> on input line 129.
 
 [4] (bachelor_thesis.toc [5
 
@@ -486,8 +527,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `bachelor_thesis.toc'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
-4.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+31.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -502,7 +543,7 @@ Kapitola 2.
 ]
 Kapitola 3.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-05.
+42.
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9
@@ -512,94 +553,110 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Kapitola 4.
 [11
 
-] [12] [13] [14] [15] [16]
+] [12] [13] [14]
+<img/rizeni_projektu/kanban.png, id=337, 1239.88219pt x 594.72188pt>
+File: img/rizeni_projektu/kanban.png Graphic file (type png)
+<use img/rizeni_projektu/kanban.png>
+Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 214
+.
+(pdftex.def)             Requested size: 386.95749pt x 185.6051pt.
+ [15] [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.224 \chapter
+              {Návrh aplikace} <./img/rizeni_projektu/kanban.png>]
 Kapitola 5.
-<img/use_case/use_case_diagram.png, id=310, 1084.05pt x 863.225pt>
+<img/use_case/use_case_diagram.png, id=349, 1084.05pt x 863.225pt>
 File: img/use_case/use_case_diagram.png Graphic file (type png)
 <use img/use_case/use_case_diagram.png>
 Package pdftex.def Info: img/use_case/use_case_diagram.png  used on input line 
-186.
+245.
 (pdftex.def)             Requested size: 309.56717pt x 246.50903pt.
 [17
 
-
+] [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.194 	\section
-               {Rozdělení aplikace dle způsobu užití} <./img/use_case/use_
-case_diagram.png (PNG copy)>]
-<img/database/database_model.png, id=316, 976.64874pt x 1339.0025pt>
+l.252 		\subsection
+                   {Komponenty aplikace v Nette} <./img/use_case/use_case_diagr
+am.png (PNG copy)>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 258.
+ [19]
+<img/database/database_model.png, id=384, 976.64874pt x 1339.0025pt>
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
-Package pdftex.def Info: img/database/database_model.png  used on input line 20
-6.
+Package pdftex.def Info: img/database/database_model.png  used on input line 28
+3.
 (pdftex.def)             Requested size: 309.56717pt x 424.42369pt.
- [18] [19
+ [20] [21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.215 				\item C
+l.292 				\item C
                  ONTACT -- Tabulka pro evidenci informací a kontaktů na me...
  <./img/database/database_model.png>]
-Overfull \hbox (21.82481pt too wide) in paragraph at lines 232--233
+Overfull \hbox (21.82481pt too wide) in paragraph at lines 309--310
 []\T1/lmr/m/n/12 TEAM_ROLE_STUDENT -- Pro-po-jen� mezi ta-bul-kami TEAM_ROLE
  []
 
 
-Overfull \hbox (43.3581pt too wide) in paragraph at lines 234--235
+Overfull \hbox (43.3581pt too wide) in paragraph at lines 311--312
 []\T1/lmr/m/n/12 ASSIGNMENT_TAG -- Pro-po-jen� mezi ta-bul-kami TAG a ASSIGN
 MENT
  []
 
 
-Overfull \hbox (29.81528pt too wide) in paragraph at lines 236--237
+Overfull \hbox (29.81528pt too wide) in paragraph at lines 313--314
 []\T1/lmr/m/n/12 REQUIREMENT_STATE -- Pro-po-jen� mezi ta-bul-kami REQUIREMENT
 
  []
 
-[20]
-Overfull \hbox (4.68729pt too wide) in paragraph at lines 237--238
+[22]
+Overfull \hbox (4.68729pt too wide) in paragraph at lines 314--315
 []\T1/lmr/m/n/12 EXPERIENCE_STATE -- Pro-po-jen� mezi ta-bul-kami EXPERIENCE
  []
 
-[21]
+[23]
 Kapitola 6.
-[22
+[24
 
 ]
 Kapitola 7.
-[23
+[25
 
 ]
 Kapitola 8.
-(bachelor_thesis.bbl [24
+[26
+
+] (bachelor_thesis.lol)
+\tf@lol=\write5
+\openout5 = `bachelor_thesis.lol'.
+
+ (bachelor_thesis.bbl [27
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 13.
-) [25
+) [28
 
 ] (bachelor_thesis.aux)
-
-Package rerunfilecheck Warning: File `bachelor_thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bachelor_thesis.out':
-(rerunfilecheck)             Before: F034CE00347D0ABCEA9B3F32619FE69C;5616
-(rerunfilecheck)             After:  CCB190F76104D7DBCECC4823BA7A7F08;5616.
+Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 8826ED5B72BB588885433B2F29A3DF7C;6516.
  ) 
 Here is how much of TeX's memory you used:
- 10937 strings out of 478659
- 176745 string characters out of 2845447
- 492657 words of memory out of 3000000
- 28786 multiletter control sequences out of 15000+600000
- 465481 words of font info for 59 fonts, out of 8000000 for 9000
+ 14890 strings out of 478659
+ 237226 string characters out of 2845447
+ 814889 words of memory out of 3000000
+ 32682 multiletter control sequences out of 15000+600000
+ 468469 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,76p,770b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,76p,770b,2965s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
 C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:
 /Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
@@ -607,13 +664,14 @@ C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:
 <C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
 <C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
 <C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pf
-b><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
-fb>
-Output written on bachelor_thesis.pdf (25 pages, 474926 bytes).
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
+b>
+Output written on bachelor_thesis.pdf (28 pages, 592067 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 432 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,5 +25,11 @@
   Seminumerical Algorithms}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., 1997.
 \newblock ISBN 0-201-89684-2.
+
+\bibitem[Nette Documentation - Interactive Components()]{NetteComponents}
+\emph{Interactive Components} [online]. Nette Foundation, 2022.
+  [cit.~2022/03/27].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://doc.nette.org/en/application/components}.
 
 \end{thebibliography}

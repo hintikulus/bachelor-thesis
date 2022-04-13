@@ -81,6 +81,43 @@
 
 \usepackage{float}
 
+% Barvičky
+\usepackage{xcolor}
+\colorlet{mygray}{black!30}
+\colorlet{mygreen}{green!60!blue}
+\colorlet{mymauve}{red!60!blue}
+% Vkládání formátovaného zdrojového kódu
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Ukázka kódu}
+\renewcommand\lstlistlistingname{Seznam ukázek kódu}
+\lstset{
+	backgroundcolor=\color{gray!10},  
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	breakatwhitespace=false,      
+	breaklines=true,                
+	captionpos=b,                    
+	commentstyle=\color{mygreen}, 
+	extendedchars=true,              
+	frame=single,                   
+	keepspaces=true,             
+	keywordstyle=\color{blue},      
+	language=php,                 
+	numbers=none,                
+	numbersep=5pt,
+	numberbychapter=false,
+	numberstyle=\tiny\color{blue}, 
+	rulecolor=\color{mygray},        
+	showspaces=false,               
+	showtabs=false,
+	showstringspaces=false,
+	stepnumber=1,                  
+	stringstyle=\color{mymauve},    
+	tabsize=3,                      
+	title=\lstname,
+	numbers=left       
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % VLASTNÍ TEXT PRÁCE
@@ -144,7 +181,8 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 		Ačkoli Bootstrap přichází již s hotovou sadou stylů pro určité prvky a pro responzivitu, tak stavba celé webové aplikace by se neobešla bez četného přidávání vlastních stylů. Existují však nástavby nad technologií Boostrap a nabízejí kompletní sadu stylů k vytvoření informačních systémů. Jedním z takových projektů je front-endový framework AdminLTE. 
 		\par Tento framework nabízí celou řadu placených šablon, ale poskytuje i jednu velmi oblíbenou šablonu zdarma. Součástí tohoto frameworku jsou příklady použití stylů jednotlivých elementů a také předpřipravené šablony pro celé stránky.
 		\par Framework využívá Bootstrap, je tedy stejně jednoduché využívat responzivitu a čerpat jeho dalších výhod. Stylování stránek tedy vypadá tak, že na hotovou HTML strukturu aplikujeme třídy, na které se následně navazují styly těchto frameworků. 
-
+\section{Databáze}
+	\subsection{MySQL}
 \section{Nástroje pro řízení projektu}
 	\par Aplikace, kterou vyvíjíme, bude patřit mezi rozsahově náročnější, proto je její řešení rozděleno do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladné otestování aplikace, čímž má být zajištěna její kvalita spolehlivost.
 	\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba využít takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním a vedoucím práce.
@@ -171,6 +209,11 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \subsection{Kanban}
 	\par Systém kanban je strategie řízení projektu, kdy si mezi sebou části výroby předávají výrobek. Cílem je využívat pouze ty nejnutnější zdroje.
 	\par V praxi se tento systém zobrazuje jako tabule, kde jsou rozvržené jednotlivé sloupce dle možných stavů vývoje. Následně zde máme rámečky představující výrobek, které obsahují popis jak má být produkt upraven. Podstatou věci je, že tyto rámečky následně přemisťujeme mezi jednotlivými sloupci v závislosti na reálném stavu produktu.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{img/rizeni_projektu/kanban}
+		\caption{Ukázka použití tabule s issues}
+	\end{figure}
 	\par V informačních technologiích se kanban používá ve velké míře pro organizaci různých úkolů a požadavků. Různé části vývoje si mezi sebou požadavek vyměňují a tím mění jeho stav.
 	\par Například když vývojář dokončí práci na nové funkcionalitě, tak přesune příslušný rámeček ze sloupce \uv{Ve vývoji} do sloupce \uv{Připraveno k testování}. Tím se tester dozví, že je daný úkol připraven k testování a může si úkol přiřadit a pracovat na něm.
 	\par V GitLabu je systém kanbanu implementován v souvislosti s issues a jejich štítky. Každý issue je zobrazen jeden rámeček na tabuli kanban, kam se automaticky po vytvoření issue promítne a po přidělení štítků zařadí do připravených sloupců.
@@ -180,7 +223,23 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par MantisBT využíváme pro nahlašování objevených selhání nalezených především, ale ne výhradně pomocí komplexního automatizovaného testování aplikace. Na základě reportování defektů jsou následně žádány jejich opravy chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \chapter{Návrh aplikace}
 	\section{Případy užití}
-		Ze specifikace požadavků vycházejí následující případy užití.
+		\par Z podrobné specifikace požadavků vycházejí následující případy užití.
+		\subsection{Nepřihlášený uživatel}
+			\subsubsection{Přihlášení (UC.01)}
+				\par Velká část aplikace jsou přístupné pouze uživatelům dle jejich role. To vytváří potřebu autentizace v naší aplikaci. Uživatel má možnost se přihlásit pomocí přihlašovací stránky pomocí registrované kombinace loginu a hesla. Pokud je uživatel autentizován, je přesměrován na domovskou obrazovku pro jeho konkrétní roli.
+			\subsubsection{Zobrazení témat (UC.02-03)}
+				\par Nepřihlášený uživatel (např. běžný student) si může zobrazit seznam volných témat v přehledu, kde se dozví základní informace o tématech.
+				\par Tyto témata lze rozkliknout do podrobnější podoby, kde je zobrazen název, stručný popis, časová náročnost, doporučená velikost týmu, zadavatel a mentor zadání. Také lze stáhnout PDF soubor s podrobným zadáním.
+			\subsubsection{Neúplné týmy (UC.04)}
+				\par Nepřihlášený uživatel má k dispozici seznam neúplných týmů, které hledají nové členy. Případný student má k dispozici seznam obsazených rolí a kontakt na vedoucího týmu.
+		\subsection{Přihlášený uživatel}
+			\subsubsection{Odhlášení (UC.05)}
+				\par Přihlášený uživatel má možnost ukončit svou relaci a odhlásit se. Po této akci je uživatel přesměrován na hlavní stránku nepřihlášeného uživatele.
+		\subsection{Vedoucí týmu}
+			\subsubsection{Schůzky týmu UC.06-09}
+				\par 
+		\subsection{Mentor}
+		\subsection{Garant}
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.8\textwidth]{img/use_case/use_case_diagram}
@@ -190,8 +249,25 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 		\subsection{MVP architektura}
 		\par Architektura MVP (Model-View-Presenter) je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
 		\par Mezi další velice rozšířenou architekturou patří MVC architektura. Hlavním rozdílem mezi MVP a MVC architekturami je, zpracovávání vstupů od uživatele. V MVP architektuře jsou vstupy obsluhovány prezentovací vrstvou.
-		\subsection{Komponenty aplikace}
-		\par PHP framework nám dovoluje vytvářet komponenty, které mohou být na různých částech aplikace znovu použity. Takový přístup je pro nás výhodný zejména ve tvorbě formulářů.
+		\subsection{Komponenty aplikace v Nette}
+		\par Komponenty jsou části aplikace, které vkládáme do stránek. Nejčastěji se jedná o formuláře, tabulky a další objekty, které je možné používat opakovaně.
+		\par Nette má v sobě vestavěný komponentový systém, který umožňuje komponenty vkládat na stránky a někdy dokonce do jiných komponent, kdy se tak tvoří tzv. komponentový strom. Velkou výhodou je, že se komponenta tvoří až tehdy, kdy je opravdu použita. To těží výhodu zejména zpracování AJAX požadavků, kde je typicky výsledkem operace pouze část stránky, kdy není komponenta využita. Díky tomu se vůbec nevytváří tím šetří výkon serveru.
+		\par Komponenty se vytváření v továrních funkcích v presenteru. Tyto funkce mají prototyp \texttt{createComponent<Name>(): Control} \cite{NetteComponents}.
+		
+		\subsubsection{Ukázka tovární metody v presenteru}
+		\begin{lstlisting}[caption={Ukázka tovární metody v presenteru}]
+class DefaultPresenter extends Nette\Application\UI\Presenter
+{
+	protected function createComponentPoll(): PollControl
+	{
+		$poll = new PollControl;
+		$poll->items = $this->item;
+		return $poll;
+	}
+}
+		\end{lstlisting}
+		 
+		\par Komponentu lze definovat přímo v tovární metodě, ale pro účely znovupoužitelnosti je možné pro komponentu vytvořit vlastní třídu dědící třídu \texttt{Nette\textbackslash Application\textbackslash UI\textbackslash Control}.
 	\section{Rozdělení aplikace dle způsobu užití}
 		\subsection{Zadání}
 			
@@ -200,7 +276,7 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 			
 	\section{Databázová struktura}
 		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využivá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
-		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování řádek. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyla porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn.
+		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou \texttt{PERIOD} jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování řádek. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyla porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn.
 		
 		\begin{figure}[H]
 			\centering
@@ -247,6 +323,12 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \chapter{Testování}
 
 \chapter{Závěr}
+
+
+%
+% SEZNAM UKÁZEK KÓDU
+%
+\lstlistoflistings
 
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT

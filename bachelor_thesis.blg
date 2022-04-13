@@ -1,46 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: bachelor_thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 The style file: csplainnatkiv.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: literatura.bib
-You've used 3 entries,
+You've used 4 entries,
             2898 wiz_defined-function locations,
-            649 strings with 5543 characters,
-and the built_in function-call counts, 989 in all, are:
-= -- 108
+            657 strings with 5716 characters,
+and the built_in function-call counts, 1226 in all, are:
+= -- 145
 > -- 22
 < -- 2
-+ -- 9
++ -- 10
 - -- 6
-* -- 71
-:= -- 162
-add.period$ -- 16
-call.type$ -- 3
-change.case$ -- 6
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 54
-empty$ -- 88
+* -- 91
+:= -- 190
+add.period$ -- 20
+call.type$ -- 4
+change.case$ -- 8
+chr.to.int$ -- 4
+cite$ -- 8
+duplicate$ -- 67
+empty$ -- 108
 format.name$ -- 10
-if$ -- 214
+if$ -- 274
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 26
+missing$ -- 9
+newline$ -- 30
 num.names$ -- 10
-pop$ -- 17
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 8
 quote$ -- 0
-skip$ -- 32
+skip$ -- 41
 stack$ -- 0
-substring$ -- 15
-swap$ -- 6
+substring$ -- 17
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 39
 warning$ -- 0
 while$ -- 7
 width$ -- 0
-write$ -- 53
+write$ -- 65
