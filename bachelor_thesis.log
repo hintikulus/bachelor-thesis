@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  5 APR 2022 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  13 APR 2022 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,7 +554,7 @@ Kapitola 4.
 [11
 
 ] [12] [13] [14]
-<img/rizeni_projektu/kanban.png, id=337, 1239.88219pt x 594.72188pt>
+<img/rizeni_projektu/kanban.png, id=342, 1239.88219pt x 594.72188pt>
 File: img/rizeni_projektu/kanban.png Graphic file (type png)
 <use img/rizeni_projektu/kanban.png>
 Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 214
@@ -568,7 +568,7 @@ has been already used, duplicate ignored
 l.224 \chapter
               {NÃ¡vrh aplikace} <./img/rizeni_projektu/kanban.png>]
 Kapitola 5.
-<img/use_case/use_case_diagram.png, id=349, 1084.05pt x 863.225pt>
+<img/use_case/use_case_diagram.png, id=354, 1084.05pt x 863.225pt>
 File: img/use_case/use_case_diagram.png Graphic file (type png)
 <use img/use_case/use_case_diagram.png>
 Package pdftex.def Info: img/use_case/use_case_diagram.png  used on input line 
@@ -586,92 +586,100 @@ l.252 		\subsection
 am.png (PNG copy)>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 258.
- [19]
-<img/database/database_model.png, id=384, 976.64874pt x 1339.0025pt>
+ [19] [20]
+<img/database/database_model.png, id=395, 976.64874pt x 1339.0025pt>
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
-Package pdftex.def Info: img/database/database_model.png  used on input line 28
-3.
+Package pdftex.def Info: img/database/database_model.png  used on input line 29
+1.
 (pdftex.def)             Requested size: 309.56717pt x 424.42369pt.
- [20] [21
+ [21] [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 				\item C
+l.300 				\item C
                  ONTACT -- Tabulka pro evidenci informacÃ­ a kontaktÅ¯ na me...
  <./img/database/database_model.png>]
-Overfull \hbox (21.82481pt too wide) in paragraph at lines 309--310
+Overfull \hbox (21.82481pt too wide) in paragraph at lines 317--318
 []\T1/lmr/m/n/12 TEAM_ROLE_STUDENT -- Pro-po-jení mezi ta-bul-kami TEAM_ROLE
  []
 
 
-Overfull \hbox (43.3581pt too wide) in paragraph at lines 311--312
+Overfull \hbox (43.3581pt too wide) in paragraph at lines 319--320
 []\T1/lmr/m/n/12 ASSIGNMENT_TAG -- Pro-po-jení mezi ta-bul-kami TAG a ASSIGN
 MENT
  []
 
 
-Overfull \hbox (29.81528pt too wide) in paragraph at lines 313--314
+Overfull \hbox (29.81528pt too wide) in paragraph at lines 321--322
 []\T1/lmr/m/n/12 REQUIREMENT_STATE -- Pro-po-jení mezi ta-bul-kami REQUIREMENT
 
  []
 
-[22]
-Overfull \hbox (4.68729pt too wide) in paragraph at lines 314--315
+[23]
+Overfull \hbox (4.68729pt too wide) in paragraph at lines 322--323
 []\T1/lmr/m/n/12 EXPERIENCE_STATE -- Pro-po-jení mezi ta-bul-kami EXPERIENCE
  []
 
-[23]
+[24]
 Kapitola 6.
-[24
-
-]
-Kapitola 7.
 [25
 
 ]
-Kapitola 8.
+Kapitola 7.
 [26
+
+]
+Kapitola 8.
+[27
 
 ] (bachelor_thesis.lol)
 \tf@lol=\write5
 \openout5 = `bachelor_thesis.lol'.
 
- (bachelor_thesis.bbl [27
+ (bachelor_thesis.bbl [28
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 13.
-) [28
+) [29
 
 ] (bachelor_thesis.aux)
-Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8826ED5B72BB588885433B2F29A3DF7C;6516.
+
+Package rerunfilecheck Warning: File `bachelor_thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `bachelor_thesis.out':
+(rerunfilecheck)             Before: 95DFCB290A8ED0E46B6493883D8783A9;6674
+(rerunfilecheck)             After:  6DDC63D003972569BCE2344DAF953CE6;6884.
  ) 
 Here is how much of TeX's memory you used:
- 14890 strings out of 478659
- 237226 string characters out of 2845447
+ 14894 strings out of 478659
+ 237283 string characters out of 2845447
  814889 words of memory out of 3000000
- 32682 multiletter control sequences out of 15000+600000
+ 32683 multiletter control sequences out of 15000+600000
  468469 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,76p,770b,2965s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,76p,1061b,2965s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:
-/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
-b>
-Output written on bachelor_thesis.pdf (28 pages, 592067 bytes).
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
+{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C
+:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pf
+b><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.p
+fb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.
+pfb>
+Output written on bachelor_thesis.pdf (29 pages, 599210 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

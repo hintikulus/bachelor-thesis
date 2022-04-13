@@ -268,6 +268,14 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\end{lstlisting}
 		 
 		\par Komponentu lze definovat přímo v tovární metodě, ale pro účely znovupoužitelnosti je možné pro komponentu vytvořit vlastní třídu dědící třídu \texttt{Nette\textbackslash Application\textbackslash UI\textbackslash Control}.
+		
+		\subsection{Dependency Injection v Nette}
+		
+		
+		\subsection{Formuláře v Nette}
+		\par Formuláře jsou důležitou součástí webového systému. Jedná se o jednu z mála možností jak získat uživatelský vstup. Zároveň tak představují bezpečností riziko, které je nutno ošetřit. Typů útoků skrz uživatelský vstup přes formuláře je velké množsví a jejich ošetření klade nemalé časové a znalostní na programátora. Také i proto je tvorba a validace formulářů je velmi rutinní činnost. Framework Nette proto přichází se svým řešením Nette Forms. Jedná se o možnost tvorby formulářů, kdy programátor definuje základní prvky formuláře a framework sám z těchto informací sestaví formulář. Výhodou tohoto přístupu spočívá v bezpečnosti. Nette Forms totiž validuje vstupy uživatele podle definovaných validačních pravidel a to jak na straně backendu, tak v případě připojených příslušných JavaScript skriptů i na straně frontendu. Aplikaci tedy komponenta vrátí validovaná data, která může bez starostí použít.
+		\par Tvorba formuláře probíhá jako obyčejná komponenta. Tovární funkce vrací instanci třídy \texttt{Nette$\backslash$Application$\backslash$UI$\backslash$Form}. Funkce instanci vytvoří a postupně do ní přidává formulářové prvky, kterým lze definovat další různá pravidla nebo vlastnosti. Je také potřeba implementovat kód, který se spustí po nějaké události ve formuláři. Zejména je myšlena událost úspěšně odeslaného formuláře, kdy je pravděpodobně nutné vykonat nějakou akci aplikace (např. uložit data).
+		\par Vytvořenou komponentu formuláře je možno automaticky vykreslit dle předem vytvořené šablony pomocí šablonovacího systému Latte a tak jednoduše vložit formulář do příslušné stránky. Je však ponechána možnost vytvoření si jednotlivých formulářových prvků v šabloně a dle identifikátoru je propojit s prvky v komponentě.
 	\section{Rozdělení aplikace dle způsobu užití}
 		\subsection{Zadání}
 			
