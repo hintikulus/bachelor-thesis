@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,6 +25,18 @@
   Seminumerical Algorithms}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., 1997.
 \newblock ISBN 0-201-89684-2.
+
+\bibitem[Napoli(2022)]{PHP-DI}
+{\sc Napoli}, M.
+\newblock \emph{Understanding Dependency Injection} [online]. Matthieu Napoli,
+  2022. [cit.~2022/03/29].
+\newblock Dostupn{\'{e}}~z: \url{https://php-di.org/doc/understanding-di.html}.
+
+\bibitem[Nette Documentation - Dependency Injection()]{NetteDI}
+\emph{Dependency Injection} [online]. Nette Foundation, 2022.
+  [cit.~2022/03/29].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://doc.nette.org/cs/dependency-injection}.
 
 \bibitem[Nette Documentation - Interactive Components()]{NetteComponents}
 \emph{Interactive Components} [online]. Nette Foundation, 2022.

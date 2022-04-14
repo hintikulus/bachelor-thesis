@@ -115,7 +115,7 @@
 	stringstyle=\color{mymauve},    
 	tabsize=3,                      
 	title=\lstname,
-	numbers=left       
+	numbers=left      
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,11 +181,13 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 		Ačkoli Bootstrap přichází již s hotovou sadou stylů pro určité prvky a pro responzivitu, tak stavba celé webové aplikace by se neobešla bez četného přidávání vlastních stylů. Existují však nástavby nad technologií Boostrap a nabízejí kompletní sadu stylů k vytvoření informačních systémů. Jedním z takových projektů je front-endový framework AdminLTE. 
 		\par Tento framework nabízí celou řadu placených šablon, ale poskytuje i jednu velmi oblíbenou šablonu zdarma. Součástí tohoto frameworku jsou příklady použití stylů jednotlivých elementů a také předpřipravené šablony pro celé stránky.
 		\par Framework využívá Bootstrap, je tedy stejně jednoduché využívat responzivitu a čerpat jeho dalších výhod. Stylování stránek tedy vypadá tak, že na hotovou HTML strukturu aplikujeme třídy, na které se následně navazují styly těchto frameworků. 
-\section{Databáze}
-	\subsection{MySQL}
+\section{Databáze MariaDB}
+	\par Databáze je důležitá součást informačního systému, která zpracovává nějaká data a je potřeba jejich uložení a rychlé přístupnosti k nim.
+	\par MariaDB databáze je relační databáze oblíbená vývojáři zejména webových projektů malé a střední velikosti. Systém MariaDB původně vznikl jako alternativní větev MySQL od původních vývojářů po zakoupení firmy Sun společností Oracle. MariaDB staví na své značné kompatibilitě s databází MySQL, která je považována z různých průzkumů za jednu z nejoblíbenějších databází pro webové aplikace společně s databází Oracle a MS SQL. Další přednosti systému MariaDB je její cíl zůstat open-source projektem.
+	\par Díky velké kompatibilitě s databází MySQL je možné využívat nástroje určené nativně pro MySQL i pro MariaDB. Proto pro vývoj využíváme nástroj MySQL Workbench, který pro většinu případů poskytuje stejné funkce jako pro databázi MySQL.
 \section{Nástroje pro řízení projektu}
 	\par Aplikace, kterou vyvíjíme, bude patřit mezi rozsahově náročnější, proto je její řešení rozděleno do dvou prací. Jedna práce (tato) se věnuje samotnému vývoji aplikace. Druhá je zaměřená na důkladné otestování aplikace, čímž má být zajištěna její kvalita spolehlivost.
-	\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba využít takové procesy, které usnadní jednotlivé části vývoje a domlovu mezi vývojem, testováním a vedoucím práce.
+	\par Ze skutečnosti, že na aplikaci takového rozsahu pracuje více lidí, je potřeba využít takové procesy, které usnadní jednotlivé části vývoje a domluvu mezi vývojem, testováním a vedoucím práce.
 \subsection{Verzovací systém}
 	\par V oblasti vývoje informačních projektů je častým nástrojem pro efektivní a produktivní vývoj verzovací systém ze skupiny Git.
 	\par Tato technologie totiž umožňují práci více vývojářů na jednom projektu současně. Jednotlivé změny v repozitáři vývojáři seskupují do tzv. commitů. Ty totiž v systémech Git představují nejmenší jednotku změny v úložišti. Commit v sobě obsahuje informace o upravených řádkách textových a změny dalších souborů.
@@ -222,6 +224,11 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par Mantis Bug Tracker je webová aplikace pro nahlašování a evidenci chyb (defektů) vytvořených v průběhu vývoje aplikace. Přidávané defekty lze velmi podrobně popsat, určit prioritu a štítkovat.
 	\par MantisBT využíváme pro nahlašování objevených selhání nalezených především, ale ne výhradně pomocí komplexního automatizovaného testování aplikace. Na základě reportování defektů jsou následně žádány jejich opravy chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \chapter{Návrh aplikace}
+	\section{Dekompozice specifikace}
+		\subsection{Zadání}
+		
+		\subsection{Tým}
+		\subsection{Projekt}
 	\section{Případy užití}
 		\par Z podrobné specifikace požadavků vycházejí následující případy užití.
 		\subsection{Nepřihlášený uživatel}
@@ -266,21 +273,33 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 	}
 }
 		\end{lstlisting}
-		 
+		
 		\par Komponentu lze definovat přímo v tovární metodě, ale pro účely znovupoužitelnosti je možné pro komponentu vytvořit vlastní třídu dědící třídu \texttt{Nette\textbackslash Application\textbackslash UI\textbackslash Control}.
 		
 		\subsection{Dependency Injection v Nette}
+		\par Vkládání závislostí je technika programování vedoucí k čistému a přehlednému kódu. Princip tohoto způsobu programování spočívá v předávání zdrojů, které konkrétní funkce nebo třída vyžaduje, aby splnila svoji úlohu. Cílem je zamezit získávání zdrojů přímo v daném objektu, kdy programátor bez žádné další informace neví jaký zdroj se získá a jak se získá. V těchto případech říkáme, že se vytváří v aplikaci skryté vazby, díky kterým vzniká nepřehledný a špatně udržitelný kód \cite{PHP-DI}.
+		\par Pro implementaci DI se využívá tzv. Dependecy Container. Tento nástroj slouží k uchování instancí jednotlivých služeb a jejich vytváření, pokud se jedná o závislosti aktuálně potřebných částí aplikace.
+		\par Nette pro implementaci Depencency Containeru využívá vlastní knihovnu Nette DI Container. Knihovna se stará o automatické generování a aktualizaci tříd kontejneru na základě konfiguračního souboru formátu NEON. Díky této technologii programátor nemá potřebu implementace vlastního řešení a může se soustředit na vývoj logiky aplikace. Při vytváření jednotlivých služeb však nesmí zapomenout tuto službu zaregistrovat zapsáním do konfiguračního souboru.
+		\par Další technologií, kterou Nette využívá, je nástroj Autowire. Ten se stará o automatické předávání závislostí z dependency kontejneru do konstruktorů a parametrů dalších funkcí \cite{NetteDI}.
 		
 		
 		\subsection{Formuláře v Nette}
 		\par Formuláře jsou důležitou součástí webového systému. Jedná se o jednu z mála možností jak získat uživatelský vstup. Zároveň tak představují bezpečností riziko, které je nutno ošetřit. Typů útoků skrz uživatelský vstup přes formuláře je velké množsví a jejich ošetření klade nemalé časové a znalostní na programátora. Také i proto je tvorba a validace formulářů je velmi rutinní činnost. Framework Nette proto přichází se svým řešením Nette Forms. Jedná se o možnost tvorby formulářů, kdy programátor definuje základní prvky formuláře a framework sám z těchto informací sestaví formulář. Výhodou tohoto přístupu spočívá v bezpečnosti. Nette Forms totiž validuje vstupy uživatele podle definovaných validačních pravidel a to jak na straně backendu, tak v případě připojených příslušných JavaScript skriptů i na straně frontendu. Aplikaci tedy komponenta vrátí validovaná data, která může bez starostí použít.
 		\par Tvorba formuláře probíhá jako obyčejná komponenta. Tovární funkce vrací instanci třídy \texttt{Nette$\backslash$Application$\backslash$UI$\backslash$Form}. Funkce instanci vytvoří a postupně do ní přidává formulářové prvky, kterým lze definovat další různá pravidla nebo vlastnosti. Je také potřeba implementovat kód, který se spustí po nějaké události ve formuláři. Zejména je myšlena událost úspěšně odeslaného formuláře, kdy je pravděpodobně nutné vykonat nějakou akci aplikace (např. uložit data).
-		\par Vytvořenou komponentu formuláře je možno automaticky vykreslit dle předem vytvořené šablony pomocí šablonovacího systému Latte a tak jednoduše vložit formulář do příslušné stránky. Je však ponechána možnost vytvoření si jednotlivých formulářových prvků v šabloně a dle identifikátoru je propojit s prvky v komponentě.
-	\section{Rozdělení aplikace dle způsobu užití}
-		\subsection{Zadání}
-			
-		\subsection{Tým}
-		\subsection{Projekt}
+		\par Vytvořenou komponentu formuláře je možno automaticky vykreslit dle předem vytvořené šablony pomocí šablonovacího systému Latte a tak jednoduše vložit formulář do příslušné stránky. Je však ponechána možnost vytvoření si jednotlivých formulářových prvků v šabloně a dle identifikátoru je propojit s prvky v komponentě \cite{NetteDI}.
+		
+		\subsection{Testovatelnost aplikace}
+		\subsubsection{Testování robot frameworkem}
+		\par Aby bylo možné aplikaci automaticky otestovat je potřeba umožnit testovacímu softwaru ovládat aplikaci. Proto musí být veškeré ovládací prvky jednoznačně identifikovatelné. Toho docílíme zavedením jednoznačných identifikátorů vložených do atributu \texttt{id} daných elementů.
+		\par Robor framework díky tomu je schopen nalézt požadovaný prvek stránky. Takto jednoznačně identifikovatelné není potřeba mít pouze akční prvky typu odkazu nebo tlačítka, ale také i dalších prvků stránky. Ty Robot framework potřebuje nalézt, aby z nich mohl číst data.
+		\par Navržené automatické testování se na tuto vlastnost spoléhá např. při orientaci v aplikaci. Každá stránka s obsahem má svůj nadpis. Tento nadpis má jednoznačný identifikátor v celé aplikaci. Na základě této značky se při testování zjišťuje, zda je otevřena žádaná stránka. Obdobným způsobem dokáže také získat data z jednotlivých elementů, ke kterým se dostane, a může provést jejich kontrolu.
+		
+		\subsubsection{Jednotkové testování}
+		\par Princip jednotkového testování je ověření nejelementárnějších procedur aplikace. V tomhle ohledu se práce vyvíjené webové aplikace se skládá z většinové části pouze z interpretace dat z a do databáze voláním funkcí Nette frameworku a tedy se nedostáváme na elementární úroveň, kterou můžeme jednotkově testovat. Avšak při vývoji byly vytvořeny pomocné procedury, které pomáhají se zpracováním dat (např. parsování). Tyto funkce jsou oddělené od logiky aplikace a jsou závislé pouze na svých vstupech. Pro těchto pár funkcí byly vytvořeny jednotkové testy, které ověřují jejich výstupy.
+		
+		\subsection{Responzivita}
+		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu na různé velikosti obrazovek (typicky mobily, tablety, počítačové monitory).
+		\par Front-end aplikace je implementován frameworkem AdminLTE, který staví na základech technologie Bootstrap. Díky tomu je snadné udržovat aplikaci responzivní pokud je dodržena správná HTML struktura a jsou důsledně aplikovány styly použitím tříd stylů.
 			
 	\section{Databázová struktura}
 		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využivá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
