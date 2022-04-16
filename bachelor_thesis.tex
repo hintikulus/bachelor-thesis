@@ -130,10 +130,11 @@
 
 V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
 \chapter{Úvod}
-\chapter{}
 \section{Motivace}
-	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět Týmový softwarový projekt (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
+	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět \uv{Týmový softwarový projekt} (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
 	\par Zvláštností předmětu je doba pro řešení projektu, dva semestry rozdělené do dvou předmětů. Budou zapojeny čtyři skupiny lidí. Garant, zadavatelé, mentoři a studenti, což bude klást poměrně značné nároky na organizaci předmětu. Pro takový rozsah bylo rozhodnuto o vytvoření webové aplikace, která všem zúčastněným stranám zjednoduší prohlížení obsahu a evidenci postupu prací projektu. Cílem aplikace je umožnit lepší informovanost a zapojení studentů, řešení evidence zadavatelů a možnosti sdílení mezi mentorem a garantem. Aplikace tak má nahradit způsob organizace pomocí Excel tabulky, jako je tak tomu u jiných obdobných předmětů.
+\section{Cíl práce}
+	\par Cílem práce je vyvinout zmíněnou webovou aplikaci dle specifikace předmětu a požadavků jeho garanta. Předpokládá se, že aplikace bude v budoucnu nadále rozšiřována. Je proto žádoucí, aby aplikace byla dostatečně robustní a důkladně otestována.
 \chapter{Specifikace požadavků}
 \section{Organizace předmětů TSP}
 	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučovaného v letním semestru 1. ročníku a KIV/TSP2 v zimním semestru 2. ročníku. Řešení týmového projektu tedy bude překračovat hranice ročníku a v mnoha částech se organizace předmětů bude překrývat.
@@ -160,21 +161,21 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 
 \chapter{Dostupné technologie}
 \section{PHP frameworky}
-	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symphony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
+	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
 \subsection{Laravel}
 	\par Framework Laravel je možné považovat jako za ten nejrozšířenější. Mezi jeho hlavní východy patří jeho jednoduchost používání a rychlost. Pro svůj přístup k jednoduchému použití je Laravel doporučován jako vhodný pro začátečníky ale i pro profesionály. Framework se hodí pro vytváření méně komplexních projektů.
 	\par Laravel využívá šablonovací engine Blade, který je standardně dodáván společně se samotným frameworkem. Tento engine umožňuje oproti jiným rozšiřovat PHP kód, a tak provádět různé jednoduché operace pro přizpůsobení dat k samotnému front-endu.
-\subsection{Symphony}
-	\par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symphony více náročný na naučení.
+\subsection{Symfony}
+	\par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symfony více náročný na naučení.
 	\par Jako výchozí šablonovací engine je využíván Twig, který se také řadí mezi nejpoužívanější šablonovací systémy. Oproti systému Blade obsahuje navíc další bezpečnostní vrstvu a další funkce. Twig je často využíván i samostatně, tedy bez použití back-end frameworku. To podtrhuje jeho flexibilitu.
 \subsection{Nette}
 	\par 
 	\par S frameworkem společně přichází i šablonovací engine Latte.
 \section{Front-end}
 	\subsection{HTML a CSS}
-		\par Základem webových aplikací je způsob zobrazování. Webové technologie nabízejí tvorbu elementů pomocí formátu HTML založeného na XML. Vlastností tohoto formátu je tvorba webových elementů pomocí tagů, kterým se specifikují jejich vlastnosti. Dnes již naprostá většina prohlížečů zobrazuje webové stránky pomocí tohoto formátu a stává prakticky synonymem pro internetové stránky.
-		\par Další obdobně oblíbenou technologií je stylovací kaskádový jazyk CSS. Díky tomuto formátu je možné nastavovat atributy jednotlivých elementů a upravovat tak zejména jejich vzhled. Tyto styly lze aplikovat přímo do HTML tagu daného elementu nebo do blokového elementu společný pro celou stránku. Nejčastěji se však využívá importování přiloženého \texttt{.css} souboru. CSS umožňuje vzhled stránky upravovat i podle velikosti displeje zařízení a tak přizpůsobit obsah i pro menší obrazovky.
+		\par Základem webových aplikací je způsob zobrazování. Webové technologie nabízejí tvorbu elementů pomocí formátu HTML\footnote{Hyper Text Markup Language - Značkovací jazyk pro tvorbu webových technologí} založeného na XML\footnote{Extensible Markup Language - Víceúčelový značkovací jazyk}. Vlastností tohoto formátu je tvorba webových elementů pomocí tagů, kterým se specifikují jejich vlastnosti. Dnes již naprostá většina prohlížečů zobrazuje webové stránky pomocí tohoto formátu a stává prakticky synonymem pro internetové stránky.
+		\par Další obdobně oblíbenou technologií je stylovací kaskádový jazyk CSS\footnote{Cascading Style Sheet - technologie pro úpravu vzhledu nejen webových stránek}. Díky tomuto formátu je možné nastavovat atributy jednotlivých elementů a upravovat tak zejména jejich vzhled. Tyto styly lze aplikovat přímo do HTML tagu daného elementu nebo do blokového elementu společný pro celou stránku. Nejčastěji se však využívá importování přiloženého \texttt{.css} souboru. CSS umožňuje vzhled stránky upravovat i podle velikosti displeje zařízení a tak přizpůsobit obsah i pro menší obrazovky.
 	\subsection{Bootstrap}
 		\par Bootstrap představuje nadstavbu nad CSS styly. Umožňuje upravovat prvky pomocí tříd a dát jim tak moderní vzhled bez potřeby upravovat styly ručně. Při správném použití tohoto frameworku je velice snadno zajištěna responzivita webu.
 	\subsection{AdminLTE}
@@ -224,6 +225,7 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par Mantis Bug Tracker je webová aplikace pro nahlašování a evidenci chyb (defektů) vytvořených v průběhu vývoje aplikace. Přidávané defekty lze velmi podrobně popsat, určit prioritu a štítkovat.
 	\par MantisBT využíváme pro nahlašování objevených selhání nalezených především, ale ne výhradně pomocí komplexního automatizovaného testování aplikace. Na základě reportování defektů jsou následně žádány jejich opravy chyb a po opravě jsou znovu testovány. Pro naše potřeby používáme vlastní instalaci MantisBT, která je přístupná pro anonymně přihlášené, aby mohli v budoucnu nahlašovat defekty i uživatelé aplikace.
 \chapter{Návrh aplikace}
+
 	\section{Dekompozice specifikace}
 		\subsection{Zadání}
 		
@@ -243,9 +245,27 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 			\subsubsection{Odhlášení (UC.05)}
 				\par Přihlášený uživatel má možnost ukončit svou relaci a odhlásit se. Po této akci je uživatel přesměrován na hlavní stránku nepřihlášeného uživatele.
 		\subsection{Vedoucí týmu}
-			\subsubsection{Schůzky týmu UC.06-09}
-				\par 
+			\subsubsection{Schůzky týmu (UC.06-09)}
+				\par Vedoucí týmu může v aplikaci naplánovat schůzku. Schůzka může být obsahuje čas a místo konání a v jakém uskupení. Schůzka může být například interní, kdy tým se schází s jeho členy, aby například probrali další postup nebo může být za účasti mentora, zadavatele apod. Pokud je zvoleno, že se schůzky účastní mentor projektu týmu, zobrazí se schůzka kromě stránky týmu i na stránce mentorovaných projektů mentora.
+			\subsubsection{Řešení projektu (UC.10-13)}
+				\par V řešení projektu vedoucí týmu zaznamenává postup svého týmu pomocí čtyřstavové hodnoty v několika kategoriích. Na základě těchto záznamů přiřazený mentor kontroluje a potvrzuje tento postup týmu volbou ze stejného čtyřstavového výběru.
+				\par Vedoucí týmu má na stránce řešení projektu možnost vyplnit a přidat užitečné odkazy.
+			\subsubsection{Editaci týmu (UC.14-16)}
+				\par
+			\subsubsection{Stránka tématu a zájem o téma (UC.17-19)}
+				\par
 		\subsection{Mentor}
+			\subsubsection{Změna kontaktních údajů (UC.20)}
+				\par
+			\subsubsection{Mentorované projekty (UC.21-25)}
+				\par
+			\subsubsection{Schůzky (UC.09-10,26)}
+				\par
+			\subsubsection{Volba tématu (UC.27-28)}
+				\par
+			\subsubsection{Témata bez týmu (UC.29-30)}
+				\par
+			\subsubsection{Historie mentorování (UC.31)}
 		\subsection{Garant}
 		\begin{figure}[h]
 			\centering
@@ -254,7 +274,7 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 		\end{figure}
 	\section{Architektura aplikace}
 		\subsection{MVP architektura}
-		\par Architektura MVP (Model-View-Presenter) je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
+		\par Architektura MVP\footnote{Model-View-Presenter - třívrstvá architektura} je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
 		\par Mezi další velice rozšířenou architekturou patří MVC architektura. Hlavním rozdílem mezi MVP a MVC architekturami je, zpracovávání vstupů od uživatele. V MVP architektuře jsou vstupy obsluhovány prezentovací vrstvou.
 		\subsection{Komponenty aplikace v Nette}
 		\par Komponenty jsou části aplikace, které vkládáme do stránek. Nejčastěji se jedná o formuláře, tabulky a další objekty, které je možné používat opakovaně.
@@ -282,7 +302,6 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Nette pro implementaci Depencency Containeru využívá vlastní knihovnu Nette DI Container. Knihovna se stará o automatické generování a aktualizaci tříd kontejneru na základě konfiguračního souboru formátu NEON. Díky této technologii programátor nemá potřebu implementace vlastního řešení a může se soustředit na vývoj logiky aplikace. Při vytváření jednotlivých služeb však nesmí zapomenout tuto službu zaregistrovat zapsáním do konfiguračního souboru.
 		\par Další technologií, kterou Nette využívá, je nástroj Autowire. Ten se stará o automatické předávání závislostí z dependency kontejneru do konstruktorů a parametrů dalších funkcí \cite{NetteDI}.
 		
-		
 		\subsection{Formuláře v Nette}
 		\par Formuláře jsou důležitou součástí webového systému. Jedná se o jednu z mála možností jak získat uživatelský vstup. Zároveň tak představují bezpečností riziko, které je nutno ošetřit. Typů útoků skrz uživatelský vstup přes formuláře je velké množsví a jejich ošetření klade nemalé časové a znalostní na programátora. Také i proto je tvorba a validace formulářů je velmi rutinní činnost. Framework Nette proto přichází se svým řešením Nette Forms. Jedná se o možnost tvorby formulářů, kdy programátor definuje základní prvky formuláře a framework sám z těchto informací sestaví formulář. Výhodou tohoto přístupu spočívá v bezpečnosti. Nette Forms totiž validuje vstupy uživatele podle definovaných validačních pravidel a to jak na straně backendu, tak v případě připojených příslušných JavaScript skriptů i na straně frontendu. Aplikaci tedy komponenta vrátí validovaná data, která může bez starostí použít.
 		\par Tvorba formuláře probíhá jako obyčejná komponenta. Tovární funkce vrací instanci třídy \texttt{Nette$\backslash$Application$\backslash$UI$\backslash$Form}. Funkce instanci vytvoří a postupně do ní přidává formulářové prvky, kterým lze definovat další různá pravidla nebo vlastnosti. Je také potřeba implementovat kód, který se spustí po nějaké události ve formuláři. Zejména je myšlena událost úspěšně odeslaného formuláře, kdy je pravděpodobně nutné vykonat nějakou akci aplikace (např. uložit data).
@@ -296,6 +315,10 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		
 		\subsubsection{Jednotkové testování}
 		\par Princip jednotkového testování je ověření nejelementárnějších procedur aplikace. V tomhle ohledu se práce vyvíjené webové aplikace se skládá z většinové části pouze z interpretace dat z a do databáze voláním funkcí Nette frameworku a tedy se nedostáváme na elementární úroveň, kterou můžeme jednotkově testovat. Avšak při vývoji byly vytvořeny pomocné procedury, které pomáhají se zpracováním dat (např. parsování). Tyto funkce jsou oddělené od logiky aplikace a jsou závislé pouze na svých vstupech. Pro těchto pár funkcí byly vytvořeny jednotkové testy, které ověřují jejich výstupy.
+		
+		\subsubsection{Logování}
+		
+		\subsubsection{Ladící nástroj Tracy}
 		
 		\subsection{Responzivita}
 		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu na různé velikosti obrazovek (typicky mobily, tablety, počítačové monitory).
@@ -345,8 +368,18 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 				\item ASSIGNMENT\_FILE -- Tabulka sloužící pro uložení PDF souborů s příslušnými informacemi.
 			\end{itemize}
 	\section{Uživatelské rozhraní}
+	\section{Návrh loga}
 \chapter{Realizace}
 	\section{Adresářová struktura}
+	\par Adresářová struktura vychází z třívrstvé MVP architektury a \uv{best practices} použití Nette Frameworku.
+	
+	\section{Vylepšování aplikace}
+	\subsection{Oprava nalezených defektů}
+	\subsection{Úpravy dle aktualizování specifikace}
+	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány.
+	\subsection{Připomínky budoucích uživatelů}
+	
+	\section{Požadavky na zavedení aplikace}
 \chapter{Testování}
 
 \chapter{Závěr}
