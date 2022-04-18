@@ -135,6 +135,7 @@
 \section{Cíl práce}
 	\par Cílem práce je vyvinout zmíněnou webovou aplikaci dle specifikace předmětu a požadavků jeho garanta. Předpokládá se, že aplikace bude v budoucnu nadále rozšiřována. Je proto žádoucí, aby aplikace byla dostatečně robustní a důkladně otestována.
 \chapter{Specifikace požadavků}
+\par Specifikace požadavků se řídí průběhem a organizací předmětů TSP. V době vývoje aplikace se díky aktivní přípravě těchto předmětů několikrát požadavky změnily a tedy muselo být počítáno s průběžnou aktualizací specifikace. Díky tomu je potřeba aplikaci psát s dostatečným odstupem a přiměřeně obecně, aby odolávala drobným změnám specifikace.
 \section{Organizace předmětů TSP}
 	\par Výuka předmětů TSP je rozdělena do dvou semestrů, a tedy do dvou předmětů KIV/TSP1 vyučovaného v letním semestru 1. ročníku a KIV/TSP2 v zimním semestru 2. ročníku. Řešení týmového projektu tedy bude překračovat hranice ročníku a v mnoha částech se organizace předmětů bude překrývat.
 	\par Jednotlivý cyklus se v nejčastějším případě bude probíhat následovně. 
@@ -160,7 +161,7 @@
 
 \chapter{Dostupné technologie}
 \section{PHP}
-\par
+\par \cite{PHPOkamzite}
 \section{PHP frameworky}
 	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
@@ -214,10 +215,12 @@
 \subsection{Kanban}
 	\par Systém kanban je strategie řízení projektu, kdy si mezi sebou části výroby předávají výrobek. Cílem je využívat pouze ty nejnutnější zdroje.
 	\par V praxi se tento systém zobrazuje jako tabule, kde jsou rozvržené jednotlivé sloupce dle možných stavů vývoje. Následně zde máme rámečky představující výrobek, které obsahují popis jak má být produkt upraven. Podstatou věci je, že tyto rámečky následně přemisťujeme mezi jednotlivými sloupci v závislosti na reálném stavu produktu.
+	\par Obrázek \ref{fig:kanban} obsahuje snímek z reálného použití při vývoji. Jednotlivé issues jsou rozděleny do sloupců dle jejich stavu rozpracovanosti.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth]{img/rizeni_projektu/kanban}
-		\caption{Ukázka použití tabule s issues}
+		\caption{Ukázka použití tabule s issues (zdroj: vlastní)}
+		\label{fig:kanban}
 	\end{figure}
 	\par V informačních technologiích se kanban používá ve velké míře pro organizaci různých úkolů a požadavků. Různé části vývoje si mezi sebou požadavek vyměňují a tím mění jeho stav.
 	\par Například když vývojář dokončí práci na nové funkcionalitě, tak přesune příslušný rámeček ze sloupce \uv{Ve vývoji} do sloupce \uv{Připraveno k testování}. Tím se tester dozví, že je daný úkol připraven k testování a může si úkol přiřadit a pracovat na něm.
@@ -241,8 +244,8 @@
 			\item časová náročnost řešení
 			\item kontaktní informace zadavatele
 			\item požadovaný profil týmu.
-		\par Požadovaný profil týmu obsahuje stejné 
 		\end{itemize}
+		\par Požadovaný profil týmu obsahuje štítky ze stejného souboru štítků jako v profilu týmu.
 		\subsection{Tým}
 		\par Tým je seskupení několika studentů. Má svého vedoucího, který vede tým a hájí jeho zájmy. Cílem týmu je řešení společného projektu na základě přiřazené tématu.
 		\par Tým je vytvořem na požádání vedoucího garantem předmětu. Po vytvoření nového týmu se založí nový uživatelský účet pro vedoucího. Následně jsou vedoucímu na jeho studentský email zaslány přihlašovací údaje.
@@ -250,10 +253,11 @@
 		\par Vedoucí týmu je zodpovědný za obsah, který do softwarové podpory vkládá.
 		\subsection{Projekt}
 	\section{Případy užití}
-		\par Z podrobné specifikace požadavků vycházejí následující případy užití.
+		\par Příklady užití popisují v krocích způsob používání různých částí aplikace uživatelem nebo systémem. Tyto případy představují se zadavatelem dohodnutou funkčnost systému. Vytvořené případy užití usnadňují tvorbu požadavků na systém pro následné sepsání testovacího plánu.
+		\par Z podrobné specifikace požadavků byly sestaveny případy užití, které popisují práci s výslednou aplikací. Rozdělení případů užití jsou ilustrovány v use-case diagramu (viz obrázek \ref{fig:use-case}). Následuje seznam sestavených případů užití s popisem funkcí, které pokrývají.
 		\subsection{Nepřihlášený uživatel}
 			\subsubsection{Přihlášení (UC.01)}
-				\par Velká část aplikace jsou přístupné pouze uživatelům dle jejich role. To vytváří potřebu autentizace v naší aplikaci. Uživatel má možnost se přihlásit pomocí přihlašovací stránky pomocí registrované kombinace loginu a hesla. Pokud je uživatel autentizován, je přesměrován na domovskou obrazovku pro jeho konkrétní roli.
+				\par Velká část aplikace jsou přístupné pouze uživatelům dle jejich role. To vytváří potřebu autentizace v naší aplikaci. Uživatel má možnost se přihlásit pomocí přihlašovací stránky pomocí registrované kombinace přihlašovacího jména a hesla. Pokud je uživatel autentizován, je přesměrován na domovskou obrazovku pro jeho konkrétní roli.
 			\subsubsection{Zobrazení témat (UC.02-03)}
 				\par Nepřihlášený uživatel (např. běžný student) si může zobrazit seznam volných témat v přehledu, kde se dozví základní informace o tématech.
 				\par Tyto témata lze rozkliknout do podrobnější podoby, kde je zobrazen název, stručný popis, časová náročnost, doporučená velikost týmu, zadavatel a mentor zadání. Také lze stáhnout PDF soubor s podrobným zadáním.
@@ -288,13 +292,40 @@
 			\subsubsection{Historie mentorování (UC.31)}
 				\par Aplikace má v sobě udržovat historii předchozích ročníků TSP. Proto mentor má k dispozici výpis témat, která dosud mentoroval. Mentor se může na dané projekty prokliknout a prohlížet je.
 		\subsection{Garant}
+			\subsubsection{Témata bez mentorů}
+			\par Garant vidí tabulku se seznamem témat, která nemají dosud přiřazeného mentora. Součástí tabulky je i název zadavatele.
+			\subsubsection{Seznam týmů}
+			\par Obdobná tabulka jako u pohledu mentora \uv{Mentorovaná tabulka}, obsahuje tedy podobné . Tabulka však navíc obsahuje i týmy, které nemají přiřazené žádné zadání. V tom případě tak proklik odkazuje na stránku týmu.
+			\par Tabulka umožňuje přistoupit k editaci daného týmu, kde lze upravit údaje o týmu, zadávat datumy zápočtů a vytvářet záznamy o obhajobách.
+			\subsubsection{Seznam mentorů}
+			\par Stránka ukazující propojení témat a jejich mentorů mentorů. Proklikem na jméno mentora je mentor zvolen a garant může skrz navigační menu přistupovat k pohledům mentora.
+			\subsubsection{Správa osob}
+			\par Garant má k dispozici tabulky se seznamy všech uživatelů, kteří se mohou přihlásit. Tito uživatelé jsou rozděleni dle jejich role na mentory a vedoucí. Garant má oprávnění těmto uživatelům odebrat přístup čímž jim zamezí v jejich dalším přihlášení.
+			\subsubsection{Správa témat}
+			\par Garant má přístupnou tabulku všech zadání, kde o nich může vidět základní informace. 
+			\par Součástí správy témat je i vytváření a editace nového zadání. Garant kromě všech dat zadání může přiřadit zadání mentora, určit ročník ve kterém je zadání vyvěšeno a upravovat jeho viditelnost.
+			\subsubsection{Správa štítků}
+			\par Používané štítky může garant také upravovat, vytvářet a znemožnit další použití. V aplikace jsou dva druhy štítků. Týmové role, které vedoucí přiřazuje členům jeho týmu a štítky pro profil týmu a zadání. Pokud garant pro jakýkoliv štítek nastavení, že není dostupný pro další užití, není možné jej nově použít. Naopak při znepřístupnění štítku není odebráno již stávající přiřazení, aby nebyla nijak upravována historie již proběhlých projektů.
+			\subsubsection{Přidělování témat}
+			\par Speciální tabulka, kde každý sloupec reprezentuje tým bez přiřazeného tématu a každý řádek jedno volné zadání. V tabulce jsou vyplněné ty buňky, kde existuje zájem týmu o dané zadání. Garant zde vidí vážnost zájmu a datum vytvoření zájmu. Zobrazuje se zde i doporučení mentora, které mentor vyplní na stránce \uv{Témata bez týmu}. Na základě těchto informací garant definitivně přiřadí zadání jednomu z přihlášených týmů.
+			\subsubsection{Správa studentů}
+			\par Na stránce správy studentů má garant k dispozici tabulku všech přidaných studentů. Z těchto studentů vedoucí vkládají členy do svých týmů. Garant může nad těmito studenty vyvolávat akce mazání a stanovení vedoucího nového týmu. Při vytvoření nového týmu je potřeba vyplnit počáteční název týmu. Studenti se do této tabulky přidávají buď jednotlivě pomocí formuláře nebo z přiloženého CSV\footnote{Comma-separated values - jednoduchý souborový formát pro výměnu tabulkových dat} souboru.
+			\par Vkládání studenta jednotlivě vyžaduje znalost přihlašovacího jména do systému StaG, křestní jméno, příjmení, email, osobní číslo, ročník ve kterém je TSP studováno a případně obor studia se studovanou fakultou.
+			\par Import studentů pomocí CSV umožňuje přidání velkého množství studentů najednou. Jedná se o vhodnou variantu pro hromadné přidávání studentů například na začátku semestru. Je počítáno s CSV souborem formátu, který poskytuje systém StaG při exportu studentů zapsaných na daný předmět. I v tomto případě je potřeba určit do kterého ročníku TSP importovaní studenti náleží.
+			\subsubsection{Správa ročníků}
+			\par Garant ve správě ročníků může vidět informace o jednotlivých proběhlých ročnících. Zároveň může tvořit nové ročníky a nastavovat aktuální ročník TSP. Po zvolení nového aktuální cyklu TSP se původní cyklus považuje za historický a je tak i zobrazován ve zbytku aplikace. Tímto způsobem je řešeno zachování předchozích ročníků TSP, kdy v běžném stavu aplikace se zobrazují zejména údaje vztažené k aktuálnímu ročníku TSP.
+			\subsubsection{Logování}
+			\par Pro sledování správní činnosti aplikace má garant přístup k zobrazení logovacích záznamů. Tato funkce je zprostředkována pomocí parsování sekvencí záznamů do tabulky. Garant si může zvolit logovací soubor k nabídky k jednoduchému zobrazení. Zvolený záznam může také stáhnout v textové podobě do počítače, kde s ním může provádět další operace.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.8\textwidth]{img/use_case/use_case_diagram}
-			\caption{Schéma případů užití}
+			\caption{Schéma případů užití (zdroj: vlastní)}
+			\label{fig:use-case}
 		\end{figure}
 	\section{Architektura aplikace}
-		\subsection{MVP architektura}
+		\subsection{Třívrstvá architektura}
+		
+		\cite{3Vrstvy}
 		\par Architektura MVP\footnote{Model-View-Presenter - třívrstvá architektura} je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
 		\par Mezi další velice rozšířenou architekturou patří MVC architektura. Hlavním rozdílem mezi MVP a MVC architekturami je, zpracovávání vstupů od uživatele. V MVP architektuře jsou vstupy obsluhovány prezentovací vrstvou.
 		\subsection{Komponenty aplikace v Nette}
@@ -324,9 +355,12 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Další technologií, kterou Nette využívá, je nástroj Autowire. Ten se stará o automatické předávání závislostí z dependency kontejneru do konstruktorů a parametrů dalších funkcí \cite{NetteDI}.
 		
 		\subsection{Formuláře v Nette}
-		\par Formuláře jsou důležitou součástí webového systému. Jedná se o jednu z mála možností jak získat uživatelský vstup. Zároveň tak představují bezpečností riziko, které je nutno ošetřit. Typů útoků skrz uživatelský vstup přes formuláře je velké množsví a jejich ošetření klade nemalé časové a znalostní na programátora. Také i proto je tvorba a validace formulářů je velmi rutinní činnost. Framework Nette proto přichází se svým řešením Nette Forms. Jedná se o možnost tvorby formulářů, kdy programátor definuje základní prvky formuláře a framework sám z těchto informací sestaví formulář. Výhodou tohoto přístupu spočívá v bezpečnosti. Nette Forms totiž validuje vstupy uživatele podle definovaných validačních pravidel a to jak na straně backendu, tak v případě připojených příslušných JavaScript skriptů i na straně frontendu. Aplikaci tedy komponenta vrátí validovaná data, která může bez starostí použít.
+		\par Formuláře jsou důležitou součástí webového systému. Jedná se o jednu z mála možností jak získat uživatelský vstup. Zároveň tak představují bezpečností riziko, které je nutno ošetřit. Typů útoků skrz uživatelský vstup přes formuláře je velké množství a jejich ošetření klade nemalé časové a znalostní na programátora. Také i proto je tvorba a validace formulářů je velmi rutinní činnost. Framework Nette proto přichází se svým řešením Nette Forms. Jedná se o možnost tvorby formulářů, kdy programátor definuje základní prvky formuláře a framework sám z těchto informací sestaví formulář. Výhodou tohoto přístupu spočívá v bezpečnosti. Nette Forms totiž validuje vstupy uživatele podle definovaných validačních pravidel a to jak na straně backendu, tak v případě připojených příslušných JavaScript skriptů i na straně frontendu. Aplikaci tedy komponenta vrátí validovaná data, která může bez starostí použít.
 		\par Tvorba formuláře probíhá jako obyčejná komponenta. Tovární funkce vrací instanci třídy \texttt{Nette$\backslash$Application$\backslash$UI$\backslash$Form}. Funkce instanci vytvoří a postupně do ní přidává formulářové prvky, kterým lze definovat další různá pravidla nebo vlastnosti. Je také potřeba implementovat kód, který se spustí po nějaké události ve formuláři. Zejména je myšlena událost úspěšně odeslaného formuláře, kdy je pravděpodobně nutné vykonat nějakou akci aplikace (např. uložit data).
 		\par Vytvořenou komponentu formuláře je možno automaticky vykreslit dle předem vytvořené šablony pomocí šablonovacího systému Latte a tak jednoduše vložit formulář do příslušné stránky. Je však ponechána možnost vytvoření si jednotlivých formulářových prvků v šabloně a dle identifikátoru je propojit s prvky v komponentě \cite{NetteDI}.
+		
+		\subsection{Database Explorer}
+		\par
 		
 		\subsection{Testovatelnost aplikace}
 		\subsubsection{Testování robot frameworkem}
@@ -338,9 +372,9 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Princip jednotkového testování je ověření nejelementárnějších procedur aplikace. V tomhle ohledu se práce vyvíjené webové aplikace se skládá z většinové části pouze z interpretace dat z a do databáze voláním funkcí Nette frameworku a tedy se nedostáváme na elementární úroveň, kterou můžeme jednotkově testovat. Avšak při vývoji byly vytvořeny pomocné procedury, které pomáhají se zpracováním dat (např. parsování). Tyto funkce jsou oddělené od logiky aplikace a jsou závislé pouze na svých vstupech. Pro těchto pár funkcí byly vytvořeny jednotkové testy, které ověřují jejich výstupy.
 		
 		\subsubsection{Logování}
-		\par Logování je určené pro dlouhodobé sledování činnosti programu. V sekvenci záznamů je možné dohledat souvislosti zpracovaných akcí a stavu systému. Pomocí logování sledujeme zejména běžnou činnost programu, výskyt chyb a výjimek, konfiguraci programu a její změny. Tato technika lze být použita i pro ladění, ale v našem případě máme jiné ladící nástroje.
+		\par Logování je určené pro dlouhodobé sledování činnosti programu. V sekvenci záznamů je možné dohledat souvislosti zpracovaných akcí a stavu systému. Pomocí logování sledujeme zejména běžnou činnost programu, výskyt chyb a výjimek, konfiguraci programu a její změny. Tato technika lze být použita i pro ladění, ale v našem případě máme jiné ladící nástroje \cite{OKSPrednasky}.
 		\par Pro PHP existuje profesionálně používaná knihovna Monolog\footnote{https://github.com/Seldaek/monolog}. Ta již integrována do známých frameworků jako Symfony, Laravel i Nette. Logovací záznam je pole o jednotlivých položkách např. úroveň, časové razítko, jméno loggeru, zaznamenávaná zpráva, dodatečn informace, atd. Tyto údaje však negeneruje programátor přímo, ale zpravidla pomocí logovacích funkcí loggeru.
-		\par Záznamy loggerů ukládáme do adresáře \texttt{/log/syslog/} v textovém formátu \texttt{.log}. Záznamy jsou rozděleny do jednotlivých souborů dle dne a soubory s logy starší 30 dní jsou automaticky mazány.
+		\par Záznamy loggerů ukládáme do adresáře \texttt{/log/syslog/} v textovém formátu \texttt{.log}. Záznamy jsou rozděleny do jednotlivých souborů dle dne a soubory s logy starší 30 dní jsou automaticky mazány. Veškeré tyto parametry lze změnit v konfiguraci aplikace a upravit tak logování dle zjištěných reálných potřeb systému.
 		\subsubsection{Ladící nástroj Tracy}
 		
 		\subsection{Responzivita}
@@ -354,7 +388,7 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{img/database/database_model}
-			\caption{Schéma databázové struktury}
+			\caption{Schéma databázové struktury (zdroj: vlastní)}
 		\end{figure}
 		\subsection{Základní tabulky}
 			\begin{itemize}

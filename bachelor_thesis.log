@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  18 APR 2022 02:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  19 APR 2022 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,7 +562,7 @@ Overfull \hbox (0.54141pt too wide) in paragraph at lines 133--134
 ]
 Kapitola 2.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-42.
+43.
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [8
@@ -574,21 +574,21 @@ Kapitola 3.
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 178.
+(Font)              <10> on input line 179.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 178.
+(Font)              <7> on input line 179.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 178.
+(Font)              <5> on input line 179.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-79.
+80.
  (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 [11] [12] [13] [14]
-<img/rizeni_projektu/kanban.png, id=412, 1239.88219pt x 594.72188pt>
+<img/rizeni_projektu/kanban.png, id=420, 1239.88219pt x 594.72188pt>
 File: img/rizeni_projektu/kanban.png Graphic file (type png)
 <use img/rizeni_projektu/kanban.png>
-Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 219
+Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 221
 .
 (pdftex.def)             Requested size: 386.95749pt x 185.6051pt.
  [15
@@ -596,121 +596,118 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.228 	\par
+l.231 	\par
             MantisBT vyu≈æ√≠v√°me pro nahla≈°ov√°n√≠ objeven√Ωch selh√°n√≠ n...
  <./img/rizeni_projektu/kanban.png>] [16]
 Kapitola 4.
 [17
 
-] [18] [19]
-<img/use_case/use_case_diagram.png, id=447, 1084.05pt x 863.225pt>
+] [18] [19] [20] [21]
+<img/use_case/use_case_diagram.png, id=476, 1084.05pt x 863.225pt>
 File: img/use_case/use_case_diagram.png Graphic file (type png)
 <use img/use_case/use_case_diagram.png>
 Package pdftex.def Info: img/use_case/use_case_diagram.png  used on input line 
-293.
+321.
 (pdftex.def)             Requested size: 309.56717pt x 246.50903pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20] [21
+ [22] [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.302 		\par
-             Nette m√° v sobƒõ vestavƒõn√Ω komponentov√Ω syst√©m, kter√Ω umo...
+l.330 		\par
+             Mezi dal≈°√≠ velice roz≈°√≠≈ôenou architekturou pat≈ô√≠ MVC arc...
  <./img/use_case/use_case_diagram.png (PNG copy)>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 306.
+nput line 337.
 
-Overfull \hbox (4.35095pt too wide) in paragraph at lines 321--322
+Overfull \hbox (4.35095pt too wide) in paragraph at lines 352--353
 \T1/lmr/m/n/12 nÈmu kÛdu. Prin-cip to-hoto zp∑-sobu pro-gra-mo-v·nÌ spo-£Ìv· v 
 p∞e-d·-v·nÌ zdroj∑,
  []
 
-[22] [23] [24]
-Overfull \hbox (1.01947pt too wide) in paragraph at lines 347--348
+[24] [25] [26]
+Overfull \hbox (1.01947pt too wide) in paragraph at lines 381--382
 \T1/lmr/m/n/12 ResponzivnÌ desing spo-£Ìv· v p∞i-zp∑-so-benÌ zob-ra-zenÌ ob-sah
 u ≤Ì∞ce okna webo-
  []
 
-<img/database/database_model.png, id=501, 976.64874pt x 1339.0025pt>
+[27]
+<img/database/database_model.png, id=540, 976.64874pt x 1339.0025pt>
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
-Package pdftex.def Info: img/database/database_model.png  used on input line 35
-6.
+Package pdftex.def Info: img/database/database_model.png  used on input line 39
+0.
 (pdftex.def)             Requested size: 309.56717pt x 424.42369pt.
-[25] [26
+ [28] [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.364 				\item P
-                 ROJECT -- Tabulka propojuje zad√°n√≠ z tabulky \uv{ASSIGNME...
+l.399 				\item C
+                 ONTACT -- Tabulka pro evidenci informac√≠ a kontakt≈Ø na me...
  <./img/database/database_model.png>]
-Overfull \hbox (21.82481pt too wide) in paragraph at lines 382--383
+Overfull \hbox (21.82481pt too wide) in paragraph at lines 416--417
 []\T1/lmr/m/n/12 TEAM_ROLE_STUDENT -- Pro-po-jenÌ mezi ta-bul-kami TEAM_ROLE
  []
 
 
-Overfull \hbox (46.9041pt too wide) in paragraph at lines 384--385
+Overfull \hbox (46.9041pt too wide) in paragraph at lines 418--419
 []\T1/lmr/m/n/12 ASSIGNMENT_TAG -- Pro-po-jenÌ mezi ta-bul-kami TAG a ASSIGN
 MENT.
  []
 
-[27]
-Overfull \hbox (29.81528pt too wide) in paragraph at lines 386--387
+
+Overfull \hbox (29.81528pt too wide) in paragraph at lines 420--421
 []\T1/lmr/m/n/12 REQUIREMENT_STATE -- Pro-po-jenÌ mezi ta-bul-kami REQUIREMENT
 
  []
 
-
-Overfull \hbox (4.68729pt too wide) in paragraph at lines 387--388
+[30]
+Overfull \hbox (4.68729pt too wide) in paragraph at lines 421--422
 []\T1/lmr/m/n/12 EXPERIENCE_STATE -- Pro-po-jenÌ mezi ta-bul-kami EXPERIENCE
  []
 
-[28]
+[31]
 Kapitola 5.
 
-Overfull \hbox (57.98807pt too wide) in paragraph at lines 423--424
+Overfull \hbox (57.98807pt too wide) in paragraph at lines 457--458
 \T1/lmr/m/n/12 Na da-ta-b·zi se apli-kace p∞i-po-juje na-tiv-nÌm p∞i-po-je-nÌm 
 po-mocÌ ba-lÌ£ku \T1/lmtt/m/n/12 nette/database\T1/lmr/m/n/12 ,
  []
 
-[29
+[32
 
-] [30]
+] [33]
 Kapitola 6.
-[31
+[34
 
 ]
 Kapitola 7.
-[32
+[35
 
 ] (bachelor_thesis.lol)
 \tf@lol=\write5
 \openout5 = `bachelor_thesis.lol'.
 
- (bachelor_thesis.bbl [33
+ (bachelor_thesis.bbl [36
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 19.
-) [34
+(Font)              <10.95> on input line 25.
+) [37
 
 ] (bachelor_thesis.aux)
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 474CF70E70283EB53F9964A9B40B89B1;8969.
+(rerunfilecheck)             Checksum: 507BAF0773DE9D21BE11570F4C0DEFEB;9157.
  ) 
 Here is how much of TeX's memory you used:
- 15100 strings out of 478659
- 240379 string characters out of 2845447
+ 15116 strings out of 478659
+ 240563 string characters out of 2845447
  812793 words of memory out of 3000000
- 32831 multiletter control sequences out of 15000+600000
+ 32832 multiletter control sequences out of 15000+600000
  488229 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,76p,1061b,2965s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,76p,1062b,2965s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
 C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 {C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C
@@ -727,9 +724,9 @@ C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
 <C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
 ><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
 b>
-Output written on bachelor_thesis.pdf (34 pages, 686441 bytes).
+Output written on bachelor_thesis.pdf (37 pages, 695024 bytes).
 PDF statistics:
- 656 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 536 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
+ 544 words of extra memory for PDF output out of 10000 (max. 10000000)
 
