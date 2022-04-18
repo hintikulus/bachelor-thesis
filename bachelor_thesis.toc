@@ -15,72 +15,76 @@
 \contentsline {subsection}{\numberline {2.2.3}Mentor}{9}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Garant}{9}{subsection.2.2.4}%
 \contentsline {chapter}{\numberline {3}Dostupné technologie}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}PHP frameworky}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Laravel}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Symfony}{10}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Nette}{11}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Front-end}{11}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}HTML a CSS}{11}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Bootstrap}{11}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}AdminLTE}{12}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Databáze MariaDB}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Nástroje pro řízení projektu}{12}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Verzovací systém}{13}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Plánování úkolů}{14}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Issues}{14}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Kanban}{14}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}MantisBT}{15}{subsection.3.4.5}%
-\contentsline {chapter}{\numberline {4}Návrh aplikace}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dekompozice specifikace}{16}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Zadání}{16}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Tým}{16}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Projekt}{16}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Případy užití}{16}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Nepřihlášený uživatel}{16}{subsection.4.2.1}%
-\contentsline {subsubsection}{Přihlášení (UC.01)}{16}{section*.5}%
-\contentsline {subsubsection}{Zobrazení témat (UC.02-03)}{16}{section*.6}%
-\contentsline {subsubsection}{Neúplné týmy (UC.04)}{16}{section*.7}%
-\contentsline {subsection}{\numberline {4.2.2}Přihlášený uživatel}{17}{subsection.4.2.2}%
-\contentsline {subsubsection}{Odhlášení (UC.05)}{17}{section*.8}%
-\contentsline {subsection}{\numberline {4.2.3}Vedoucí týmu}{17}{subsection.4.2.3}%
-\contentsline {subsubsection}{Schůzky týmu (UC.06-09)}{17}{section*.9}%
-\contentsline {subsubsection}{Řešení projektu (UC.10-13)}{17}{section*.10}%
-\contentsline {subsubsection}{Editaci týmu (UC.14-16)}{18}{section*.11}%
-\contentsline {subsubsection}{Stránka tématu a zájem o téma (UC.17-19)}{18}{section*.12}%
-\contentsline {subsection}{\numberline {4.2.4}Mentor}{18}{subsection.4.2.4}%
-\contentsline {subsubsection}{Změna kontaktních údajů (UC.20)}{18}{section*.13}%
-\contentsline {subsubsection}{Mentorované projekty (UC.21-25)}{18}{section*.14}%
-\contentsline {subsubsection}{Schůzky (UC.09-10,26)}{18}{section*.15}%
-\contentsline {subsubsection}{Volba tématu (UC.27-28)}{18}{section*.16}%
-\contentsline {subsubsection}{Témata bez týmu (UC.29-30)}{18}{section*.17}%
-\contentsline {subsubsection}{Historie mentorování (UC.31)}{18}{section*.18}%
-\contentsline {subsection}{\numberline {4.2.5}Garant}{18}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Architektura aplikace}{18}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}MVP architektura}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Komponenty aplikace v Nette}{19}{subsection.4.3.2}%
-\contentsline {subsubsection}{Ukázka tovární metody v presenteru}{19}{section*.19}%
-\contentsline {subsection}{\numberline {4.3.3}Dependency Injection v Nette}{20}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Formuláře v Nette}{20}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Testovatelnost aplikace}{21}{subsection.4.3.5}%
-\contentsline {subsubsection}{Testování robot frameworkem}{21}{section*.20}%
-\contentsline {subsubsection}{Jednotkové testování}{21}{section*.21}%
-\contentsline {subsubsection}{Logování}{22}{section*.22}%
-\contentsline {subsubsection}{Ladící nástroj Tracy}{22}{section*.23}%
-\contentsline {subsection}{\numberline {4.3.6}Responzivita}{22}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Databázová struktura}{22}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Základní tabulky}{23}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Číselníkové tabulky}{24}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Spojovací tabulky}{24}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Další tabulky}{25}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Uživatelské rozhraní}{25}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Návrh loga}{25}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Realizace}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Adresářová struktura}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Vylepšování aplikace}{26}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Oprava nalezených defektů}{26}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Úpravy dle aktualizování specifikace}{26}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Připomínky budoucích uživatelů}{26}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Požadavky na zavedení aplikace}{26}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Testování}{27}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Závěr}{28}{chapter.7}%
-\contentsline {chapter}{Literatura}{30}{chapter*.25}%
+\contentsline {section}{\numberline {3.1}PHP}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}PHP frameworky}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Laravel}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Symfony}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Nette}{11}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Front-end}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}HTML a CSS}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bootstrap}{12}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}AdminLTE}{12}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Databáze MariaDB}{12}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Nástroje pro řízení projektu}{13}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Verzovací systém}{13}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Plánování úkolů}{14}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Issues}{14}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Kanban}{15}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}MantisBT}{16}{subsection.3.5.5}%
+\contentsline {chapter}{\numberline {4}Návrh aplikace}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dekompozice specifikace}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Zadání}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Tým}{17}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Projekt}{18}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Případy užití}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Nepřihlášený uživatel}{18}{subsection.4.2.1}%
+\contentsline {subsubsection}{Přihlášení (UC.01)}{18}{section*.5}%
+\contentsline {subsubsection}{Zobrazení témat (UC.02-03)}{18}{section*.6}%
+\contentsline {subsubsection}{Neúplné týmy (UC.04)}{18}{section*.7}%
+\contentsline {subsection}{\numberline {4.2.2}Přihlášený uživatel}{18}{subsection.4.2.2}%
+\contentsline {subsubsection}{Odhlášení (UC.05)}{18}{section*.8}%
+\contentsline {subsection}{\numberline {4.2.3}Vedoucí týmu}{18}{subsection.4.2.3}%
+\contentsline {subsubsection}{Schůzky týmu (UC.06-09)}{18}{section*.9}%
+\contentsline {subsubsection}{Řešení projektu (UC.10-13)}{19}{section*.10}%
+\contentsline {subsubsection}{Editace týmu (UC.14-16)}{19}{section*.11}%
+\contentsline {subsubsection}{Stránka tématu a zájem o téma (UC.17-19)}{19}{section*.12}%
+\contentsline {subsection}{\numberline {4.2.4}Mentor}{19}{subsection.4.2.4}%
+\contentsline {subsubsection}{Změna kontaktních údajů (UC.20)}{19}{section*.13}%
+\contentsline {subsubsection}{Mentorované projekty (UC.21-25)}{19}{section*.14}%
+\contentsline {subsubsection}{Schůzky (UC.09-10,26)}{20}{section*.15}%
+\contentsline {subsubsection}{Volba tématu (UC.27-28)}{20}{section*.16}%
+\contentsline {subsubsection}{Témata bez týmu (UC.29-30)}{20}{section*.17}%
+\contentsline {subsubsection}{Historie mentorování (UC.31)}{20}{section*.18}%
+\contentsline {subsection}{\numberline {4.2.5}Garant}{21}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Architektura aplikace}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}MVP architektura}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Komponenty aplikace v Nette}{22}{subsection.4.3.2}%
+\contentsline {subsubsection}{Ukázka tovární metody v presenteru}{22}{section*.19}%
+\contentsline {subsection}{\numberline {4.3.3}Dependency Injection v Nette}{22}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Formuláře v Nette}{23}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Testovatelnost aplikace}{24}{subsection.4.3.5}%
+\contentsline {subsubsection}{Testování robot frameworkem}{24}{section*.20}%
+\contentsline {subsubsection}{Jednotkové testování}{24}{section*.21}%
+\contentsline {subsubsection}{Logování}{24}{section*.22}%
+\contentsline {subsubsection}{Ladící nástroj Tracy}{25}{section*.23}%
+\contentsline {subsection}{\numberline {4.3.6}Responzivita}{25}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Databázová struktura}{25}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Základní tabulky}{26}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Číselníkové tabulky}{27}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Spojovací tabulky}{27}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Další tabulky}{28}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Uživatelské rozhraní}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Návrh loga}{28}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Realizace}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Adresářová struktura}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Konfigurace aplikace}{29}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Konfigurace databázového spojení}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Vlastní nastavení aplikace}{30}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Vylepšování aplikace}{30}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Oprava nalezených defektů}{30}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Úpravy dle aktualizování specifikace}{30}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Připomínky budoucích uživatelů}{30}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Požadavky na zavedení aplikace}{30}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Testování}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Závěr}{32}{chapter.7}%
+\contentsline {chapter}{Literatura}{34}{chapter*.25}%

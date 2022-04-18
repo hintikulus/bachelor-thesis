@@ -80,6 +80,7 @@
 \usepackage[numbers,sort&compress]{natbib}
 
 \usepackage{float}
+\usepackage{dirtree}
 
 % Barvičky
 \usepackage{xcolor}
@@ -127,8 +128,6 @@
 %
 \maketitle
 \tableofcontents
-
-V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
 \chapter{Úvod}
 \section{Motivace}
 	\par Na Katedře informatiky a výpočetní techniky vzniká nový předmět \uv{Týmový softwarový projekt} (KIV/TSP1 a KIV/TSP2) určený pro studenty navazujícího studia. Podstatou předmětu je vypracování zadaného tématu ve skupinkách studentů, kdy studenti přijdou do styku s týmovou prací, řízením projektu a dalšími interními procesy.
@@ -160,6 +159,8 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 		\par Garant je osoba, která koordinuje činnost všech ostatních skupin uživatelů. Mezi jeho hlavní náplní patří také přidávání nových témat, správa uživatelů a dalších nastavení softwarové podpory.
 
 \chapter{Dostupné technologie}
+\section{PHP}
+\par
 \section{PHP frameworky}
 	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
@@ -174,10 +175,11 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par S frameworkem společně přichází i šablonovací engine Latte.
 \section{Front-end}
 	\subsection{HTML a CSS}
-		\par Základem webových aplikací je způsob zobrazování. Webové technologie nabízejí tvorbu elementů pomocí formátu HTML\footnote{Hyper Text Markup Language - Značkovací jazyk pro tvorbu webových technologí} založeného na XML\footnote{Extensible Markup Language - Víceúčelový značkovací jazyk}. Vlastností tohoto formátu je tvorba webových elementů pomocí tagů, kterým se specifikují jejich vlastnosti. Dnes již naprostá většina prohlížečů zobrazuje webové stránky pomocí tohoto formátu a stává prakticky synonymem pro internetové stránky.
-		\par Další obdobně oblíbenou technologií je stylovací kaskádový jazyk CSS\footnote{Cascading Style Sheet - technologie pro úpravu vzhledu nejen webových stránek}. Díky tomuto formátu je možné nastavovat atributy jednotlivých elementů a upravovat tak zejména jejich vzhled. Tyto styly lze aplikovat přímo do HTML tagu daného elementu nebo do blokového elementu společný pro celou stránku. Nejčastěji se však využívá importování přiloženého \texttt{.css} souboru. CSS umožňuje vzhled stránky upravovat i podle velikosti displeje zařízení a tak přizpůsobit obsah i pro menší obrazovky.
+		\par Základem webových aplikací je způsob zobrazování. Webové technologie nabízejí tvorbu elementů pomocí formátu HTML\footnote{Hyper Text Markup Language - Značkovací jazyk pro tvorbu webových technologí} založeného na XML\footnote{Extensible Markup Language - Víceúčelový značkovací jazyk}. Vlastností tohoto formátu je tvorba webových elementů pomocí tagů, kterým se specifikují jejich vlastnosti. Dnes již naprostá většina prohlížečů zobrazuje webové stránky pomocí tohoto formátu a stává prakticky synonymem pro internetové stránky \cite{HTML5aCSS3}.
+		\par Další obdobně oblíbenou technologií je stylovací kaskádový jazyk CSS\footnote{Cascading Style Sheet - technologie pro úpravu vzhledu nejen webových stránek}. Díky tomuto formátu je možné nastavovat atributy jednotlivých elementů a upravovat tak zejména jejich vzhled. Tyto styly lze aplikovat přímo do HTML tagu daného elementu nebo do blokového elementu společný pro celou stránku. Nejčastěji se však využívá importování přiloženého \texttt{.css} souboru. CSS umožňuje vzhled stránky upravovat i podle velikosti displeje zařízení a tak přizpůsobit obsah i pro menší obrazovky \cite{CSSOkamzite}.
+		\par Hlavním cílem jazyka CSS je oddělovat formátovací a stylizační pravidla od obsahu stránky. Díky tomu je možné stránky snadněji udržovat a přinutit je pracovat správně v různých webových prohlížečích, na různých platfomách, zařízení nebo dokonce při tisku \cite{HTML5aCSS3}.
 	\subsection{Bootstrap}
-		\par Bootstrap představuje nadstavbu nad CSS styly. Umožňuje upravovat prvky pomocí tříd a dát jim tak moderní vzhled bez potřeby upravovat styly ručně. Při správném použití tohoto frameworku je velice snadno zajištěna responzivita webu.
+		\par Bootstrap představuje nadstavbu nad CSS styly. Umožňuje upravovat prvky pomocí tříd a dát jim tak moderní vzhled bez potřeby upravovat styly ručně. Při správném použití tohoto frameworku je velice snadno zajištěn responzivní design webu.
 	\subsection{AdminLTE}
 		Ačkoli Bootstrap přichází již s hotovou sadou stylů pro určité prvky a pro responzivitu, tak stavba celé webové aplikace by se neobešla bez četného přidávání vlastních stylů. Existují však nástavby nad technologií Boostrap a nabízejí kompletní sadu stylů k vytvoření informačních systémů. Jedním z takových projektů je front-endový framework AdminLTE. 
 		\par Tento framework nabízí celou řadu placených šablon, ale poskytuje i jednu velmi oblíbenou šablonu zdarma. Součástí tohoto frameworku jsou příklady použití stylů jednotlivých elementů a také předpřipravené šablony pro celé stránky.
@@ -202,7 +204,7 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 	\par Z těchto důvodů jsme se v naší volbě verzovacího systému rozhodli zvolit právě variantu s katedrálním serverem.
 \subsection{Plánování úkolů}
 	\par S rozsahem práce přichází i potřeba rozvržení práce na časové úseky a stanovení cílů. Zároveň je žádoucí, aby k plánu měli přístup všechny zúčastněné osoby. Tyto požadavky sice splňuje množství známých nástrojů nebo sdílených úložišť. My jsme se ale rozhodli využít již námi používaný nástroj GitLab.
-	\par Tento nástroj obsahuje možnosti vytváření wiki dokumentace ve formátu MarkDown, který navíc zajišťuje základní formátování.
+	\par Tento nástroj obsahuje možnosti vytváření wiki dokumentace ve formátu MarkDown\footnote{Značkovací jazyk pro vytváření formátovaného textu}, který navíc zajišťuje základní formátování.
 	\par V této dokumentátorské sekci máme vytvořenou jednu stránku, ve které je po týdnech rozdělena struktura naplánovaných úkolů a vzniklých dotazů.
 \subsection{Issues}
 	\par Různé požadavky evidujeme jako jednotlivé issues. Issues je záznam o požadavku na aplikaci nebo úkolu, který je potřeba vykonat. Issue tak eviduje přiřazení k člověku, který daný požadavek řeší, kompletní historii řešení požadavku, termíny pro jeho splnění, atd.
@@ -228,8 +230,24 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 
 	\section{Dekompozice specifikace}
 		\subsection{Zadání}
-		
+		\par V moment zveřejnění zadání pro mentory je mentorům umožněno zvolit si téma k mentorování. Po zvolení se automaticky přidělí danému mentorovi.
+		\par Po úplném zveřejnění tématu je zadání zobrazováno ve veřejném seznamu témat. Vedoucí týmů mohou o takové zadání projevit zájem hodnotou na pětibodové stupnici vážnosti.
+		\par Zadání se skládá z částí:
+		\begin{itemize}
+			\item název zadání
+			\item stručný popis zadání
+			\item PDF soubor s podrobným zadáním
+			\item doporučovaná velikost týmu
+			\item časová náročnost řešení
+			\item kontaktní informace zadavatele
+			\item požadovaný profil týmu.
+		\par Požadovaný profil týmu obsahuje stejné 
+		\end{itemize}
 		\subsection{Tým}
+		\par Tým je seskupení několika studentů. Má svého vedoucího, který vede tým a hájí jeho zájmy. Cílem týmu je řešení společného projektu na základě přiřazené tématu.
+		\par Tým je vytvořem na požádání vedoucího garantem předmětu. Po vytvoření nového týmu se založí nový uživatelský účet pro vedoucího. Následně jsou vedoucímu na jeho studentský email zaslány přihlašovací údaje.
+		\par Nastavení týmu provádí z zejména vedoucího týmu včetně přidávání studentů do týmu ze seznamu volných studentů zapsaných na předmět.
+		\par Vedoucí týmu je zodpovědný za obsah, který do softwarové podpory vkládá.
 		\subsection{Projekt}
 	\section{Případy užití}
 		\par Z podrobné specifikace požadavků vycházejí následující případy užití.
@@ -250,22 +268,25 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 			\subsubsection{Řešení projektu (UC.10-13)}
 				\par V řešení projektu vedoucí týmu zaznamenává postup svého týmu pomocí čtyřstavové hodnoty v několika kategoriích. Na základě těchto záznamů přiřazený mentor kontroluje a potvrzuje tento postup týmu volbou ze stejného čtyřstavového výběru.
 				\par Vedoucí týmu má na stránce řešení projektu možnost vyplnit a přidat užitečné odkazy.
-			\subsubsection{Editaci týmu (UC.14-16)}
-				\par
+			\subsubsection{Editace týmu (UC.14-16)}
+				\par Vedoucí má možnost přidávat nebo odebírat členy týmu a signalizovat jednotlivé stavy týmu. Členům týmu může přiřazovat a odebírat týmové role. Také může vyplňovat týmový profil z předem definovaného seznamu schopností. Řádně stanovený profil dle opravdových schopností členů týmu může orientačně pomoci s výběrem tématu.
 			\subsubsection{Stránka tématu a zájem o téma (UC.17-19)}
-				\par
+				\par Vedoucí jehož tým nemá přiřazené žádné téma může na stránce detailu volného zadání projevit zájem. Vážnost zájmu o téma je vybírána ze stupnice pěti hodnot od méně významné po nejvážnější. Vedoucí nemůže projevit zájem o téma s vážností, s kterou již má aktivní zájem o jiné téma.
+				\par Projevené zájmy o témata (i ty neaktivní) jsou zobrazeny na stránce týmu, kde aktivní zájmy může vedoucí odvolat.
 		\subsection{Mentor}
 			\subsubsection{Změna kontaktních údajů (UC.20)}
-				\par
+				\par Mentor má ve správě profilu zpřístupněnou úpravu kontaktních údajů. Tyto údaje se následně zobrazují například u detailu zadání, kde je zobrazena \uv{vizitka} přiřazeného mentora.
 			\subsubsection{Mentorované projekty (UC.21-25)}
-				\par
+				\par Jednou z hlavních tabulek mentora jsou mentorované projekty. V této tabulce uvidí o každém mentorovaném projektu stav řešení projektu v kompaktním zobrazení, datum přiřazení tématu týmu a samozřejmě prokliky na projekt a tým.
+				\par Předpokládá se, že tato tabulka bude hlavním rozcestníkem mentora v průběhu mentorování projektů a tedy stránka na které se nachází je nastavena jako mentorova domovská stránka.
 			\subsubsection{Schůzky (UC.09-10,26)}
-				\par
+				\par Mentor má přístup k vytváření schůzek týmů stejně jako vedoucí týmu. Navíc však disponuje tabulkou obsahující schůzky všech týmů, kterých má být mentor zúčastněný.
 			\subsubsection{Volba tématu (UC.27-28)}
-				\par
+				\par Součástí navigace mentora je i položka \uv{Položka bez mentora} vedoucí na stránku s tabulkou témat, která nemají mentora. Tyto témata jsou buď zveřejněná pouze pro mentory nebo zcela veřejná. Témata z této nabídky si mohou mentoři v detailu zadání přiřadit k mentorování. Po přidělení je téma z tabulky odstraněno a naopak se objeví v tabulce \uv{Témata bez týmu}, pokud téma dosud není přiřazeno žádnému týmu, nebo na stránce \uv{Témata bez týmu}.
 			\subsubsection{Témata bez týmu (UC.29-30)}
-				\par
+				\par Stránka témat bez týmu je rozdělena na dvě tabulky. Jedna tabulka obsahuje prostý výčet témat, která má mentor přidělené k mentorování, ale dosud žádný tým o ně neprojevil zájem. Druhá komplexnější tabulka obsahuje veškeré projevené zájmy týmu o zadání. Účel tabulky pochází ze specifikace, že mentor posuzuje vhodnost tématu pro daný tým. Výsledek posouzení mentor v příslušnému zájmu přidělí označení \uv{Nevhodné} nebo \uv{Vhodné}. Výchozí hodnota, kdy mentor dosud není rozhodnut je \uv{Neohodnoceno}.
 			\subsubsection{Historie mentorování (UC.31)}
+				\par Aplikace má v sobě udržovat historii předchozích ročníků TSP. Proto mentor má k dispozici výpis témat, která dosud mentoroval. Mentor se může na dané projekty prokliknout a prohlížet je.
 		\subsection{Garant}
 		\begin{figure}[h]
 			\centering
@@ -292,7 +313,7 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		return $poll;
 	}
 }
-		\end{lstlisting}
+\end{lstlisting}
 		
 		\par Komponentu lze definovat přímo v tovární metodě, ale pro účely znovupoužitelnosti je možné pro komponentu vytvořit vlastní třídu dědící třídu \texttt{Nette\textbackslash Application\textbackslash UI\textbackslash Control}.
 		
@@ -317,16 +338,18 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Princip jednotkového testování je ověření nejelementárnějších procedur aplikace. V tomhle ohledu se práce vyvíjené webové aplikace se skládá z většinové části pouze z interpretace dat z a do databáze voláním funkcí Nette frameworku a tedy se nedostáváme na elementární úroveň, kterou můžeme jednotkově testovat. Avšak při vývoji byly vytvořeny pomocné procedury, které pomáhají se zpracováním dat (např. parsování). Tyto funkce jsou oddělené od logiky aplikace a jsou závislé pouze na svých vstupech. Pro těchto pár funkcí byly vytvořeny jednotkové testy, které ověřují jejich výstupy.
 		
 		\subsubsection{Logování}
-		
+		\par Logování je určené pro dlouhodobé sledování činnosti programu. V sekvenci záznamů je možné dohledat souvislosti zpracovaných akcí a stavu systému. Pomocí logování sledujeme zejména běžnou činnost programu, výskyt chyb a výjimek, konfiguraci programu a její změny. Tato technika lze být použita i pro ladění, ale v našem případě máme jiné ladící nástroje.
+		\par Pro PHP existuje profesionálně používaná knihovna Monolog\footnote{https://github.com/Seldaek/monolog}. Ta již integrována do známých frameworků jako Symfony, Laravel i Nette. Logovací záznam je pole o jednotlivých položkách např. úroveň, časové razítko, jméno loggeru, zaznamenávaná zpráva, dodatečn informace, atd. Tyto údaje však negeneruje programátor přímo, ale zpravidla pomocí logovacích funkcí loggeru.
+		\par Záznamy loggerů ukládáme do adresáře \texttt{/log/syslog/} v textovém formátu \texttt{.log}. Záznamy jsou rozděleny do jednotlivých souborů dle dne a soubory s logy starší 30 dní jsou automaticky mazány.
 		\subsubsection{Ladící nástroj Tracy}
 		
 		\subsection{Responzivita}
-		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu na různé velikosti obrazovek (typicky mobily, tablety, počítačové monitory).
+		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu šířce okna webového prohlížeče (příp. velikosti obrazovky zařízení). To znamená, že uživatel navštěvující naší stránku ze stolního počítače nebo mobilního zařízení uvidí uspořádaný obsah tak, aby byl na daném zařízení dostatečně čitelný a ovladatelný \cite{CSSOkamzite}.
 		\par Front-end aplikace je implementován frameworkem AdminLTE, který staví na základech technologie Bootstrap. Díky tomu je snadné udržovat aplikaci responzivní pokud je dodržena správná HTML struktura a jsou důsledně aplikovány styly použitím tříd stylů.
 			
 	\section{Databázová struktura}
 		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využivá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
-		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou \texttt{PERIOD} jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování řádek. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyla porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn.
+		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou \texttt{PERIOD} jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování záznamů. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyl porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn pro další užití. Tím prvek stále existuje, není porušeno integritní omezení a potřebné změny pro nové projekty jsou upraveny.
 		
 		\begin{figure}[H]
 			\centering
@@ -354,32 +377,69 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 			\item PERIOD -- Tabulka jednotlivých cyklů aplikace a předmětů TSP.
 		\end{itemize}
 		\subsection{Spojovací tabulky}
+			\par Následující tabulky jsou pomocné tabulky pro realizaci N:M relace. Propojují typicky dvě tabulky s případným ohodnocením nebo informacemi dané relace.
 			\begin{itemize}
-				\item
-				\item TEAM\_ROLE\_STUDENT -- Propojení mezi tabulkami \uv{TEAM\_ROLE} a \uv{STUDENT} pro realizaci N:M relace. 
-				\item TEAM\_SKILL -- Propojení mezi tabulkami \uv{TAG} a \uv{TEAM} pro realizaci N:M relace. Tabulka specifikuje jaký tým má zvolenou jaký profil týmu.
-				\item ASSIGNMENT\_TAG -- Propojení mezi tabulkami \uv{TAG} a \uv{ASSIGNMENT} pro realizaci N:M relace. Tabulka specifikuje jaké schopnosti bude tým potřebovat pro řešení tématu.
-				\item PROGRESS\_STATE -- Propojení mezi tabulkami \uv{PROGRESS} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje postup v řešení projektu.
-				\item REQUIREMENT\_STATE -- Propojení mezi tabulkami \uv{REQUIREMENT} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje plnění kritérií při řešení projektu.
-				\item EXPERIENCE\_STATE -- Propojení mezi tabulkami \uv{EXPERIENCE} a \uv{PROJECt} pro realizaci N:M relace. Tabulka eviduje stav potvrzení využitých zkušeností.
+				\item TEAM\_ROLE\_STUDENT -- Propojení mezi tabulkami \uv{TEAM\_ROLE} a \uv{STUDENT}. Tabulka slouží pro zaznamenání přiřazení rolí jednotlivým členům týmu.
+				\item TEAM\_SKILL -- Propojení mezi tabulkami \uv{TAG} a \uv{TEAM}. Tabulka specifikuje jednotlivé profily týmů .
+				\item ASSIGNMENT\_TAG -- Propojení mezi tabulkami \uv{TAG} a \uv{ASSIGNMENT}. Tabulka specifikuje jaký profil týmu je předpokládán pro tým, který bude zadání řešit.
+				\item PROGRESS\_STATE -- Propojení mezi tabulkami \uv{PROGRESS} a \uv{PROJECT}. Tabulka eviduje postup v řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
+				\item REQUIREMENT\_STATE -- Propojení mezi tabulkami \uv{REQUIREMENT} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje plnění kritérií při řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
+				\item EXPERIENCE\_STATE -- Propojení mezi tabulkami \uv{EXPERIENCE} a \uv{PROJECT} pro realizaci N:M relace. Tabulka eviduje stav potvrzení využitých zkušeností. Relace uchovává stavovou hodnotu daného přepínače.
 			\end{itemize}
 		\subsection{Další tabulky}
 			\begin{itemize}
 				\item ASSIGNMENT\_FILE -- Tabulka sloužící pro uložení PDF souborů s příslušnými informacemi.
+				\item SETTING -- Tabulka s nastavením aplikace. Každý záznam představuje typ nastavení a jeho hodnotu.
 			\end{itemize}
 	\section{Uživatelské rozhraní}
 	\section{Návrh loga}
 \chapter{Realizace}
 	\section{Adresářová struktura}
 	\par Adresářová struktura vychází z třívrstvé MVP architektury a \uv{best practices} použití Nette Frameworku.
-	
+	\par Struktura adresářů je naznačena v následujícím stromu:
+	\dirtree{%
+		.1 /.
+		.2 app.
+			.3 components \normalfont{-- třídy znovupoužitelných komponent}.
+			.3 locale \normalfont{-- překlady}.
+			.3 Model \normalfont{-- třídy modelů}.
+			.3 Presenters \normalfont{-- třídy presenterů}.
+				.4 templates \normalfont{-- soubory šablon a pohledů}.
+			.3 Router \normalfont{-- konfigurace URL adres}.
+			.3 Boostrap.php \normalfont{-- zaváděcí třída Boostrap}.
+		.2 config \normalfont{-- konfigurační soubory}.
+		.2 log \normalfont{-- logovací soubory}.
+		.2 temp \normalfont{-- dočasné soubory, cache}.
+		.2 tests \normalfont{-- třídy s jednotkovými testy}.
+		.2 vendor \normalfont{-- knihovny instalované Composerem}.
+			.3 autoload.php \normalfont{-- automatické načítání nainstalovaných balíčků}.
+		.2 www \normalfont{-- veřejný adresář}.
+			.3 src \normalfont{-- CSS a JavaScript soubory}.
+			.3 index.php \normalfont{-- prvotní soubor, kterým se aplikace spouští}.
+	}
+	\section{Konfigurace aplikace}
+	\par Framework Nette používá konfiguraci pomocí externích souborů formátu NEON. Zápis konfigurace je velmi podobný zápisu formátu YAML.
+	\subsection{Konfigurace databázového spojení}
+	\par Na databázi se aplikace připojuje nativním připojením pomocí balíčku \texttt{nette/database}, kdy spojení získáme jako službu z DI kontejneru.
+	\begin{lstlisting}[caption={Konfigurace databázového spojení},label={lst:spojeniDB}]
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=test'
+	user: root
+	password: password
+\end{lstlisting}
+	\par V nastavení databázové struktury (viz ukázka kódu \ref{lst:spojeniDB}) nastavujeme položku \texttt{dns} jako textový řetězec obsahující typ připojované databáze, adresu serveru (případně s číslem služby) a název výchozí zvoleného schématu v databázi. Dále se nastavuje uživatelské jméno a heslo pro připojení.
+	\subsection{Vlastní nastavení aplikace}
+	\par Do konfigurace aplikace lze vkládat vlastní konfigurovatelné možnosti, které lze následně v aplikaci načítat a upravovat tak chování systému. V konkrétním případě tohoto využíváme pro nastavení režimu pro testování aplikace, kdy veškerá emailová komunikace se zasílá na předem definovaný email.
 	\section{Vylepšování aplikace}
 	\subsection{Oprava nalezených defektů}
 	\subsection{Úpravy dle aktualizování specifikace}
 	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány.
 	\subsection{Připomínky budoucích uživatelů}
-	
+	\par Od počátku vývoje jsou přijímány podměty pro vylepšování uživatelského komfortu z používání aplikace. Nejčastěji se jednalo o úpravy vzhledu, popisků nebo změnu pozicování prvků stránek. Vyskytly se však návrhy na přidání zcela nových funkcionalit, které zcela vytváří nový modul aplikace nebo pouze rozšiřuje již existující funkce.
+	\par Na začátku prosince roku 2021 bylo uskutečněno představení vyvíjeného softwaru budoucím mentorům předmětů TSP za účelem získání zpětné vazby od reálných budoucích uživatelů tohoto systému.
+	\par Veškeré návrhy a podměty byly projednány a případně zaneseny do nástrojů pro řízení projektu.
 	\section{Požadavky na zavedení aplikace}
+	
 \chapter{Testování}
 
 \chapter{Závěr}
