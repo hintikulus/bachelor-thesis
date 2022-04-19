@@ -1,9 +1,9 @@
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
 \contentsline {chapter}{\numberline {1}Úvod}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivace}{8}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Cíl práce}{8}{section.1.2}%
@@ -19,14 +19,12 @@
 \contentsline {section}{\numberline {3.2}Srovnání PHP Frameworků}{11}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}PHP Framework}{11}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Vybrané frameworky ke srovnání}{12}{subsection.3.2.2}%
-\contentsline {subsubsection}{Symfony}{12}{section*.5}%
-\contentsline {subsubsection}{Laravel}{12}{section*.6}%
-\contentsline {subsubsection}{Nette}{12}{section*.7}%
-\contentsline {subsection}{\numberline {3.2.3}Srovnání}{12}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}PHP frameworky}{12}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Laravel}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Symfony}{13}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Nette}{13}{subsection.3.3.3}%
+\contentsline {subsubsection}{Laravel}{12}{section*.5}%
+\contentsline {subsubsection}{Symfony}{12}{section*.6}%
+\contentsline {subsubsection}{Nette}{13}{section*.7}%
+\contentsline {subsection}{\numberline {3.2.3}Srovnání}{13}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}PHP frameworky}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Nette}{13}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Front-end}{13}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}HTML a CSS}{13}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Bootstrap}{14}{subsection.3.4.2}%

@@ -172,20 +172,25 @@
 	\par PHP framework pro vývojaře totiž řeší celou řadu problémů. Příkladem mohou být různé optimalizační nástroje, DI\footnote{Dependency Injection - technologie vkládání závislostí} kontejner nebo komunikace s databází. Vývojář se tak může zaměřit na vývoj samotné logiky aplikace a nezabývat se příliš repetetivními a nízkoúrovňovými záležitostmi.
 	\par Součástí frameworků bývají šablonovací enginy. Ty vývojář často může nebo nemusí použít. Případně může zvolit jiný, který mu vyhovuje. Šablonovací enginy slouží pro prezentaci dat z backendové části aplikace a tvoří tak stránku, kterou vidí uživatel. Některé šablonovací systémy obsahují vlastní funkce například pro úpravu textu, podmíněné vykreslování nebo cykly. Struktury které známe z jiných programovacích jazyků. Zde však slouží pro zmíněnou prezentaci dat.
 	\subsection{Vybrané frameworky ke srovnání}
-	\par V dnešní době již existuje spousta spolehlivých frameworků, které mohou být použity. Stále však ujímají na nejvyšších příčkách frameworky Symfony a Laravel.  
-	\subsubsection{Symfony}
+	\par V dnešní době již existuje spousta spolehlivých frameworků, které mohou být použity. Stále však ujímají na nejvyšších příčkách frameworky Symfony a Laravel. Oba frameworky jsou mírně rozdílné a rozhodnutí, který nasadit spočívá v druhu použití.
 	\subsubsection{Laravel}
+	\par Framework Laravel je možné považovat jako za ten nejrozšířenější. Mezi jeho hlavní východy patří jeho jednoduchost používání a rychlost. Pro svůj přístup k jednoduchému použití je Laravel doporučován jako vhodný pro začátečníky ale i pro profesionály. Framework se hodí pro vytváření méně komplexních projektů.
+	\par Laravel využívá šablonovací engine Blade, který je standardně dodáván společně se samotným frameworkem. Tento engine umožňuje oproti jiným rozšiřovat PHP kód, a tak provádět různé jednoduché operace pro přizpůsobení dat k samotnému front-endu.
+	\subsubsection{Symfony}
+	\par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symfony více náročný na naučení.
+	\par Jako výchozí šablonovací engine je využíván Twig, který se také řadí mezi nejpoužívanější šablonovací systémy. Oproti systému Blade obsahuje navíc další bezpečnostní vrstvu a další funkce. Twig je často využíván i samostatně, tedy bez použití back-end frameworku. To podtrhuje jeho flexibilitu.
 	\subsubsection{Nette}
+	\par Český projekt Nette není tolik světově známý, ale v České republice je velice populární. Kombinuje totiž výhody obou předchozích frameworků a dosahuje velmi dobrých výsledků v rychlosti. Svoji popularitu si nadále udržuje i díky velmi aktivní komunitě.
 	\subsection{Srovnání}
+	\par Jedná se o frameworky, které každý
+	\subsubsection{Podobnosti}
+	\par Všechny zmíněné frameworky používají při komunikaci s databází objektově relační mapování. To znamená, že výsledky z databáze nejsou vráceny jako pole hodnot, ale jako objekty nad kterými lze volat další funkce. Díky tomu je možné dotazy na databázi i postupně optimalizovat a tím zrychlovat činnost aplikace.
+	\par V otázkách poskytování závislostí všechny nabízejí vlastní formu DI kontejneru.
+	\par Přikládané šablonovací enginy poskytují formu dědičnosti šablon. Umožňují rozšíření vlastními funkcemi a tak upravovat výpisy.
+	
 \section{PHP frameworky}
 	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
-\subsection{Laravel}
-	\par Framework Laravel je možné považovat jako za ten nejrozšířenější. Mezi jeho hlavní východy patří jeho jednoduchost používání a rychlost. Pro svůj přístup k jednoduchému použití je Laravel doporučován jako vhodný pro začátečníky ale i pro profesionály. Framework se hodí pro vytváření méně komplexních projektů.
-	\par Laravel využívá šablonovací engine Blade, který je standardně dodáván společně se samotným frameworkem. Tento engine umožňuje oproti jiným rozšiřovat PHP kód, a tak provádět různé jednoduché operace pro přizpůsobení dat k samotnému front-endu.
-\subsection{Symfony}
-	\par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symfony více náročný na naučení.
-	\par Jako výchozí šablonovací engine je využíván Twig, který se také řadí mezi nejpoužívanější šablonovací systémy. Oproti systému Blade obsahuje navíc další bezpečnostní vrstvu a další funkce. Twig je často využíván i samostatně, tedy bez použití back-end frameworku. To podtrhuje jeho flexibilitu.
 \subsection{Nette}
 	\par 
 	\par S frameworkem společně přichází i šablonovací engine Latte.
