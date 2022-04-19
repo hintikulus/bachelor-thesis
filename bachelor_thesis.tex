@@ -161,7 +161,22 @@
 
 \chapter{Dostupné technologie}
 \section{PHP}
-\par \cite{PHPOkamzite}
+\par PHP je jedním z nejoblíbenějších jazyků zpracovávaného na straně serveru v oblasti webového vývoje. Jedná se volně dostupný skriptovací jazyk, který je spravován a vyvíjen skupinou vývojářů s názvem The PHP Group.
+\par Jazyk PHP se většinou používá na straně serveru (backend). Po jeho zpracování jsou výsledky typicky zobrazovány webovým serverem. Takový server musí mít nainstalovaný modul PHP. Poté lze vkládat kód jazyka do značkovaného kódu jazyka HTML. Soubory s PHP kódem mají koncovku .php. Jazyk je možné provozovat na velké škále operačních systémů na všech platformách.
+\par Díky své jednoduchosti bývá PHP častá volba pro vývoj webových aplikací. Poskytuje dostatečné množství funkcí, aby programátor nepotřeboval přecházet na jiný jazyk a vystačil si čistě s jazykem PHP. Jazyk je konkurentem pro jazyky jako ASP.NET, Java a Node.js, které se také zabývají webovým vývojem.
+\par Díky velké popularitě jazyka vznikla velká komunita vývojářů, kteří převážně zdarma nabízejí pomoc na různých fórech \cite{PHPOkamzite}.
+\section{Srovnání PHP Frameworků}
+	\par Existuje několik cest jak webovou aplikaci vyvíjet. V základu se jedná o dva směry. Vyvíjení aplikace z již vytvořených komponent a tvorba od úplného počátku. Oba směry mají své výhody a nevýhody. Pro rozsáhlé systémy se však posledních několik let rozmáhá použití frameworků.
+	\subsection{PHP Framework}
+	\par PHP framework je platforma pro tvorbu webových aplikací. Obsahuje knihovny pro často používané činnosti. Tvoří tak základ, na kterém mohou vývojáři stavět svůj produkt. Tento přístup je často vítaný, protože umožňuje urychlení a sjednocení vývoje.
+	\par PHP framework pro vývojaře totiž řeší celou řadu problémů. Příkladem mohou být různé optimalizační nástroje, DI\footnote{Dependency Injection - technologie vkládání závislostí} kontejner nebo komunikace s databází. Vývojář se tak může zaměřit na vývoj samotné logiky aplikace a nezabývat se příliš repetetivními a nízkoúrovňovými záležitostmi.
+	\par Součástí frameworků bývají šablonovací enginy. Ty vývojář často může nebo nemusí použít. Případně může zvolit jiný, který mu vyhovuje. Šablonovací enginy slouží pro prezentaci dat z backendové části aplikace a tvoří tak stránku, kterou vidí uživatel. Některé šablonovací systémy obsahují vlastní funkce například pro úpravu textu, podmíněné vykreslování nebo cykly. Struktury které známe z jiných programovacích jazyků. Zde však slouží pro zmíněnou prezentaci dat.
+	\subsection{Vybrané frameworky ke srovnání}
+	\par V dnešní době již existuje spousta spolehlivých frameworků, které mohou být použity. Stále však ujímají na nejvyšších příčkách frameworky Symfony a Laravel.  
+	\subsubsection{Symfony}
+	\subsubsection{Laravel}
+	\subsubsection{Nette}
+	\subsection{Srovnání}
 \section{PHP frameworky}
 	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
 	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
@@ -380,15 +395,21 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\subsection{Responzivita}
 		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu šířce okna webového prohlížeče (příp. velikosti obrazovky zařízení). To znamená, že uživatel navštěvující naší stránku ze stolního počítače nebo mobilního zařízení uvidí uspořádaný obsah tak, aby byl na daném zařízení dostatečně čitelný a ovladatelný \cite{CSSOkamzite}.
 		\par Front-end aplikace je implementován frameworkem AdminLTE, který staví na základech technologie Bootstrap. Díky tomu je snadné udržovat aplikaci responzivní pokud je dodržena správná HTML struktura a jsou důsledně aplikovány styly použitím tříd stylů.
-			
+		
+		\subsection{Vícejazyčnost}
+		\par Mezi požadavky na aplikaci je podpora vícejazyčného prostředí. Zejména byla vyžádána možnost přepnout rozhraní do anglického jazyka.
+		\par Pro splnění tohoto požadavku byl implementován balíček \texttt{kdyby/translation}. Balíček umožňuje vkládat do šablon a kódu řetězce dle jejich identifikátoru ze souborů s překlady. Vždy se tak použije řetězec ze souboru dle aktuálně nastaveného jazyka.
+		\par Soubory s překlady jsou uloženy ve formátu NEON ve vlastním adresáři. Každé jazykové podání je obsaženo v samostatném souboru. Hodnoty jednotlivých překladů jsou uspořádány v hierarchické struktuře. Pro vizuální i logické oddělení tak lze větvit strukturu dle částí aplikace, ve kterých jsou překlady řetězce obsaženy.
+	
 	\section{Databázová struktura}
-		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využivá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
+		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využívá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
 		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou \texttt{PERIOD} jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování záznamů. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyl porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn pro další užití. Tím prvek stále existuje, není porušeno integritní omezení a potřebné změny pro nové projekty jsou upraveny.
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{img/database/database_model}
 			\caption{Schéma databázové struktury (zdroj: vlastní)}
+			\label{fig:strukturaDB}
 		\end{figure}
 		\subsection{Základní tabulky}
 			\begin{itemize}
@@ -426,7 +447,29 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 				\item SETTING -- Tabulka s nastavením aplikace. Každý záznam představuje typ nastavení a jeho hodnotu.
 			\end{itemize}
 	\section{Uživatelské rozhraní}
-	\section{Návrh loga}
+	\section{Návrh a použití loga}
+	\par Systém pro svoji vizuální komunikaci a rozeznatelnost potřebuje logo. 
+	\par Vývoj loga projektu vychází z názvu projektu \uv{Podpůrný software TSP} respektive z jeho zkratky \uv{PSTSP}. Bylo využito, že zkratka názvu je palindromem\footnote{Palindrom je slovo, které lze číst zleva i zprava stejně}, a vlastnosti osové souměrnosti písmena \uv{T}.
+	\par Počáteční návrh loga (viz obrázek \ref{fig:logo.prvni_navrh}) spočívá v zrcadlení části \uv{PS} resp. \uv{SP}, které jsou \uv{zastřešeny} velkým písmenem \uv{T}, kdy jeho vertikální čára působí jako zrcadlo.
+	\par Finální verze (viz obrázek \ref{fig:logo.final}) vychází z prvotního návrhu. Celé logo bylo vloženo do šestiúhelníkového rámu s přidanou perspektivou. Písmena k sobě přiléhají a kvůli tvarům písmen a rámu jsou hranaté. Barevná paleta byla vybírána s ohledem na barvy univerzity (modrá) a fakulty (zlatá). V celkovém pojetí logo připomíná výraznou šipku symbolující posun se zlatavým ohonem a bílým vzduchem. Logo tedy symbolizuje rychlý pokrok vpřed.
+	\begin{figure}
+		\centering
+		\begin{minipage}[c]{0.4\linewidth}
+			\includegraphics[width=1\textwidth]{img/logo/prototype_logo}
+			\caption{Prvotní návrh loga (zdroj: vlastní)}
+			\label{fig:logo.prvni_navrh}
+		\end{minipage}\hfill
+		\begin{minipage}[c]{0.4\linewidth}
+			\includegraphics[width=1\textwidth]{img/logo/transparent_bg_logo}
+			\caption{Finální verze loga aplikace (zdroj: vlastní)}
+			\label{fig:logo.final}
+		\end{minipage}
+	\end{figure}
+	\subsection{Použití loga}
+	\par Logo je plánováno pro použití v samotném systému a hlavně pro použití jako favicon webové aplikace.
+	\par Otázka ikon webových stránek není úplně triviální, protože je potřeba definovat jednotlivé obrázky a další údaje pro různé velikosti zobrazení na různých platformách. Typický příklad je ikonka v prohlížeči, kde se použije rozlišení 64x64px, na rozdíl od mobilního telefonu s moderním operačním s ikonkou stránky na ploše, kdy se použije podstatně větší rozlišení s definovanou barvou pozadí.
+	\par Pro vyřešení této otázky byl nalezen a použit nástroj RealFaviconGenerator\footnote{Dostupné na https://realfavicongenerator.net/}, který z jednoho vstupního obrázku umožní sestavit si vlastní nastavení faviconů pro různé platformy. Výsledkem tohoto procesu jsou prvky HTML hlavičky, které stačí implementovat do práce. 
+	\par Díky tomuto nástroji máme rychle zajištěnou kompatibilitu zobrazení ikonky webu.
 \chapter{Realizace}
 	\section{Adresářová struktura}
 	\par Adresářová struktura vychází z třívrstvé MVP architektury a \uv{best practices} použití Nette Frameworku.
