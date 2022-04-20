@@ -418,6 +418,7 @@ $address->update([
 	\section{Databázová struktura}
 		\par Struktura databáze musí obsahovat veškeré informace použitelné v softwarové podpoře a umožnit jejich snadné propojení. Dalších aspektem pro tvorbu struktury je použitý PHP framework, který využívá službu pro správu databázových dotazů a jejich optimalizaci. Pro jeho správnou funkci je potřeba mít strukturu databáze řádně připravenou včetně vytvořených indexů a propojení pomocí cizích klíčů.
 		\par Databázová struktura musí respektovat, že požadavkem na aplikaci je prohlížení historie. To nás přivádí na strategii, že každá tabulka u které to bude potřeba bude provázána s tabulkou \texttt{PERIOD} jejíž řádky představují jednotlivé cykly TSP. Také se však vyskytuje problém u odstraňování záznamů. Prakticky nebude možné z databáze cokoli odstraňovat, aby nebyl porušen konzistentní stav již proběhlých projektů. To je následně ve struktuře zapracováno v různých tabulkách sloupcem s příznakem, který určuje zda je prvek odstraněn nebo znepřístupněn pro další užití. Tím prvek stále existuje, není porušeno integritní omezení a potřebné změny pro nové projekty jsou upraveny.
+		\par Byla požadavků sestavena následující organizace 23 tabulek jejíž struktura lze vidět v diagramu (viz obrázek \ref{fig:strukturaDB}).
 		
 		\begin{figure}[H]
 			\centering
