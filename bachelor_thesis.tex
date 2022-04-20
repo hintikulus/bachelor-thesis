@@ -170,6 +170,7 @@
 	\subsection{PHP Framework}
 	\par PHP framework je platforma pro tvorbu webových aplikací. Obsahuje knihovny pro často používané činnosti. Tvoří tak základ, na kterém mohou vývojáři stavět svůj produkt. Tento přístup je často vítaný, protože umožňuje urychlení a sjednocení vývoje.
 	\par PHP framework pro vývojaře totiž řeší celou řadu problémů. Příkladem mohou být různé optimalizační nástroje, DI\footnote{Dependency Injection - technologie vkládání závislostí} kontejner nebo komunikace s databází. Vývojář se tak může zaměřit na vývoj samotné logiky aplikace a nezabývat se příliš repetetivními a nízkoúrovňovými záležitostmi.
+	\par Bezpečnost je také hlavním bodem, kterým se PHP Frameworky věnují. Poskytují totiž obalovací objekty nad nízkoúrovňovými funkcemi a v nich sami vytváří bezpečností vrstvu. Pomocí frameworku prakticky bez námahy chráníte svoji aplikaci proti různým typům útokům. 
 	\par Součástí frameworků bývají šablonovací enginy. Ty vývojář často může nebo nemusí použít. Případně může zvolit jiný, který mu vyhovuje. Šablonovací enginy slouží pro prezentaci dat z backendové části aplikace a tvoří tak stránku, kterou vidí uživatel. Některé šablonovací systémy obsahují vlastní funkce například pro úpravu textu, podmíněné vykreslování nebo cykly. Struktury které známe z jiných programovacích jazyků. Zde však slouží pro zmíněnou prezentaci dat.
 	\subsection{Vybrané frameworky ke srovnání}
 	\par V dnešní době již existuje spousta spolehlivých frameworků, které mohou být použity. Stále však ujímají na nejvyšších příčkách frameworky Symfony a Laravel. Oba frameworky jsou mírně rozdílné a rozhodnutí, který nasadit spočívá v druhu použití.
@@ -180,20 +181,19 @@
 	\par Tento framework se vyznačuje zakládáním si na striktním dodržování nejen PHP standardů a snaží se maximálně využívat různé návrhové vzory. Díky tomu jsou komponenty frameworku robustnější, což může znamenat větší časovou náročnost, ale také výraznou stabilitu frameworku, a proto je vhodný pro použití na komplexnějších projektech. Další předností mohou být rozsáhlé možnosti pro vývojáře, který si může prostředí přizpůsobit svým potřebám. To však vyžaduje hlubší znalosti jazyka PHP a struktury frameworku. Pro nováčky se tedy Symfony více náročný na naučení.
 	\par Jako výchozí šablonovací engine je využíván Twig, který se také řadí mezi nejpoužívanější šablonovací systémy. Oproti systému Blade obsahuje navíc další bezpečnostní vrstvu a další funkce. Twig je často využíván i samostatně, tedy bez použití back-end frameworku. To podtrhuje jeho flexibilitu.
 	\subsubsection{Nette}
-	\par Český projekt Nette není tolik světově známý, ale v České republice je velice populární. Kombinuje totiž výhody obou předchozích frameworků a dosahuje velmi dobrých výsledků v rychlosti. Svoji popularitu si nadále udržuje i díky velmi aktivní komunitě.
+	\par Český projekt Nette není tolik světově známý, ale v České republice je velice populární. Kombinuje totiž výhody obou předchozích frameworků a dosahuje velmi dobrých výsledků. Je distribuován po různých volitelných modulech. Součástí těchto modulů je i ladička\footnote{Ladící nástroj pro vylepšování aplikace} Tracy, která umožnuje rozsáhlé ladící možnosti. Svoji popularitu si nadále udržuje i díky velmi aktivní komunitě.
 	\subsection{Srovnání}
-	\par Jedná se o frameworky, které každý
+	\par Jedná se o frameworky, které jsou si velmi podobné a prostý výčet nabízených funkcí je takřka podobný. V určitých drobnostech se však jejich použití liší.
 	\subsubsection{Podobnosti}
 	\par Všechny zmíněné frameworky používají při komunikaci s databází objektově relační mapování. To znamená, že výsledky z databáze nejsou vráceny jako pole hodnot, ale jako objekty nad kterými lze volat další funkce. Díky tomu je možné dotazy na databázi i postupně optimalizovat a tím zrychlovat činnost aplikace.
 	\par V otázkách poskytování závislostí všechny nabízejí vlastní formu DI kontejneru.
 	\par Přikládané šablonovací enginy poskytují formu dědičnosti šablon. Umožňují rozšíření vlastními funkcemi a tak upravovat výpisy.
-	
-\section{PHP frameworky}
-	\par Existuje mnoho úspěšných PHP frameworků, které mají různé typy zaměření. Mezi nejúspěšnější a nejpoužívanější patří Laravel, Symfony a Nette. Všechny tyto frameworky si zakládají na vytváření znovupoužitelných komponent a služeb. Kromě toho v sobě obsahují rozsáhlé nástroje pro usnadnění například práce s databází, přesměrování, ošetření bezpečnosti, atd. Díky tomu ulehčují vývojářům vlastní vývoj aplikace a nemusí tak vyvíjet úsilí pro tvorbu vlastních řešení. Výrazné zjednodušení představuje funkce dependency injection, která zajišťuje propojení mezi jednotlivými komponentami a službami a hlídá dostupnost všech závislostí.
-	\par Součástí těchto frameworků jsou také šablonovací enginy, které zjednodušují tvorbu front-endu. Tyto šablonovací systémy umožňují dědičnost jednotlivých pohledů, jejich členění na sekce a obecně jejich cílem je jednodušeji prezentovat data z back-endu. Jednotlivé šablonovací enginy se liší svými funkcemi a rozšířeními, ale typicky je vybíráme dle osobních preferencí nebo dle použitého back-end frameworku.
-\subsection{Nette}
-	\par 
-	\par S frameworkem společně přichází i šablonovací engine Latte.
+	\subsubsection{Rozdílnosti}
+	\par Světově jsou frameworky Symfony a Laravel velice oblíbené a značně zastoupené. Z perspektivy České republiky ve však Nette na absolutní špičce a v tomto ohledu značně překonává i zbylé dva porovnávané frameworky. To se samozřejmě projevuje i na míře pracovního uplatnění.
+	\par Učební křivka frameworků se liší. Zatímco Symfony se řadí mezi ty náročnější, Laravel si zakládá na své jednoduchosti a Nette tvoří pomyslný střed.
+	\subsection{Výběr}
+	\par Na vyvíjený projekt, který je rozsahem středního rozsahu lze vhodně použít jakýkoli ze zmíněných frameworků. Výsledný výběr tak stojí na zkušenostech a osobních preferencí vývojáře.
+	\par Z důvodu toho, že vývojář a tester se již setkali s frameworkem Nette a mají s ním alespoň začátečnické zkušenosti, byl vybrát framework Nette.
 \section{Front-end}
 	\subsection{HTML a CSS}
 		\par Základem webových aplikací je způsob zobrazování. Webové technologie nabízejí tvorbu elementů pomocí formátu HTML\footnote{Hyper Text Markup Language - Značkovací jazyk pro tvorbu webových technologí} založeného na XML\footnote{Extensible Markup Language - Víceúčelový značkovací jazyk}. Vlastností tohoto formátu je tvorba webových elementů pomocí tagů, kterým se specifikují jejich vlastnosti. Dnes již naprostá většina prohlížečů zobrazuje webové stránky pomocí tohoto formátu a stává prakticky synonymem pro internetové stránky \cite{HTML5aCSS3}.
@@ -272,6 +272,9 @@
 		\par Nastavení týmu provádí z zejména vedoucího týmu včetně přidávání studentů do týmu ze seznamu volných studentů zapsaných na předmět.
 		\par Vedoucí týmu je zodpovědný za obsah, který do softwarové podpory vkládá.
 		\subsection{Projekt}
+		\par Projekt je propojením instance zadání a týmu. Obsahuje dvě základní části. Data o postupu řešení tématu týmem a informace o projektu samotném. 
+		\par Data o postupu řešení tématu jsou rozděleny na 3 sekce. Plnění minimálních kritérií, plnění postupu projektu a záznamy o využitých zkušenostech. Všechny záznamy v těchto sekcích mají dva stavy. Stav který určil vedoucí týmu a stav, který potvrdil mentor projektu. Na základě potvrzení mentora se určuje opravdový oficiální stav řešení tématu.
+		\par Druhá část ohledně údajů o projektu obsahuje kromě informací o týmu a samotném zadání vedoucím definované a vyplněné odkazy například na různá úložiště nebo stránky řízení projektu. Dalšími údaji jsou údaje o udělení zápočtů a proběhlých obhajobách.
 	\section{Případy užití}
 		\par Příklady užití popisují v krocích způsob používání různých částí aplikace uživatelem nebo systémem. Tyto případy představují se zadavatelem dohodnutou funkčnost systému. Vytvořené případy užití usnadňují tvorbu požadavků na systém pro následné sepsání testovacího plánu.
 		\par Z podrobné specifikace požadavků byly sestaveny případy užití, které popisují práci s výslednou aplikací. Rozdělení případů užití jsou ilustrovány v use-case diagramu (viz obrázek \ref{fig:use-case}). Následuje seznam sestavených případů užití s popisem funkcí, které pokrývají.
@@ -344,10 +347,10 @@
 		\end{figure}
 	\section{Architektura aplikace}
 		\subsection{Třívrstvá architektura}
-		
-		\cite{3Vrstvy}
 		\par Architektura MVP\footnote{Model-View-Presenter - třívrstvá architektura} je třívrstvový návrh struktury aplikace pro rozdělení souborů dle funkčnosti s ohledem na rozšiřitelnost. MVP architektura se skládá z datové části (model), která se stará o práci s daty a umožňují vytvářet abstrakci nad jednotlivými strukturami. Například jednotlivé akce s databází v kontextu dat se kterými aplikace pracuje. Další část je aplikační vrstva (presenter), která řídí chod aplikace, předává data z šablon do modelů a naopak. Poslední vrstvou je vrstva prezentační. Ta se skládá z jednotlivých šablon a prezentace dat. Představuje tak rozhraní, přes které uživatel komunikuje s aplikací.
-		\par Mezi další velice rozšířenou architekturou patří MVC architektura. Hlavním rozdílem mezi MVP a MVC architekturami je, zpracovávání vstupů od uživatele. V MVP architektuře jsou vstupy obsluhovány prezentovací vrstvou.
+		\par Mezi další velice rozšířenou architekturou patří MVC architektura ze které MVP struktura vychází. Hlavním rozdílem mezi MVP a MVC architekturami je, způsob zpracovávání vstupů od uživatele \cite{3Vrstvy}.
+		\par Rozdělení aplikace do několik vrstev je výhodné z důvodu nezávislosti jednotlivých částí. To pomáhá efektivnosti vývoji, kdy jsou jednotlivé části aplikace mohou být vytvářeny téměř nezávisle.
+		
 		\subsection{Komponenty aplikace v Nette}
 		\par Komponenty jsou části aplikace, které vkládáme do stránek. Nejčastěji se jedná o formuláře, tabulky a další objekty, které je možné používat opakovaně.
 		\par Nette má v sobě vestavěný komponentový systém, který umožňuje komponenty vkládat na stránky a někdy dokonce do jiných komponent, kdy se tak tvoří tzv. komponentový strom. Velkou výhodou je, že se komponenta tvoří až tehdy, kdy je opravdu použita. To těží výhodu zejména zpracování AJAX požadavků, kde je typicky výsledkem operace pouze část stránky, kdy není komponenta využita. Díky tomu se vůbec nevytváří tím šetří výkon serveru.
@@ -380,10 +383,21 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Vytvořenou komponentu formuláře je možno automaticky vykreslit dle předem vytvořené šablony pomocí šablonovacího systému Latte a tak jednoduše vložit formulář do příslušné stránky. Je však ponechána možnost vytvoření si jednotlivých formulářových prvků v šabloně a dle identifikátoru je propojit s prvky v komponentě \cite{NetteDI}.
 		
 		\subsection{Database Explorer}
-		\par
+		\par Vyvíjená aplikace je postavená na předávání dat mezi aplikace a databází. Proto je využita služba Nette Database Exploreru, který umožňuje vytvářet dotazy databáze bez potřeby psát kompletní SQL příkazy. Je zde využíváno techniky objektově relačního mapování, kdy není výsledkem dotazu pole hodnot, ale objekty, nad kterými lze volat další funkce (viz ukázka kódu \ref{lst:DBExplorer}).
+		\begin{lstlisting}[language=PHP, caption={Ukázka použití Nette Database Explorer},label={lst:DBExplorer}]
+$user = $explorer->table('USER')->get($id);
+$address = $explorer->table('ADDRESS')->where('id', $user->id)->fetch();
+$address->update([
+	'street' => 'New Street',
+	'city' => 'City',	
+]);
+\end{lstlisting}
+		\par Databáze nám vrací objekt typu \texttt{ActiveRow} reprezentující záznam výsledku dotazu nebo \texttt{Selection} představující výběr. Pomocí instancí typu \texttt{ActiveRow} lze přistupovat k datům jednotlivých sloupců záznamu. Naproti tomu u objektu \texttt{Selection} je jeho hlavním účelem možnost iterování přes záznamy a získat tak instance \texttt{ActiveRow}. 
+		\par Použití Database Exploreru poskytuje nativně i ochranu proti různým typům útokům zejména před SQL Injection. Zároveň za programátora se snaží základně optimalizovat dotazy pro zvýšení efektivnosti a tím i rychlosti.
 		
 		\subsection{Testovatelnost aplikace}
-		\subsubsection{Testování robot frameworkem}
+		\label{sec:testovatelnost}
+		\subsubsection{Testování pomocí Robot Framework}
 		\par Aby bylo možné aplikaci automaticky otestovat je potřeba umožnit testovacímu softwaru ovládat aplikaci. Proto musí být veškeré ovládací prvky jednoznačně identifikovatelné. Toho docílíme zavedením jednoznačných identifikátorů vložených do atributu \texttt{id} daných elementů.
 		\par Robor framework díky tomu je schopen nalézt požadovaný prvek stránky. Takto jednoznačně identifikovatelné není potřeba mít pouze akční prvky typu odkazu nebo tlačítka, ale také i dalších prvků stránky. Ty Robot framework potřebuje nalézt, aby z nich mohl číst data.
 		\par Navržené automatické testování se na tuto vlastnost spoléhá např. při orientaci v aplikaci. Každá stránka s obsahem má svůj nadpis. Tento nadpis má jednoznačný identifikátor v celé aplikaci. Na základě této značky se při testování zjišťuje, zda je otevřena žádaná stránka. Obdobným způsobem dokáže také získat data z jednotlivých elementů, ke kterým se dostane, a může provést jejich kontrolu.
@@ -395,11 +409,6 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 		\par Logování je určené pro dlouhodobé sledování činnosti programu. V sekvenci záznamů je možné dohledat souvislosti zpracovaných akcí a stavu systému. Pomocí logování sledujeme zejména běžnou činnost programu, výskyt chyb a výjimek, konfiguraci programu a její změny. Tato technika lze být použita i pro ladění, ale v našem případě máme jiné ladící nástroje \cite{OKSPrednasky}.
 		\par Pro PHP existuje profesionálně používaná knihovna Monolog\footnote{https://github.com/Seldaek/monolog}. Ta již integrována do známých frameworků jako Symfony, Laravel i Nette. Logovací záznam je pole o jednotlivých položkách např. úroveň, časové razítko, jméno loggeru, zaznamenávaná zpráva, dodatečn informace, atd. Tyto údaje však negeneruje programátor přímo, ale zpravidla pomocí logovacích funkcí loggeru.
 		\par Záznamy loggerů ukládáme do adresáře \texttt{/log/syslog/} v textovém formátu \texttt{.log}. Záznamy jsou rozděleny do jednotlivých souborů dle dne a soubory s logy starší 30 dní jsou automaticky mazány. Veškeré tyto parametry lze změnit v konfiguraci aplikace a upravit tak logování dle zjištěných reálných potřeb systému.
-		\subsubsection{Ladící nástroj Tracy}
-		
-		\subsection{Responzivita}
-		\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu šířce okna webového prohlížeče (příp. velikosti obrazovky zařízení). To znamená, že uživatel navštěvující naší stránku ze stolního počítače nebo mobilního zařízení uvidí uspořádaný obsah tak, aby byl na daném zařízení dostatečně čitelný a ovladatelný \cite{CSSOkamzite}.
-		\par Front-end aplikace je implementován frameworkem AdminLTE, který staví na základech technologie Bootstrap. Díky tomu je snadné udržovat aplikaci responzivní pokud je dodržena správná HTML struktura a jsou důsledně aplikovány styly použitím tříd stylů.
 		
 		\subsection{Vícejazyčnost}
 		\par Mezi požadavky na aplikaci je podpora vícejazyčného prostředí. Zejména byla vyžádána možnost přepnout rozhraní do anglického jazyka.
@@ -452,12 +461,20 @@ class DefaultPresenter extends Nette\Application\UI\Presenter
 				\item SETTING -- Tabulka s nastavením aplikace. Každý záznam představuje typ nastavení a jeho hodnotu.
 			\end{itemize}
 	\section{Uživatelské rozhraní}
-	\section{Návrh a použití loga}
+	\par Důležitou částí aplikace je uživatelské rozhraní. Tím je totiž aplikace ovládána a jedná se o pohled, kterým uživatel pracuje s aplikací. Zjednodušeně lze říct, že nekvalitně vytvořené uživatelské rozhraní může ohrozit příjemný uživatelský zážitek z používání aplikace a znepříjemnit práci se systémem. Je tedy potřebné věnovat návrhu uživatelského prostředí značnou pozornost.	
+	\par Návrh rozhraní rozděluje zobrazovací prostor na 3 hlavní části. Horizontální navigační lišta, který obsahuje hlavní rozcestník na důležité stránky vztahující se k předmětu (např. CourseWarová stránka předmětu), údaje o přihlášeném uživateli a nastavení jazykové předvolby. Tato navigace je navržená tak, že je vždy přístupná. Pod ní se zobrazují hlášky aplikace například o úspěšně provedených akcí. Na levé straně straně zobrazovací plochy je umístěna hlavní (vertikální) navigace systému. Obsahuje stránky, ke kterým má aktuální uživatel přístup. Poslední a hlavní částí je část obsahu, která zobrazuje obsah jednotlivých stránek. Tato stránka pro orientaci v aplikaci vždy obsahuje název stránky.
+	\par Je potřeba při návrhu klást důraz na jednotnost. Uživatel, by měl mít napříč aplikací jednotný zážitek z používání.
+	
+	\subsection{Responzivita}
+	\par Responzivní desing spočívá v přizpůsobení zobrazení obsahu šířce okna webového prohlížeče (příp. velikosti obrazovky zařízení). To znamená, že uživatel navštěvující naší stránku ze stolního počítače nebo mobilního zařízení uvidí uspořádaný obsah tak, aby byl na daném zařízení dostatečně čitelný a ovladatelný \cite{CSSOkamzite}.
+	\par Front-end aplikace je implementován frameworkem AdminLTE, který staví na základech technologie Bootstrap. Díky tomu je snadné udržovat aplikaci responzivní pokud je dodržena správná HTML struktura a jsou důsledně aplikovány styly použitím tříd stylů. 
+	\par V aplikaci jsou jednotlivé celky umístěné do tzv. karet. Díky tomu je možné je snadno přemisťovat jako ucelené balíčky uspořádané do sloupců a řádků. Například při zobrazení na malém mobilním zařízení jsou veškeré karty uspořádány do jednoho sloupce, kdy je podstatné, aby ty důležitější karty byly zobrazovány navrchu.  
+	\section{Návrh loga}
 	\par Systém pro svoji vizuální komunikaci a rozeznatelnost potřebuje logo. 
 	\par Vývoj loga projektu vychází z názvu projektu \uv{Podpůrný software TSP} respektive z jeho zkratky \uv{PSTSP}. Bylo využito, že zkratka názvu je palindromem\footnote{Palindrom je slovo, které lze číst zleva i zprava stejně}, a vlastnosti osové souměrnosti písmena \uv{T}.
 	\par Počáteční návrh loga (viz obrázek \ref{fig:logo.prvni_navrh}) spočívá v zrcadlení části \uv{PS} resp. \uv{SP}, které jsou \uv{zastřešeny} velkým písmenem \uv{T}, kdy jeho vertikální čára působí jako zrcadlo.
 	\par Finální verze (viz obrázek \ref{fig:logo.final}) vychází z prvotního návrhu. Celé logo bylo vloženo do šestiúhelníkového rámu s přidanou perspektivou. Písmena k sobě přiléhají a kvůli tvarům písmen a rámu jsou hranaté. Barevná paleta byla vybírána s ohledem na barvy univerzity (modrá) a fakulty (zlatá). V celkovém pojetí logo připomíná výraznou šipku symbolující posun se zlatavým ohonem a bílým vzduchem. Logo tedy symbolizuje rychlý pokrok vpřed.
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
 		\begin{minipage}[c]{0.4\linewidth}
 			\includegraphics[width=1\textwidth]{img/logo/prototype_logo}
@@ -513,20 +530,46 @@ database:
 	\subsection{Vlastní nastavení aplikace}
 	\par Do konfigurace aplikace lze vkládat vlastní konfigurovatelné možnosti, které lze následně v aplikaci načítat a upravovat tak chování systému. V konkrétním případě tohoto využíváme pro nastavení režimu pro testování aplikace, kdy veškerá emailová komunikace se zasílá na předem definovaný email.
 	\section{Vylepšování aplikace}
-	\subsection{Oprava nalezených defektů}
+	\par Již implementované funkce jsou v aplikaci stále vylepšovány. Nejčastěji z důvodu nalezených defektů¨ a následujících případech.
 	\subsection{Úpravy dle aktualizování specifikace}
-	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány.
+	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány. To vyžadovalo obvykle úpravy na již dokončených částí aplikace. Aktualizace specifikace pramenily většinou z diskusí autorů předmětů, kteří následně přehodnotili postoje k původně požadovaných funkcím. 
+	\par Některé změny 
 	\subsection{Připomínky budoucích uživatelů}
 	\par Od počátku vývoje jsou přijímány podměty pro vylepšování uživatelského komfortu z používání aplikace. Nejčastěji se jednalo o úpravy vzhledu, popisků nebo změnu pozicování prvků stránek. Vyskytly se však návrhy na přidání zcela nových funkcionalit, které zcela vytváří nový modul aplikace nebo pouze rozšiřuje již existující funkce.
 	\par Na začátku prosince roku 2021 bylo uskutečněno představení vyvíjeného softwaru budoucím mentorům předmětů TSP za účelem získání zpětné vazby od reálných budoucích uživatelů tohoto systému.
 	\par Veškeré návrhy a podměty byly projednány a případně zaneseny do nástrojů pro řízení projektu.
 	\section{Požadavky na zavedení aplikace}
-	
+	\par Pro úspěšnou instalaci projektu na webovém serveru je potřeba splnit požadavky pro běh programu. Nejdůležitější požadavek pro spuštění je mít nainstalovaný webový server s modulem PHP podporující verzi PHP minimálně 7.2. Další požadavky se shodují s požadavkami frameworku Nette ve verzi 3.1. Nette však již spolehlivě běží na každé běžné PHP instalaci a zrušil tedy nástroj Requirement Checker.
+	\par Případné balíčky aplikací jsou pribalené s aplikací nebo je lze získat pomocí nástroje Composer a přiložené definice závislostí.
+	\par Dále je také požadována přístupná databáze MySQL nebo MariaDB pro trvalé úložiště dat.
+	\par Pro korektní odesílání emailových zpráv je potřeba také definovat SMTP server přes který se má korespondence odesílat.
 \chapter{Testování}
-
+	\par Jedním z hlavních požadavků na výslednou aplikaci je její spolehlivost a robustnost. Tomu je podřízeno rozsáhlé testování. Tvorba testů však není součástí této práce a je prováděna paralelní bakalářskou prací \uv{Komplexní testy webové aplikace} psanou Davidem Kůtou.
+	\section{Testování aplikace}
+	\par Aplikace byla připravována na různé druhy testů (viz \nameref{sec:testovatelnost}). Tyto testy byly vytvářeny současně při tvorbě aplikace přičemž byl systém průběžně testován.
+	\subsection{Jednotkové testování}
+	\par Ačkoli jednotkové testování v případě naší aplikace je velice omezené, je vytvořeno množství testů pro funkce pomocné třídy \texttt{Utils}. Tyto testy ověřují správnost výsledků funkcí na základě různých vstupních dat.
+	\subsection{Automatické testování}
+	\par Byly sestaveny automatické testy aplikace pomocí technologie Robot Framework. Pro testování je automatickými testy kompletně dokončeno pokrytí rolí Vedoucí a Mentor. Pro roli Garant jsou dokončeny významné části přímo souvisejících s organizací předmětů.
+	\par Pro účely automatického testování byl sestaven stav aplikace, kdy se v datech systému vyskytuje většina možných stavů aplikace. Tento stav lze nahrát pomocí tlačítka \uv{ResetDB} umístěného v liště horizontální navigace, které je přístupné pouze v testovatelském režimu aplikace.
+	\subsection{End-to-end testy}
+	\par Součástí testovací strategie jsou i testy, které otestují činnost aplikace v sekvencí scénářů. Scénáře jsou vytvořeny dle předpokládaného způsobu užití aplikace.
+	\subsection{Logování}
+	\par Aplikace si také pro účely testování zaznamenává data o provedených akcích. Při testování tedy možné sledovat posloupnost akcí, které se prováděly a které selhaly. Díky tomu lze jednoduše vystopovat příčinu nebo její přibližný výskyt.
+	\subsection{Manuální testování}
+	\par Některé funkce systému nebylo možné nebo přínosné testovat automaticky pomocí Robot Framework. Typickým příkladem těchto částí aplikace je stahování a odesílání emailů. Proto tyto činnosti byly otestovány manuálně v různých případech v různých částech aplikace.
+	\section{Výsledky testování}
+	\par Po zahájení testování se objevila celá řada chyb. Většina defektů byla způsobena nedokončeným ošetřením přístupu na jednotlivé stránky nebo neúplností dat při práci s databází. Veškeré defekty však byly původem implementačního rázu. Jednalo se tak o odklad implementace od návrhu a dosud nebyla nalezena chyba, která je způsobena chybou návrhu aplikace.
+	\par Nalezené odchylky od specifikace byly okamžitě po nalezení testerem komunikovány s vývojářem a buď byla chyba na místě opravena nebo byl vytvořen záznam v nástroji pro řízení projektu za účelem prošetření a případné opravy.  
 \chapter{Závěr}
+	\par Cílem práce bylo navrhnout a implementovat webovou aplikaci pomocí zvoleného PHP frameworku. Aplikace byla navržena a vytvořena. Její základní funkce potřebné pro organizaci předmětů TSP byly realizovány a otestovány. Některé méně významové funkce aplikace nebyly implementovány z důvodu stále nedokončené specifikace, kdy se čeká na diskuzi s dalšími zainteresovanými členy. Pro nasazení systému pro ostré použití je potřeba systém doladit, doplnit o chybějící chtěné funkce a nasazení na školní server. 
 
-
+	\par Úplné dokončení systému a jeho nasazení je plánováno mezi srpnem 2022 až prosincem 2022. Mezi vývojářem a zadavatelem je domluvena spolupráce na dokončení projektu a jeho nasazení. Případně dodělání dalších funkcí v navazujícím studiu vývojáře.
+	\section{Další možný vývoj}
+	\par Aplikace má mnoho potenciálu jak v univerzitním prostředí růst. Jedním z další možných rozšíření je implementace přihlášení skrz protokol Kerberos univerzitní sítě a umožnit tak jednotné přihlášení do aplikace. To by mohlo znamenat i možnost nové role Student, jejíž držitelé by si mohli prohlížet aktuální stav svého týmu a projektu a případně kontrolovat akce svého vedoucího.
+	\par Dalším rozšířením aplikace je přidat podporu pro netypické případy studia předmětů TSP (např. studium pouze jednoho z předmětů).
+	\par V neposlední řadě také byl vysloven nápad do budoucna rozšířit software i do dalších předmětů podobného zaměření (KIV/ASWI, KIV/ZSWI, atd.).
+\listoffigures
 %
 % SEZNAM UKÁZEK KÓDU
 %
