@@ -105,8 +105,10 @@
   \setcounter{page}{2}
   \thispagestyle{empty}
   \hbox{}\vfill
-  {\centering\Huge\bfseries Místo této strany bude\\ zadání práce.\par}
-  \vfill\vfill
+  %{\centering\Huge\bfseries Místo této strany bude\\ zadání práce.\par}
+  %\vfill\vfill
+  \includepdf[pages=-]{include/zadani.pdf}
+  \newpage
   %
   % DECLARATION PAGE
   %

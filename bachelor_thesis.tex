@@ -32,7 +32,8 @@
 %
 \abstracttexten{The text of the abstract (in English). It contains the English translation of the thesis title and a short description of the thesis.}
 
-\abstracttextcz{Text abstraktu (česky). Obsahuje krátkou anotaci (cca 10 řádek) v češtině. Budete ji potřebovat i při vyplňování údajů o bakalářské práci ve STAGu. Český i anglický abstrakt by měly být na stejné stránce a měly by si obsahem co možná nejvíce odpovídat (samozřejmě není možný doslovný překlad!).
+\abstracttextcz{
+	Bakalářská práce se zabývá návrhem systému pro podporu organizace předmětů TSP. Cílem je navrhnout a implementovat robustní webovou aplikaci s řízeným přístupem, která vychází ze specifikace předmětu. Součástí práce je zvolení vhodného frameworku, popsání případů užití a sestavení struktury modelu databáze. Návrh aplikace zohledňuje požadavky na modularitu, responzivitu a možnosti budoucího rozšíření. Při vývoji aplikace je pohlíženo zejména na použitelnost, spolehlivost a bezpečnost. Výsledná aplikace je důkladně otestována připravenými testy.
 }
 
 % Na titulní stranu a do textu prohlášení se automaticky vkládá 
@@ -83,6 +84,8 @@
 \usepackage{float}
 \usepackage{dirtree}
 
+\usepackage{nomencl}
+
 % Barvičky
 \usepackage{xcolor}
 \colorlet{mygray}{black!30}
@@ -126,6 +129,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+	\makenomenclature
 %
 \maketitle
 %\includepdf[pages=-]{include/zadani.pdf}[H]
@@ -456,12 +460,12 @@ $address->update([
 		\subsection{Spojovací tabulky}
 			\par Následující tabulky jsou pomocné tabulky pro realizaci N:M relace. Propojují typicky dvě tabulky s případným ohodnocením nebo informacemi dané relace.
 			\begin{itemize}
-				\item \texttt{TEAM\_ROLE\_STUDENT} -- propojení mezi tabulkami \texttt{TEAM\_ROLE} a \texttt{STUDENT}. Tabulka slouží pro zaznamenání přiřazení rolí jednotlivým členům týmu.
-				\item \texttt{TEAM\_SKILL} -- propojení mezi tabulkami \texttt{TAG} a \texttt{TEAM}. Tabulka specifikuje jednotlivé profily týmů.
-				\item \texttt{ASSIGNMENT\_TAG} -- propojení mezi tabulkami \texttt{TAG} a \texttt{ASSIGNMENT}. Tabulka specifikuje jaký profil týmu je předpokládán pro tým, který bude zadání řešit.
-				\item \texttt{PROGRESS\_STATE} -- propojení mezi tabulkami \texttt{PROGRESS} a \texttt{PROJECT}. Tabulka eviduje postup v řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
-				\item \texttt{REQUIREMENT\_STATE} -- propojení mezi tabulkami \texttt{REQUIREMENT} a \texttt{PROJECT}. Tabulka eviduje plnění kritérií při řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
-				\item \texttt{EXPERIENCE\_STATE} -- propojení mezi tabulkami \texttt{EXPERIENCE} a \texttt{PROJECT}. Tabulka eviduje stav potvrzení využitých zkušeností. Relace uchovává stavovou hodnotu daného přepínače.
+				\item \texttt{TEAM\_ROLE\_STUDENT} -- propojení tabulek \texttt{TEAM\_ROLE} a \texttt{STUDENT}. Tabulka slouží pro zaznamenání přiřazení rolí jednotlivým členům týmu.
+				\item \texttt{TEAM\_SKILL} -- propojení tabulek \texttt{TAG} a \texttt{TEAM}. Tabulka specifikuje jednotlivé profily týmů.
+				\item \texttt{ASSIGNMENT\_TAG} -- propojení tabulek \texttt{TAG} a \texttt{ASSIGNMENT}. Tabulka specifikuje jaký profil týmu je předpokládán pro tým, který bude zadání řešit.
+				\item \texttt{PROGRESS\_STATE} -- propojení tabulek \texttt{PROGRESS} a \texttt{PROJECT}. Tabulka eviduje postup v řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
+				\item \texttt{REQUIREMENT\_STATE} -- propojení tabulek \texttt{REQUIREMENT} a \texttt{PROJECT}. Tabulka eviduje plnění kritérií při řešení projektu. Relace uchovává stavovou hodnotu daného přepínače.
+				\item \texttt{EXPERIENCE\_STATE} -- propojení tabulek \texttt{EXPERIENCE} a \texttt{PROJECT}. Tabulka eviduje stav potvrzení využitých zkušeností. Relace uchovává stavovou hodnotu daného přepínače.
 			\end{itemize}
 		\subsection{Další tabulky}
 			\begin{itemize}
@@ -501,6 +505,7 @@ $address->update([
 	\par Pro vyřešení této otázky byl nalezen a použit nástroj RealFaviconGenerator\footnote{Dostupné na https://realfavicongenerator.net/}, který z jednoho vstupního obrázku umožní sestavit si vlastní nastavení faviconů pro různé platformy. Výsledkem tohoto procesu jsou prvky HTML hlavičky, které stačí implementovat do práce. 
 	\par Díky tomuto nástroji máme rychle zajištěnou kompatibilitu zobrazení ikonky webu.
 \chapter{Realizace}
+	\par Během realizace byly využívány postupy a technologie uvedené v předchozích kapitolách.
 	\section{Adresářová struktura}
 	\par Adresářová struktura vychází z třívrstvé MVP architektury a \uv{best practices} použití Nette Frameworku.
 	\par Struktura adresářů je naznačena v následujícím stromu:
@@ -524,34 +529,36 @@ $address->update([
 			.3 src \normalfont{-- CSS a JavaScript soubory}.
 			.3 index.php \normalfont{-- prvotní soubor, kterým se aplikace spouští}.
 	}
+
 	\section{Konfigurace aplikace}
-	\par Framework Nette používá konfiguraci pomocí externích souborů formátu NEON. Zápis konfigurace je velmi podobný zápisu formátu YAML.
+	\par Framework Nette používá konfiguraci pomocí externích souborů formátu NEON. Zápis konfigurace je velmi podobný zápisu ve formátu YAML.
 	\subsection{Konfigurace databázového spojení}
-	\par Na databázi se aplikace připojuje nativním připojením pomocí balíčku \texttt{nette/database}, kdy spojení získáme jako službu z DI kontejneru.
-	
+	\par Na databázi se aplikace připojuje nativním připojením v Nette pomocí balíčku \texttt{nette/database}, kdy spojení získáme jako službu z DI kontejneru.
+\begin{minipage}{\linewidth}
+		
 	\begin{lstlisting}[caption={Konfigurace databázového spojení},label={lst:spojeniDB}]
 database:
 	dsn: 'mysql:host=127.0.0.1;dbname=test'
 	user: root
 	password: password
 \end{lstlisting}
-	\par V nastavení databázové struktury (viz ukázka kódu \ref{lst:spojeniDB}) nastavujeme položku \texttt{dns} jako textový řetězec obsahující typ připojované databáze, adresu serveru (případně s číslem služby) a název výchozí zvoleného schématu v databázi. Dále se nastavuje uživatelské jméno a heslo pro připojení.
+\end{minipage}
+	\par V nastavení databázové struktury (viz ukázka kódu \ref{lst:spojeniDB}) nastavujeme položku \texttt{dns} jako textový řetězec obsahující typ připojované databáze, adresu serveru (případně s číslem služby) a název výchozího zvoleného schématu v databázi. Dále se nastavuje uživatelské jméno a heslo pro připojení.
 	\subsection{Vlastní nastavení aplikace}
 	\par Do konfigurace aplikace lze vkládat vlastní konfigurovatelné možnosti, které lze následně v aplikaci načítat a upravovat tak chování systému. V konkrétním případě tohoto využíváme pro nastavení režimu pro testování aplikace, kdy veškerá emailová komunikace se zasílá na předem definovaný email.
 	\section{Vylepšování aplikace}
-	\par Již implementované funkce jsou v aplikaci stále vylepšovány. Nejčastěji z důvodu nalezených defektů¨ a následujících případech.
+	\par Již implementované funkce jsou v aplikaci stále vylepšovány. Nejčastěji z důvodu nalezených defektů a následujících případech.
 	\subsection{Úpravy dle aktualizování specifikace}
-	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány. To vyžadovalo obvykle úpravy na již dokončených částí aplikace. Aktualizace specifikace pramenily většinou z diskusí autorů předmětů, kteří následně přehodnotili postoje k původně požadovaných funkcím. 
-	\par Některé změny 
-	\subsection{Připomínky budoucích uživatelů}
-	\par Od počátku vývoje jsou přijímány podměty pro vylepšování uživatelského komfortu z používání aplikace. Nejčastěji se jednalo o úpravy vzhledu, popisků nebo změnu pozicování prvků stránek. Vyskytly se však návrhy na přidání zcela nových funkcionalit, které zcela vytváří nový modul aplikace nebo pouze rozšiřuje již existující funkce.
+	\par V průběhu vývoje byla specifikace a požadavky několikrát upravovány. To vyžadovalo obvykle úpravy na již dokončených částí aplikace. Aktualizace specifikace pramenily většinou z diskusí garantů předmětu a budoucích mentorů, kteří následně přehodnotili postoje k původně požadovaných funkcím. 
+	\subsection{Připomínky budoucích uživatelů}´
+	\par Od počátku vývoje jsou přijímány podměty pro vylepšování uživatelského komfortu z používání aplikace. Nejčastěji se jednalo o úpravy vzhledu, popisků nebo změnu pozicování prvků stránek. Vyskytly se však návrhy na přidání zcela nových funkcionalit, které vytváří zcela nový modul aplikace nebo pouze rozšiřují již existující funkce.
 	\par Na začátku prosince roku 2021 bylo uskutečněno představení vyvíjeného softwaru budoucím mentorům předmětů TSP za účelem získání zpětné vazby od reálných budoucích uživatelů tohoto systému.
 	\par Veškeré návrhy a podměty byly projednány a případně zaneseny do nástrojů pro řízení projektu.
 	\section{Požadavky na zavedení aplikace}
 	\par Pro úspěšnou instalaci projektu na webovém serveru je potřeba splnit požadavky pro běh programu. Nejdůležitější požadavek pro spuštění je mít nainstalovaný webový server s modulem PHP podporující verzi PHP minimálně 7.2. Další požadavky se shodují s požadavkami frameworku Nette ve verzi 3.1. Nette však již spolehlivě běží na každé běžné PHP instalaci a zrušil tedy nástroj Requirement Checker.
-	\par Případné balíčky aplikací jsou pribalené s aplikací nebo je lze získat pomocí nástroje Composer a přiložené definice závislostí.
+	\par Případné balíčky aplikací jsou př¨ibalené s aplikací nebo je lze získat pomocí nástroje Composer a přiložené definice závislostí.
 	\par Dále je také požadována přístupná databáze MySQL nebo MariaDB pro trvalé úložiště dat.
-	\par Pro korektní odesílání emailových zpráv je potřeba také definovat SMTP server přes který se má korespondence odesílat.
+	\par Pro korektní odesílání emailových zpráv je potřeba také definovat SMTP server, přes který se má korespondence odesílat.
 \chapter{Testování}
 	\par Jedním z hlavních požadavků na výslednou aplikaci je její spolehlivost a robustnost. Tomu je podřízeno provedené rozsáhlé testování. Tvorba testů však není součástí této práce a je prováděna paralelní bakalářskou prací \uv{Komplexní testy webové aplikace} psanou Davidem Kůtou.
 	\section{Testování aplikace}
@@ -571,26 +578,117 @@ database:
 	\par Po zahájení testování se objevila celá řada selhání. Většina nalezených defektů byla způsobena nedokončeným ošetřením přístupu na jednotlivé stránky nebo \hyphenation{ne-úpl-nos-tí} dat při práci s databází. Veškeré defekty však byly původem implementačního rázu. Jednalo se tak o odklad implementace od návrhu a dosud nebyl nalezen defekt, který by byl způsoben chybou návrhu aplikace.
 	\par Nalezené odchylky od specifikace byly okamžitě po nalezení testerem komunikovány s vývojářem a buď byla chyba na místě opravena nebo byl vytvořen záznam v nástroji pro řízení projektu za účelem prošetření a případné opravy.  
 \chapter{Závěr}
-	\par Cílem práce bylo navrhnout a implementovat webovou aplikaci pomocí zvoleného PHP frameworku. Aplikace byla navržena a vytvořena. Její základní funkce potřebné pro organizaci předmětů TSP byly realizovány a otestovány. Některé méně významové funkce aplikace nebyly implementovány z důvodu stále nedokončené specifikace, kdy se čeká na diskuzi s dalšími zainteresovanými členy. Pro nasazení systému pro ostré použití je potřeba systém doladit, doplnit o chybějící chtěné funkce a nasazení na školní server. 
-
-	\par Úplné dokončení systému a jeho nasazení je plánováno mezi srpnem 2022 až prosincem 2022. Mezi vývojářem a zadavatelem je domluvena spolupráce na dokončení projektu a jeho nasazení. Případně dodělání dalších funkcí v navazujícím studiu vývojáře.
+	\par V bakalářské práci byla navržena a implementována webová aplikace, pro jejíž vývoj byl využity frameworky Nette a AdminLTE.
+	Aplikace je středního rozsahu a svojí komplexností poměrně výrazně přesáhla původní odhady. Bylo vytvořeno ?? PHP souborů a dalších ?? pomocných souborů, o celkové velikosti ??? KB zdrojového kódu. Aplikace dává k dispozici celkem ?? různých webových stránek.
+	Při práci byly dodržovány všechny dobré postupy běžné v současném SW vývoji, jako např. použití verzovacího systému, použití systému pro řízení projektu, použití systému pro správu incidentů. 
+	Při vývoji byl kladen zvýšený důraz na robustnost, modularitu a testovatelnost aplikace. Vlastní testy ale byly prováděny v rámci jiné bakalářské práce. Pozitivní význam důrazu na výše zmíněné vlastnosti se plně projevil již v průběhu vývoje, neboť prototyp aplikace byl již v prosinci 2021 podroben oponentuře budoucích uživatelů. A na jejím základě vznikly četné požadavky na úpravy, změny a doplnění. Díky výše zmíněným vlastnostem aplikace bylo možné tyto požadavky beze zbytku provést a otestovat.
+	Vyvinutá aplikace svojí realizovanou funkcionalitou splňuje všechny požadavky na nasazení v předmětu KIV/TSP1.
+	
+	V současné době je aplikace nasazena na vývojovém prostředí. Úplné dokončení aplikace, tj. její nasazení na katedrální server a doladění všech přístupových práv, je plánováno v období srpen až září 2022 tak, aby již v ZS akademického roku 2022/23 mohli aplikaci využívat vyučující i studenti předmětu KIV/TSP1.
 	\section{Další možný vývoj}
 	\par Aplikace má mnoho potenciálu jak v univerzitním prostředí růst. Jedním z další možných rozšíření je implementace přihlášení skrz protokol Kerberos univerzitní sítě a umožnit tak jednotné přihlášení do aplikace. To by mohlo znamenat i možnost nové role Student, jejíž držitelé by si mohli prohlížet aktuální stav svého týmu a projektu a případně kontrolovat akce svého vedoucího.
 	\par Dalším rozšířením aplikace je přidat podporu pro netypické případy studia předmětů TSP (např. studium pouze jednoho z předmětů).
-	\par V neposlední řadě také byl vysloven nápad do budoucna rozšířit software i do dalších předmětů podobného zaměření (KIV/ASWI, KIV/ZSWI, atd.).
+	\par V neposlední řadě také byl předložen nápad do budoucna rozšířit software i do dalších předmětů podobného zaměření (KIV/ASWI, KIV/ZSWI, atd.).
 \listoffigures
 %
 % SEZNAM UKÁZEK KÓDU
 %
 \lstlistoflistings
-
 % 
+
+\chapter*{Seznam použitých zkratek}
+% \printglossaries
+\begin{description}
+	\item[PHP] Hypertextový preprocesor
+	\item[HTML] Hyper Text Markup Language
+	\item[SGML] Standard Generalized Markup Language
+	\item[CSS] Cascading Style Sheet
+	\item[PDF] Portable Document Format
+	\item[CSV] Comma-separated values
+	\item[UC] Use Case
+	\item[DI] Dependency Injection
+	\item[MVC] Třívrstvá architektura Model-View-Controller
+	\item[MVP] Třívrstvá architektura Model-View-Presenter
+	\item[SQL] Structured Query Language
+\end{description}
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
 %
 \bibliographystyle{csplainnatkiv}
 {\raggedright\small
 \bibliography{literatura}
+
+\appendix
+\chapter{Případy užití}
+Případy užití jsou sestaveny v originální XML struktuře následně vygenerované do čitelné HTML podoby. Následující obrázek ?? představuje ukázku těchto vygenerovaných výstupů. Veškeré sepsané případy užití jsou součástí obsahu odevzdané práce. Případy jsou očíslovány dle tabulky ??.
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{lll}
+		Číslo UC & Popis & Role\\
+		UC.01	& Přihlášení	&    \\
+		UC.02	&       &    \\
+		UC.02	&       &   \\
+		UC.03	&       &    \\
+		UC.04	&       &    \\
+		UC.05	&       &    \\
+		UC.06	&       &    \\
+		UC.07	&       &    \\
+		UC.08	&       &    \\
+		UC.09	&       &    \\
+		UC.10	&       &    \\
+		UC.11	&       &    \\
+		UC.12	&       &    \\
+		UC.13	&       &    \\
+		UC.14	&       &    \\
+		UC.15	&       &    \\
+		UC.16	&       &    \\
+		UC.17	&       &    \\
+		UC.18	&       &    \\
+		UC.19	&       &    \\
+		UC.20	&       &    \\
+		UC.21	&       &    \\
+		UC.22	&       &    \\
+		UC.23	&       &    \\
+		UC.24	&       &    \\
+		UC.25	&       &    \\
+		UC.26	&       &    \\
+		UC.27	&       &    \\
+		UC.28	&       &    \\
+		UC.29	&       &    \\
+		UC.30	&       &    \\
+		UC.31	&       &    \\
+		UC.32	&       &    \\
+		UC.33	&       &    \\
+		UC.34	&       &    \\
+		UC.35	&       &    \\
+		UC.36	&       &    \\
+		UC.37	&       &    \\
+		UC.38	&       &    \\
+		UC.39	&       &    \\
+		UC.40	&       &    \\
+		UC.41	&       &    \\
+		UC.42	&       &    \\
+		UC.43	&       &    \\
+		UC.44	&       &    \\
+		UC.45	&       &    \\
+		UC.46	&       &    \\
+		UC.47	&       &    \\
+		UC.48	&       &    \\
+		UC.49	&       &    \\
+		UC.50	&       &    \\
+		UC.51	&       &    \\
+		UC.52	&       &    \\
+		UC.53	&       &    \\
+		UC.54	&       &    \\
+		UC.55	&       &    \\
+		UC.56	&       &    \\
+		UC.57	&       &    \\
+		UC.58	&       &    \\
+		UC.59	&       &    \\
+	\end{tabular}
+\end{table}
+\chapter{Obsah CD}
 }
 
 \end{document}
