@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  4 MAY 2022 02:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  5 MAY 2022 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,9 +365,9 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count279
 \AM@templatesizebox=\box51
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 77.
-Package hyperref Info: Option `unicode' set `true' on input line 77.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 77.
+Package hyperref Info: Option `colorlinks' set `true' on input line 79.
+Package hyperref Info: Option `unicode' set `true' on input line 79.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 79.
  (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
@@ -612,27 +612,31 @@ ftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box108
-) (bachelor_thesis.aux)
+) (bachelor_thesis.aux
+
+LaTeX Warning: Label `fig:uc_example' multiply defined.
+
+)
 \openout1 = `bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -694,7 +698,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 137.
+Package hyperref Info: Link coloring ON on input line 139.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -708,9 +712,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 137.
-LaTeX Info: Redefining \pageref on input line 137.
-LaTeX Info: Redefining \nameref on input line 137.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
  (bachelor_thesis.out) (bachelor_thesis.out)
 \@outlinefile=\write3
 \openout3 = `bachelor_thesis.out'.
@@ -728,92 +732,92 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
  [1
 
 {C:/Users/hintik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<include/zadani.pdf, id=330, 597.432pt x 844.83629pt>
+<include/zadani.pdf, id=366, 597.51233pt x 845.0471pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf>
-Package pdftex.def Info: include/zadani.pdf  used on input line 141.
-(pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
+Package pdftex.def Info: include/zadani.pdf  used on input line 143.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf>
-Package pdftex.def Info: include/zadani.pdf  used on input line 141.
-(pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<include/zadani.pdf, id=333, page=1, 597.432pt x 844.83629pt>
+Package pdftex.def Info: include/zadani.pdf  used on input line 143.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<include/zadani.pdf, id=369, page=1, 597.51233pt x 845.0471pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
-(pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 
 [2]
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
- [3 <./include/zadani.pdf, page is rotated 270 degrees>]
-<include/zadani.pdf, id=345, page=2, 597.432pt x 844.83629pt>
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [3 <./include/zadani.pdf>]
+<include/zadani.pdf, id=400, page=2, 597.51233pt x 845.0471pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
- [4 <./include/zadani.pdf, page is rotated 270 degrees>] [5
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 143.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [4 <./include/zadani.pdf>] [5
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-41.
+43.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-41.
+43.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-141.
+143.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-141.
+143.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 141.
+(Font)              <12> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 141.
+(Font)              <8> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 141.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 141
+(Font)              <6> on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
 .
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 141
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
 .
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -828,23 +832,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [9]
 Kapitola 1.
 
-Overfull \hbox (0.54141pt too wide) in paragraph at lines 143--144
+Overfull \hbox (0.54141pt too wide) in paragraph at lines 145--146
 \T1/lmr/m/n/12 Na Ka-ted∞e in-for-ma-tiky a v˝-po-£etnÌ tech-niky vznik· nov˝ p
 ∞ed-m•t T˝mov˝|
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 146.
+(Font)              <10> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 146.
+(Font)              <7> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 146.
+(Font)              <5> on input line 148.
 [10
 
 ]
 Kapitola 2.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-53.
+55.
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [11
@@ -856,16 +860,16 @@ Kapitola 3.
 
 ] [14] [15]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-11.
+13.
 
 (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [16]
 [17] [18] [19]
-<img/rizeni_projektu/kanban.png, id=530, 1239.88219pt x 594.72188pt>
+<img/rizeni_projektu/kanban.png, id=592, 1239.88219pt x 594.72188pt>
 File: img/rizeni_projektu/kanban.png Graphic file (type png)
 <use img/rizeni_projektu/kanban.png>
-Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 253
+Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 255
 .
 (pdftex.def)             Requested size: 386.95749pt x 185.6051pt.
  [20
@@ -873,23 +877,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.263 	\par
+l.265 	\par
             MantisBT vyu≈æ√≠v√°me pro nahla≈°ov√°n√≠ objeven√Ωch selh√°n√≠ n...
  <./img/rizeni_projektu/kanban.png>] [21]
 Kapitola 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 [22
 
 ] [23] [24] [25] [26] [27]
-<img/use_case/use_case_diagram.png, id=593, 1184.425pt x 1204.5pt>
+<img/use_case/use_case_diagram.png, id=655, 1184.425pt x 1204.5pt>
 File: img/use_case/use_case_diagram.png Graphic file (type png)
 <use img/use_case/use_case_diagram.png>
 Package pdftex.def Info: img/use_case/use_case_diagram.png  used on input line 
-356.
+358.
 (pdftex.def)             Requested size: 309.56717pt x 314.81674pt.
 
 
@@ -900,7 +904,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.360 	\chapter
+l.362 	\chapter
                {Architektura aplikace} <./img/use_case/use_case_diagram.png (PN
 G copy)>]
 Kapitola 5.
@@ -908,52 +912,52 @@ Kapitola 5.
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 372.
+nput line 374.
 
-Overfull \hbox (1.08696pt too wide) in paragraph at lines 387--388
+Overfull \hbox (1.08696pt too wide) in paragraph at lines 389--390
 \T1/lmr/m/n/12 nÈmu kÛdu. Prin-cip to-hoto zp∑-sobu pro-gra-mo-v·nÌ spo-£Ìv· v 
 p∞e-d·-v·nÌ zdroj∑|
  []
 
 [31] [32] [33] [34]
-<img/database/database_model.png, id=663, 1302.8675pt x 1353.055pt>
+<img/database/database_model.png, id=725, 1302.8675pt x 1353.055pt>
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
-Package pdftex.def Info: img/database/database_model.png  used on input line 43
-9.
+Package pdftex.def Info: img/database/database_model.png  used on input line 44
+1.
 (pdftex.def)             Requested size: 309.56717pt x 321.47777pt.
  [35] [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.452 				\item \texttt
+l.454 				\item \texttt
                        {MEETING} -- tabulka pro evidenci sch≈Øzek t√Ωm≈Ø <./img
 /database/database_model.png>] [37]
-Overfull \hbox (1.01947pt too wide) in paragraph at lines 486--487
+Overfull \hbox (1.01947pt too wide) in paragraph at lines 488--489
 \T1/lmr/m/n/12 ResponzivnÌ desing spo-£Ìv· v p∞i-zp∑-so-benÌ zob-ra-zenÌ ob-sah
 u ≤Ì∞ce okna webo-|
  []
 
 [38]
-<img/logo/prototype_logo.png, id=686, 326.72063pt x 239.89626pt>
+<img/logo/prototype_logo.png, id=748, 326.72063pt x 239.89626pt>
 File: img/logo/prototype_logo.png Graphic file (type png)
 <use img/logo/prototype_logo.png>
-Package pdftex.def Info: img/logo/prototype_logo.png  used on input line 497.
+Package pdftex.def Info: img/logo/prototype_logo.png  used on input line 499.
 (pdftex.def)             Requested size: 154.78062pt x 113.64807pt.
 
-Underfull \hbox (badness 1331) in paragraph at lines 498--498
+Underfull \hbox (badness 1331) in paragraph at lines 500--500
 []\T1/lmr/m/n/12 Obr·zek 5.2: []PrvotnÌ n·-vrh
  []
 
-<img/logo/transparent_bg_logo.png, id=687, 1608.79305pt x 1608.79305pt>
+<img/logo/transparent_bg_logo.png, id=749, 1608.79305pt x 1608.79305pt>
 File: img/logo/transparent_bg_logo.png Graphic file (type png)
 <use img/logo/transparent_bg_logo.png>
 Package pdftex.def Info: img/logo/transparent_bg_logo.png  used on input line 5
-02.
+04.
 (pdftex.def)             Requested size: 154.78062pt x 154.77623pt.
 
-Underfull \hbox (badness 3646) in paragraph at lines 503--503
+Underfull \hbox (badness 3646) in paragraph at lines 505--505
 []\T1/lmr/m/n/12 Obr·zek 5.3: []Fin·lnÌ verze
  []
 
@@ -962,112 +966,200 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.512 \chapter
+l.514 \chapter
               {Realizace}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.512 \chapter
+l.514 \chapter
               {Realizace} <./img/logo/prototype_logo.png> <./img/logo/transpare
 nt_bg_logo.png>]
 Kapitola 6.
 [41
 
 ] [42] [43]
+<img/ukazky/navigace.png, id=802, 188.95593pt x 280.04625pt>
+File: img/ukazky/navigace.png Graphic file (type png)
+<use img/ukazky/navigace.png>
+Package pdftex.def Info: img/ukazky/navigace.png  used on input line 598.
+(pdftex.def)             Requested size: 188.95546pt x 280.04555pt.
+ [44]
+<img/ukazky/alert.png, id=811, 140.77594pt x 63.23625pt>
+File: img/ukazky/alert.png Graphic file (type png)
+<use img/ukazky/alert.png>
+Package pdftex.def Info: img/ukazky/alert.png  used on input line 606.
+(pdftex.def)             Requested size: 140.77557pt x 63.23608pt.
+ [45
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.612 	\par
+            Na t√©to str√°nce je umo≈ænƒõno mentor≈Øm si nementorovan√© zad√...
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.612 	\par
+            Na t√©to str√°nce je umo≈ænƒõno mentor≈Øm si nementorovan√© zad√...
+ <./img/ukazky/navigace.png> <./img/ukazky/alert.png>]
+<img/ukazky/formular.png, id=821, 397.485pt x 313.17pt>
+File: img/ukazky/formular.png Graphic file (type png)
+<use img/ukazky/formular.png>
+Package pdftex.def Info: img/ukazky/formular.png  used on input line 616.
+(pdftex.def)             Requested size: 386.95749pt x 304.88315pt.
+ [46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.627 	
+       	 <./img/ukazky/formular.png>]
+<img/ukazky/ctyrstavova_hodnota.png, id=835, 160.34906pt x 164.11313pt>
+File: img/ukazky/ctyrstavova_hodnota.png Graphic file (type png)
+<use img/ukazky/ctyrstavova_hodnota.png>
+Package pdftex.def Info: img/ukazky/ctyrstavova_hodnota.png  used on input line
+ 650.
+(pdftex.def)             Requested size: 160.34866pt x 164.11272pt.
+ [47]
+<img/ukazky/mentorovane_projekty.png, id=854, 825.0825pt x 281.55188pt>
+File: img/ukazky/mentorovane_projekty.png Graphic file (type png)
+<use img/ukazky/mentorovane_projekty.png>
+Package pdftex.def Info: img/ukazky/mentorovane_projekty.png  used on input lin
+e 659.
+(pdftex.def)             Requested size: 386.95749pt x 132.04585pt.
+ [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.663 \chapter
+              {Testov√°n√≠}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.663 \chapter
+              {Testov√°n√≠} <./img/ukazky/ctyrstavova_hodnota.png> <./img/ukazk
+y/mentorovane_projekty.png>]
 Kapitola 7.
-[44
+[49
 
 ]
-Overfull \hbox (3.66666pt too wide) in paragraph at lines 583--584
+Overfull \hbox (3.66666pt too wide) in paragraph at lines 679--680
 \T1/lmr/m/n/12 fekt∑ byla zp∑-so-bena ne-do-kon-£e-n˝m o≤et-∞e-nÌm p∞Ì-stupu na
  jed-not-livÈ str·nky|
  []
 
-[45]
+[50]
 Kapitola 8.
-[46
+[51
 
 ] (bachelor_thesis.lof)
 \tf@lof=\write5
 \openout5 = `bachelor_thesis.lof'.
 
- [47
+ [52
 
 ] (bachelor_thesis.lol)
 \tf@lol=\write6
 \openout6 = `bachelor_thesis.lol'.
 
- [48
+ [53
 
-] (bachelor_thesis.bbl [49
+] (bachelor_thesis.bbl [54
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 25.
-) [50
+) [55
 
 ]
 P\v {r}\'{\i }loha A.
-<img/use_case/use_case_example.png, id=777, 1651.16875pt x 2182.1525pt>
+<img/use_case/use_case_example.png, id=929, 1651.16875pt x 2182.1525pt>
 File: img/use_case/use_case_example.png Graphic file (type png)
 <use img/use_case/use_case_example.png>
 Package pdftex.def Info: img/use_case/use_case_example.png  used on input line 
-635.
+732.
 (pdftex.def)             Requested size: 348.25937pt x 460.23007pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 640.
+               Default added (so using `tbp') on input line 737.
 
-[51
+[56
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.A.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.715 \chapter
-              {Obsah CD} <./img/use_case/use_case_example.png>] [52
+l.812 \chapter
+              {Datab√°zov√Ω EER model} <./img/use_case/use_case_example.png>]
+[57
 pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.715 \chapter
-              {Obsah CD}] [53]
+l.812 \chapter
+              {Datab√°zov√Ω EER model}] [58]
 P\v {r}\'{\i }loha B.
-[54
+File: img/database/database_model.png Graphic file (type png)
+<use img/database/database_model.png>
+Package pdftex.def Info: img/database/database_model.png  used on input line 81
+6.
+(pdftex.def)             Requested size: 386.95749pt x 401.85239pt.
+[59
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.820 \chapter
+              {Obsah elektronick√© p≈ô√≠lohy}]
+P\v {r}\'{\i }loha C.
+[60
 
 ] (bachelor_thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2D0CE9740752EAE9284E26F7606F3FCC;11489.
- ) 
+(rerunfilecheck)             Checksum: C28A436F1B281AB69D8EED3D116F15B4;12957.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 723 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 17391 strings out of 478659
- 278526 string characters out of 2845447
- 891680 words of memory out of 3000000
- 34974 multiletter control sequences out of 15000+600000
+ 17557 strings out of 478659
+ 281761 string characters out of 2845447
+ 942838 words of memory out of 3000000
+ 35077 multiletter control sequences out of 15000+600000
  491117 words of font info for 86 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  70i,17n,76p,1061b,2967s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
-{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
-:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><
-C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
-><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
-b>
-Output written on bachelor_thesis.pdf (54 pages, 1855820 bytes).
+{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+lm/lm-ec.enc}{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
+lm-mathsy.enc}{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm
+/lm-ts1.enc}<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmbx12.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmcsc10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmr10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmr12.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmr17.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmr6.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmr7.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmr8.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmri10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmsy10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmtt10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmtt12.pfb>
+Output written on bachelor_thesis.pdf (60 pages, 1410910 bytes).
 PDF statistics:
- 901 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 696 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 277 named destinations out of 1000 (max. 500000)
+ 793 words of extra memory for PDF output out of 10000 (max. 10000000)
 

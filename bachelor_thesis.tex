@@ -30,7 +30,9 @@
 % 
 % Texty abstraktů (anglicky, česky)
 %
-\abstracttexten{The text of the abstract (in English). It contains the English translation of the thesis title and a short description of the thesis.}
+\abstracttexten{
+	The bachelor thesis deals with the design of a system to support the organization of TSP subjects. The aim is to design and implement a robust web application with controlled access, which is based on the specification of the subject. Part of the work is to select a suitable framework, describe use cases and build the structure of the database model. The design of the application takes into account the requirements for modularity, responsiveness and possibilities for future expansion. During the development of the application, emphasis was placed especially on usability, reliability and security. The resulting application is thoroughly tested with prepared tests.
+}
 
 \abstracttextcz{
 	Bakalářská práce se zabývá návrhem systému pro podporu organizace předmětů TSP. Cílem je navrhnout a implementovat robustní webovou aplikaci s řízeným přístupem, která vychází ze specifikace předmětu. Součástí práce je zvolení vhodného frameworku, popsání případů užití a sestavení struktury modelu databáze. Návrh aplikace zohledňuje požadavky na modularitu, responzivitu a možnosti budoucího rozšíření. Při vývoji aplikace byl kladen důraz zejména na použitelnost, spolehlivost a bezpečnost. Výsledná aplikace je důkladně otestována připravenými testy.
@@ -550,7 +552,22 @@ database:
 \end{minipage}
 	\par V nastavení databázové struktury (viz ukázka kódu \ref{lst:spojeniDB}) nastavujeme položku \texttt{dns} jako textový řetězec obsahující typ připojované databáze, adresu serveru (případně s číslem služby) a název výchozího zvoleného schématu v databázi. Dále se nastavuje uživatelské jméno a heslo pro připojení.
 	\subsection{Vlastní nastavení aplikace}
-	\par Do konfigurace aplikace lze vkládat vlastní konfigurovatelné možnosti, které lze následně v aplikaci načítat a upravovat tak chování systému. V konkrétním případě tohoto využíváme pro nastavení režimu pro testování aplikace, kdy veškerá emailová komunikace se zasílá na předem definovaný email.
+	\par Do konfigurace aplikace lze vkládat vlastní konfigurovatelné možnosti, které lze následně v aplikaci načítat a upravovat tak chování systému. V konkrétním případě tohoto využíváme pro nastavení režimu pro testování aplikace, kdy veškerá emailová komunikace se zasílá na předem definovaný email (viz ukázka kódu \ref{lst:nastaveni-test}).
+		\begin{lstlisting}[caption={Konfigurace testovacího režimu},label={lst:nastaveni-test}]
+parameters:
+	config:
+		testing:
+			enabled: true
+			
+			databaseResetFileName: 'testDatabase.sql'
+			
+			testMail: true
+			testMailAddress: 'hintik@hintik.cz'
+			# testMailAddress: 'schooltestforsmtp123@gmail.com'
+			
+			testPassword: true
+			testPasswordValue: 'tsp'
+		\end{lstlisting}
 	\section{Vylepšování aplikace}
 	\par Již implementované funkce jsou v aplikaci stále vylepšovány. Nejčastěji z důvodu nalezených defektů a následujících případech.
 	\subsection{Úpravy dle aktualizování specifikace}
@@ -564,6 +581,85 @@ database:
 	\par Případné balíčky aplikací jsou př¨ibalené s aplikací nebo je lze získat pomocí nástroje Composer a přiložené definice závislostí.
 	\par Dále je také požadována přístupná databáze MySQL nebo MariaDB pro trvalé úložiště dat.
 	\par Pro korektní odesílání emailových zpráv je potřeba také definovat SMTP server, přes který se má korespondence odesílat.
+	\pagebreak
+	\section{Výsledná aplikace}
+	\par Aplikace byla vyvinuta do verze 0.9. Tato verze již poskytuje dostatečné funkce pro konání prvního ročníků předmětů TSP. Funkce \uv{Ročníky} není plně implementována a nyní aplikace zobrazuje informace nezávisle na aktuálně zvoleném ročníku. Funkce vícejazyčnosti je připravena. U vícejazyčnosti je potřeba pouze vytvořit soubory s překlady a nahradit jimi aktuálně vložené řetězce přímo do šablony.
+	\subsection{Verze 1.0}
+	\par Vývoj nadále bude pokračovat s cílem dokončit implementaci nedokončených funkcionalit, vylepšení vzhledu a responzivity.
+	\par Verze 1.0 by měla představovat již zcela hotovou aplikaci pro organizaci předmětů TSP i v následujících ročnících. S touto verzí je počítáno s nasazením na univerzitním serveru, kde bude produkční verze aplikace poskytována pro účely organizace výuky.
+	\section{Ukázky vybraných částí aplikace}
+	\par V následující sekci jsou představeny kritické části aplikace, které jsou důležité pro základní funkci aplikace.
+	\subsection{Rozhraní}
+	\par Rozhraní a celkový vizuál aplikace je tvořen frontendovým frameworkem AdminLTE. Celý vzhled tak vychází z ukázek\footnote{https://adminlte.io/themes/v3/} použití tohoto frameworku.
+	\subsubsection{Navigace}
+	\par Společnou částí aplikace jsou navigační panely. Postranní navigační panel obsahuje položky dle role aktuálního uživatele (viz obrázek \ref{fig:example_nav}).
+	 \begin{figure}[H]
+	 	\centering
+	 	\includegraphics{img/ukazky/navigace}
+	 	\caption{Ukázka navigace mentora (zdroj: vlastní)}
+	 	\label{fig:example_nav}
+	 \end{figure}
+ 	\subsubsection{Alerty}
+ 	\par Uživatel je po každé akci, která upravuje data, informován vyskakujícím okénkem (viz obrázek \ref{fig:example_alert}) obsahují zprávu o úspěšnosti akce. Tato komponenta je důležitá pro informovanost uživatele a také napomáhá k testování aplikace. Při testování se jedná o jeden z posuzujících se o úspěšnosti vykonané operace. Pro důvody testování okénko samovolně nezmizí a je potřeba ho zavřít kliknutím na křížek.
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics{img/ukazky/alert}
+ 		\caption{Ukázka alertu po vykonané akce (zdroj: vlastní)}
+ 		\label{fig:example_alert}
+ 	\end{figure}
+	\subsection{Detail zadání}
+	\par Stránka detailu zadání obsahuje podrobnější informace o vyvěšeném zadání. Uživateli je zde zadání představeno a jsou zde zobrazeny důležité specifikující údaje. Je zde také umožněno stažení podrobného popisu zadání ve formátu PDF odkazem umístěného pod stručným popisem zadání. Důležitými zobrazovanými informacemi jsou také jména a kontaktní informace zadavatele a přiřazeného mentor (pokud je přiřazen).
+	\par Na této stránce je umožněno mentorům si nementorované zadání převzít a tím ho začít mentorovat. Vedoucím týmů je zde poskytnut formulář (viz obrázek \ref{fig:ukazka_formular}) pro vyjádření zájmu o téma (zredukovaná obslužná funkce formuláře viz ukázka kódu \ref{lst:obsluzna-funkce-formulare}).
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{img/ukazky/formular}
+		\caption{Ukázka formuláře pro vytvoření zájmu o téma (zdroj: vlastní)}
+		\label{fig:ukazka_formular}
+	\end{figure}
+\begin{lstlisting}[caption={Zkrácený úryvek funkce obsluhy formuláře pro projevení zájmu},label={lst:obsluzna-funkce-formulare}]
+public function showInterestFormSucceeded(array $values):void {
+	$assignmentId = $this->getParameter('id');
+	$team = $this->studentManager->teamRelToStudent($this->studentManager->getStudentByUser($this->getUser()->getId()));
+	
+	$this->database->beginTransaction();
+	if($this->interestManager->getActiveInterests($team)->count() < 5) {
+		
+		$interest = $this->interestManager->createInterest($assignmentId, $team,
+		new Nette\Utils\DateTime(), $values['weight']);
+		$this->database->commit();
+		$this->flashMessage("Uspech;Vas zájem o tema byl vyjadren.", "bg-success");
+	} else {
+		$this->database->commit();
+		$this->flashMessage('Chyba;Pri projeveni zajmu se vyskytla chyba.', "bg-warning");
+	}
+	$this->redirect('this');
+}
+\end{lstlisting}
+	\subsection{Stránka projektu}
+	\par Nejpodstatnější stránka aplikace je stránka projektu. Na této stránce probíhá evidence postupu práce na projektu ze strany vedoucího týmu a mentora projektu. Stránka se dělí na 4 části:
+	\begin{itemize}
+		\item plnění minimálních kritérií,
+		\item splnění postupu řešení projektu,
+		\item využité zkušenosti,
+		\item informace o projektu.
+	\end{itemize}
+	\par První tři zmíněné části tvoří evidenci postupu projektu. Každá položka v těchto částech obsahuje čtyřstavovou hodnotu od vedoucího týmu a mentora. Tato hodnota se volí pomocí rozbalovacího menu tlačítek (viz obrázek \ref{fig:menu_tlacitek}).
+	\begin{figure}[H]
+		\centering
+		\includegraphics{img/ukazky/ctyrstavova_hodnota}
+		\caption{Rozbalovací menu tlačítek pro čtyřstavovou hodnotu (zdroj: vlastní)}
+		\label{fig:menu_tlacitek}
+	\end{figure}
+	\par Čtvrtá část obsahuje obecné informace o projektu, týmu a mentorovi s případnými prokliky. Karta také obsahuje odkazy na stránky třetích stran, které nastavuje vedoucí týmu. Nakonec se zde zobrazuje i informace o udělených zápočtech a jednotlivé záznamy o proběhlých obhajobách.
+	\subsection{Mentorované projekty}
+	\par Stránka mentorovaných projektů je důležitým rozcestníkem pro mentora. Uživatel zde má důležitou tabulku o mentorovaných projektech a hlavně stručnou informaci o postupu každého projektu (viz obrázek \ref{fig:postup_projektu}). Díky ukazateli postupu projektu mentor na první pohled vidí, jak si jednotlivé týmy vedou.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{img/ukazky/mentorovane_projekty}
+		\caption{Tabulka mentorovaných projektů (zdroj: vlastní)}
+		\label{fig:postup_projektu}
+	\end{figure}
 \chapter{Testování}
 	\par Jedním z hlavních požadavků na výslednou aplikaci je její spolehlivost a robustnost. Tomu je podřízeno provedené rozsáhlé testování. Tvorba testů však není součástí této práce a je prováděna paralelní bakalářskou prací \uv{Komplexní testy webové aplikace} psanou Davidem Kůtou.
 	\section{Testování aplikace}
@@ -584,7 +680,7 @@ database:
 	\par Nalezené odchylky od specifikace byly okamžitě po nalezení testerem komunikovány s vývojářem a buď byla chyba na místě opravena nebo byl vytvořen záznam v nástroji pro řízení projektu za účelem prošetření a případné opravy.  
 \chapter{Závěr}
 	\par V bakalářské práci byla navržena a implementována webová aplikace, pro jejíž vývoj byl využity frameworky Nette a AdminLTE.
-	Aplikace je středního rozsahu a svojí komplexností poměrně výrazně přesáhla původní odhady. Bylo vytvořeno ?? PHP souborů a dalších ?? pomocných souborů, o celkové velikosti ??? KB zdrojového kódu. Aplikace dává k dispozici celkem ?? různých webových stránek.
+	Aplikace je středního rozsahu a svojí komplexností poměrně výrazně přesáhla původní odhady. Bylo vytvořeno 82 PHP souborů a dalších 185 pomocných souborů, o celkové velikosti 249 MB zdrojového kódu (56,3 MB bez přiložených knihoven). Aplikace dává k dispozici celkem 47 různých webových stránek.
 	Při práci byly dodržovány všechny dobré postupy běžné v současném SW vývoji, jako např. použití verzovacího systému, použití systému pro řízení projektu, použití systému pro správu incidentů. 
 	Při vývoji byl kladen zvýšený důraz na robustnost, modularitu a testovatelnost aplikace. Vlastní testy ale byly prováděny v rámci jiné bakalářské práce. Pozitivní význam důrazu na výše zmíněné vlastnosti se plně projevil již v průběhu vývoje, neboť prototyp aplikace byl již v prosinci 2021 podroben oponentuře budoucích uživatelů. A na jejím základě vznikly četné požadavky na úpravy, změny a doplnění. Díky výše zmíněným vlastnostem aplikace bylo možné tyto požadavky beze zbytku provést a otestovat.
 	Vyvinutá aplikace svojí realizovanou funkcionalitou splňuje všechny požadavky na nasazení v předmětu KIV/TSP1.
@@ -615,6 +711,7 @@ database:
 	\item[MVC] Třívrstvá architektura Model-View-Controller
 	\item[MVP] Třívrstvá architektura Model-View-Presenter
 	\item[SQL] Structured Query Language
+	\item[YAML] YAML Ain't Markup Language
 	\item[KIV] Katedra informatiky a výpočetní techniky
 	\item[TSP] Týmový softwarový projekt
 	\item[PSTSP] Podpůrný software TSP
@@ -628,7 +725,7 @@ database:
 
 \appendix
 \chapter{Případy užití}
-Případy užití jsou sestaveny v originální XML struktuře následně vygenerované do čitelné HTML podoby. Následující obrázek ?? představuje ukázku těchto vygenerovaných výstupů. Veškeré sepsané případy užití jsou součástí obsahu odevzdané práce. Případy jsou očíslovány dle tabulky \ref{tab:use-case-table}.
+Případy užití jsou sestaveny v originální XML struktuře následně vygenerované do čitelné HTML podoby. Následující obrázek \ref{fig:uc_example} představuje ukázku těchto vygenerovaných výstupů. Veškeré sepsané případy užití jsou součástí obsahu odevzdané práce. Případy jsou očíslovány dle tabulky \ref{tab:use-case-table}.
 
 \begin{figure}[H]
 	\centering
@@ -712,7 +809,39 @@ Případy užití jsou sestaveny v originální XML struktuře následně vygene
 		
 	\end{xltabular}
 \end{table}
-\chapter{Obsah CD}
+\chapter{Databázový EER model}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/database/database_model}
+	\caption{EER model diagram (zdroj: vlastní)}
+	\label{fig:uc_example}
+\end{figure}
+\chapter{Obsah elektronické přílohy}
+\section{Adresářová struktura}
+
+\dirtree{%
+.1 /.
+	.2 Aplikace\_a\_knihovny.
+		.3 Aplikace \normalfont{-- projekt webové aplikace}.
+		.3 EER\_DB\_model \normalfont{-- EER model databáze}.
+			.4 database\_model.mwb \normalfont{-- model databáze ve formátu MWB (MySQL Workbench)}.
+			.4 eer\_model\_diagram.svg \normalfont{-- EER model diagram databázové struktury ve formátu SVG}.
+		.3 SQL\_skripty \normalfont{-- SQL skripty pro vytvoření databáze}.
+			.4 PSTSP\_DB\_structure.sql \normalfont{-- SQL skript pro vytvoření struktury databáze}.
+			.4 PSTSP\_DB\_structure\_data1.sql \normalfont{-- SQL skript pro vytvoření struktury databáze a naplnění 1. variantou testovacích dat}.
+			.4 PSTSP\_DB\_structure\_data2.sql \normalfont{-- SQL skript pro vytvoření struktury databáze a naplnění 2. variantou testovacích dat}.
+		.3 UC.
+			.4 diagram.
+				.5 use-case-diagram.png \normalfont{-- diagram případů užití ve formátu PNG}.
+				.5 use-case-diagram.uxf \normalfont{-- diagram případů užití ve formátu UXF (UMLet)}.
+			.4 html \normalfont{-- případy užití ve formátu HTML}.
+			.4 xml \normalfont{-- případy užití ve formátu XML}.
+	.2 Text\_prace \normalfont{-- konfigurační soubory}.
+		.3 tex \normalfont{-- zdrojové soubory \TeX včetně přiložených souborů}.
+		.3 A19B0052P \normalfont{-- bakalářská práce ve formátu PDF}.
+	.2 readme.txt \normalfont{-- popis adresářové struktury}.
 }
+
 
 \end{document}
