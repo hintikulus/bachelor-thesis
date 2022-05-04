@@ -1,31 +1,31 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.2.23)  3 MAY 2022 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  4 MAY 2022 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**bachelor_thesis.tex
-(./bachelor_thesis.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-01-09> xparse <2020-03-03> (./thesiskiv.cls
+**./bachelor_thesis.tex
+(bachelor_thesis.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22> (thesiskiv.cls
 Document Class: thesiskiv 2016/03/14 Thesis at DCSE (KIV)
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@chapter=\count178
-\c@section=\count179
-\c@subsection=\count180
-\c@subsubsection=\count181
-\c@paragraph=\count182
-\c@subparagraph=\count183
-\c@figure=\count184
-\c@table=\count185
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(/usr/share/texmf/tex/latex/lm/lmodern.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -60,67 +60,72 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/01/26 3.53 The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/01/26 3.53 Babel common definitions
-\babel@savecnt=\count186
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/11/29 3.67 The Babel package
+\babel@savecnt=\count192
 \U@D=\dimen139
-\l@babelnohyphens=\language46
+\l@unhyphenated=\language79
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-)
-\bbl@dirlevel=\count187
+\bbl@dirlevel=\count193
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/babel-czech\czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count188
+\cs@wordlen=\count194
 Package babel Info: Making - an active character on input line 226.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/british.ldf
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\british.
+ldf
 Language: british 2017/06/06 v3.3r English support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.
+ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language10) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language10) on input line 108.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
 
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks18
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count189
-\Gm@cntv=\count190
-\c@Gm@tempcnt=\count191
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
 \Gm@bindingoffset=\dimen140
 \Gm@wd@mp=\dimen141
 \Gm@odd@mp=\dimen142
@@ -129,151 +134,174 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen145
 \Gm@layouthoffset=\dimen146
 \Gm@layoutvoffset=\dimen147
-\Gm@dimlist=\toks18
+\Gm@dimlist=\toks19
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.st
+y
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
+sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
+o.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen150
-\Hy@linkcounter=\count192
-\Hy@pagecounter=\count193
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-lang
+patches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+y
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count194
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
+\Hy@SavedSpaceFactor=\count266
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count195
-
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count267
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5076.
+LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen151
 
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count196
+\Fld@menulength=\count268
 \Field@Width=\dimen152
 \Fld@charsize=\dimen153
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count197
-\c@Item=\count198
-\c@Hfootnote=\count199
+\Hy@abspage=\count269
+\c@Item=\count270
+\c@Hfootnote=\count271
 )
 Package hyperref Info: Driver: hpdftex.
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
 with kernel methods
 )
-\Fld@listcount=\count266
-\c@bookmark@seq@number=\count267
+\Fld@listcount=\count272
+\c@bookmark@seq@number=\count273
 
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -281,283 +309,330 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2021/01/09 v0.5r Insert pages of external PDF documents (AM)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count268
-\calc@Bcount=\count269
+\calc@Acount=\count274
+\calc@Bcount=\count275
 \calc@Adimen=\dimen154
 \calc@Bdimen=\dimen155
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count270
+\calc@Ccount=\count276
 \calc@Cskip=\skip52
 )
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen156
 \ESO@tempdimb=\dimen157
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ))
 \AM@pagewidth=\dimen158
 \AM@pageheight=\dimen159
+\AM@fboxrule=\dimen160
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2021/01/09 v0.5r Pdfpages driver for pdfTeX (AM)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count271
-\AM@pagebox=\box47
-\AM@global@opts=\toks19
-\AM@pagecnt=\count272
-\AM@toc@title=\toks20
-\c@AM@survey=\count273
-\AM@templatesizebox=\box48
+\pdfpages@includegraphics@status=\count277
+\AM@pagebox=\box50
+\AM@global@opts=\toks20
+\AM@pagecnt=\count278
+\AM@toc@title=\toks21
+\c@AM@survey=\count279
+\AM@templatesizebox=\box51
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 77.
 Package hyperref Info: Option `unicode' set `true' on input line 77.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 77.
-
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count274
+\c@NAT@ctr=\count280
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count275
-\float@exts=\toks21
-\float@box=\box49
-\@float@everytoks=\toks22
-\@floatcapt=\box50
+\c@float@type=\count281
+\float@exts=\toks22
+\float@box=\box52
+\@float@everytoks=\toks23
+\@floatcapt=\box53
 )
-(/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/dirtree\dirtree.sty
 Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 
-(/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.tex
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/dirtree\dirtree.tex
 `dirtree' v0.32, 2012/12/11 (jcc)
-\DT@offset=\dimen160
-\DT@width=\dimen161
-\DT@sep=\dimen162
-\DT@all=\dimen163
-\DT@rulewidth=\dimen164
-\DT@dotwidth=\dimen165
-\DTbaselineskip=\dimen166
-\DT@counti=\count276
-\DT@countii=\count277
-\DT@countiii=\count278
-\DT@countiv=\count279
-\DT@indent=\dimen167
-\DT@parskip=\dimen168
-\DT@baselineskip=\dimen169
+\DT@offset=\dimen161
+\DT@width=\dimen162
+\DT@sep=\dimen163
+\DT@all=\dimen164
+\DT@rulewidth=\dimen165
+\DT@dotwidth=\dimen166
+\DTbaselineskip=\dimen167
+\DT@counti=\count282
+\DT@countii=\count283
+\DT@countiii=\count284
+\DT@countiv=\count285
+\DT@indent=\dimen168
+\DT@parskip=\dimen169
+\DT@baselineskip=\dimen170
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
-Package: nomencl 2020/12/29 v5.5 Nomenclature package
-
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.st
+y
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\XKV@depth=\count280
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+\c@blindtext=\count286
+\c@Blindtext=\count287
+\c@blind@countparstart=\count288
+\blind@countxx=\count289
+\blindtext@numBlindtext=\count290
+\blind@countyy=\count291
+\c@blindlist=\count292
+\c@blindlistlevel=\count293
+\c@blindlist@level=\count294
+\blind@listitem=\count295
+\c@blind@listcount=\count296
+\c@blind@levelcount=\count297
+\blind@mathformula=\count298
+\blind@Mathformula=\count299
+\c@blind@randomcount=\count300
+\c@blind@randommax=\count301
+\c@blind@pangramcount=\count302
+\c@blind@pangrammax=\count303
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count304
+\mult@box=\box54
+\multicol@leftmargin=\dimen171
+\c@unbalance=\count305
+\c@collectmore=\count306
+\doublecol@number=\count307
+\multicoltolerance=\count308
+\multicolpretolerance=\count309
+\full@width=\dimen172
+\page@free=\dimen173
+\premulticols=\dimen174
+\postmulticols=\dimen175
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box55
+\last@line=\box56
+\maxbalancingoverflow=\dimen176
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count310
+\c@columnbadness=\count311
+\c@finalcolumnbadness=\count312
+\last@try=\dimen177
+\multicolovershoot=\dimen178
+\multicolundershoot=\dimen179
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count313
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks24
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2020/09/21 v3.32 KOMA-Script package (handling toc-files)
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
-
-
-LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
-
-
-LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
-
-
-LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
-
-
-LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
-
-
-LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
-
-
-LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
-(LaTeX3)     93.
-
-
-LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
-(LaTeX3)     173.
-
-
-LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
-
-
-LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
-(LaTeX3)     191.
-
-
-LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
-
-
-LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
-
-
-LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
-
-
-LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
-
-
-LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
-
-
-LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
-
-
-LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
-
-
-LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
-(LaTeX3)     line 234.
-
-
-LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
-(LaTeX3)     line 242.
-
-
-LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
-(LaTeX3)     line 247.
-
-
-LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
-(LaTeX3)     line 261.
-
-
-LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
-(LaTeX3)     274.
-
-
-LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
-
-
-LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
-(LaTeX3)     line 298.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
-))))
-\scr@dte@tocline@numberwidth=\skip55
-\scr@dte@tocline@numbox=\box51
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen180
+\lightrulewidth=\dimen181
+\cmidrulewidth=\dimen182
+\belowrulesep=\dimen183
+\belowbottomsep=\dimen184
+\aboverulesep=\dimen185
+\abovetopsep=\dimen186
+\cmidrulesep=\dimen187
+\cmidrulekern=\dimen188
+\defaultaddspace=\dimen189
+\@cmidla=\count314
+\@cmidlb=\count315
+\@aboverulesep=\dimen190
+\@belowrulesep=\dimen191
+\@thisruleclass=\count316
+\@lastruleclass=\count317
+\@thisrulewidth=\dimen192
 )
-Package tocbasic Info: setting babel extension for `nlo' on input line 187.
-Package tocbasic Info: setting babel extension for `nls' on input line 188.
-\nomlabelwidth=\dimen170
-\nom@tempdim=\dimen171
-\nomitemsep=\skip56
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count281
-\lst@gtempboxa=\box52
-\lst@token=\toks25
-\lst@length=\count282
-\lst@currlwidth=\dimen172
-\lst@column=\count283
-\lst@pos=\count284
-\lst@lostspace=\dimen173
-\lst@width=\dimen174
-\lst@newlines=\count285
-\lst@lineno=\count286
-\lst@maxwidth=\dimen175
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/xltabular\xltabular.st
+y
+Package: xltabular 2020/11/04 v0.2e `xltabular' package (hv,RN)
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen193
+\ar@mcellbox=\box99
+\extrarowheight=\dimen194
+\NC@list=\toks25
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box100
+)
+\TX@col@width=\dimen195
+\TX@old@table=\dimen196
+\TX@old@col=\dimen197
+\TX@target=\dimen198
+\TX@delta=\dimen199
+\TX@cols=\count318
+\TX@ftn=\toks26
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/ltablex\ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
+\LTchunksize=\count319
+\LTcapwidth=\dimen256
+\LT@head=\box101
+\LT@firsthead=\box102
+\LT@foot=\box103
+\LT@lastfoot=\box104
+\LT@gbox=\box105
+\LT@cols=\count320
+\LT@rows=\count321
+\c@LT@tables=\count322
+\c@LT@chunks=\count323
+\LT@p@ftn=\toks27
+))) (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.
+sty
+\lst@mode=\count324
+\lst@gtempboxa=\box106
+\lst@token=\toks28
+\lst@length=\count325
+\lst@currlwidth=\dimen257
+\lst@column=\count326
+\lst@pos=\count327
+\lst@lostspace=\dimen258
+\lst@width=\dimen259
+\lst@newlines=\count328
+\lst@lineno=\count329
+\lst@maxwidth=\dimen260
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count287
-\lst@skipnumbers=\count288
-\lst@framebox=\box53
+\c@lstnumber=\count330
+\lst@skipnumbers=\count331
+\lst@framebox=\box107
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+) (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.st
+y
 File: lstlang2.sty 2020/03/24 1.8d listings language file
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box54
-)
-(./bachelor_thesis.aux)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count332
+\l__pdf_internal_box=\box108
+) (bachelor_thesis.aux)
 \openout1 = `bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -593,224 +668,239 @@ LaTeX Font Info:    ... okay on input line 131.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen176
-\scratchbox=\box55
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen177
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks27
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count333
+\scratchdimen=\dimen261
+\scratchbox=\box109
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen262
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks30
+)
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 131.
+Package hyperref Info: Link coloring ON on input line 137.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count296
+\c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 131.
-LaTeX Info: Redefining \pageref on input line 131.
-LaTeX Info: Redefining \nameref on input line 131.
-
-(./bachelor_thesis.out) (./bachelor_thesis.out)
+LaTeX Info: Redefining \ref on input line 137.
+LaTeX Info: Redefining \pageref on input line 137.
+LaTeX Info: Redefining \nameref on input line 137.
+ (bachelor_thesis.out) (bachelor_thesis.out)
 \@outlinefile=\write3
 \openout3 = `bachelor_thesis.out'.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.st
+y
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+ (C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count297
-\@nomenclaturefile=\write4
-\openout4 = `bachelor_thesis.nlo'.
-
-Package nomencl Info: Writing nomenclature file bachelor_thesis.nlo on input li
-ne 132.
+\c@lstlisting=\count340
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<include/zadani.pdf, id=332, 597.432pt x 844.83629pt>
+{C:/Users/hintik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<include/zadani.pdf, id=330, 597.432pt x 844.83629pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf>
-Package pdftex.def Info: include/zadani.pdf  used on input line 136.
+Package pdftex.def Info: include/zadani.pdf  used on input line 141.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf>
-Package pdftex.def Info: include/zadani.pdf  used on input line 136.
+Package pdftex.def Info: include/zadani.pdf  used on input line 141.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<include/zadani.pdf, id=335, page=1, 597.432pt x 844.83629pt>
+<include/zadani.pdf, id=333, page=1, 597.432pt x 844.83629pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
- [2]
+
+[2]
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 136.
-(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
-File: include/zadani.pdf Graphic file (type pdf)
-<use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 1>
-Package pdftex.def Info: include/zadani.pdf , page1 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
+File: include/zadani.pdf Graphic file (type pdf)
+<use include/zadani.pdf, page 1>
+Package pdftex.def Info: include/zadani.pdf , page1 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
  [3 <./include/zadani.pdf, page is rotated 270 degrees>]
-<include/zadani.pdf, id=347, page=2, 597.432pt x 844.83629pt>
+<include/zadani.pdf, id=345, page=2, 597.432pt x 844.83629pt>
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
 File: include/zadani.pdf Graphic file (type pdf)
 <use include/zadani.pdf, page 2>
-Package pdftex.def Info: include/zadani.pdf , page2 used on input line 136.
+Package pdftex.def Info: include/zadani.pdf , page2 used on input line 141.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
- [4 <./include/zadani.pdf, page is rotated 270 degrees>]
-[5
+ [4 <./include/zadani.pdf, page is rotated 270 degrees>] [5
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-36.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+41.
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-36.
+41.
 
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-136.
+141.
 
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-136.
+141.
 
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 136.
+(Font)              <12> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 136.
+(Font)              <8> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 136.
- [6] (./bachelor_thesis.toc [7
+(Font)              <6> on input line 141.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141
+.
 
-]
-[8])
-\tf@toc=\write5
-\openout5 = `bachelor_thesis.toc'.
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141
+.
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[6] (bachelor_thesis.toc [7
+
+] [8])
+\tf@toc=\write4
+\openout4 = `bachelor_thesis.toc'.
 
  [9]
 Kapitola 1.
 
-Overfull \hbox (0.54141pt too wide) in paragraph at lines 138--139
+Overfull \hbox (0.54141pt too wide) in paragraph at lines 143--144
 \T1/lmr/m/n/12 Na Ka-ted°e in-for-ma-tiky a vý-po-£etní tech-niky vzniká nový p
-°ed-m¥t ^^RTýmový|
+°ed-m¥t Týmový|
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 141.
+(Font)              <10> on input line 146.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 141.
+(Font)              <7> on input line 146.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 141.
+(Font)              <5> on input line 146.
 [10
 
 ]
 Kapitola 2.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-48.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+53.
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [11
 
-] [12]
+]
+[12]
 Kapitola 3.
 [13
 
 ] [14] [15]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-06.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+11.
+
+(C:\Users\hintik\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [16] [17] [18]
-[19]
-<img/rizeni_projektu/kanban.png, id=534, 1239.88219pt x 594.72188pt>
+) [16]
+[17] [18] [19]
+<img/rizeni_projektu/kanban.png, id=530, 1239.88219pt x 594.72188pt>
 File: img/rizeni_projektu/kanban.png Graphic file (type png)
 <use img/rizeni_projektu/kanban.png>
-Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 248
+Package pdftex.def Info: img/rizeni_projektu/kanban.png  used on input line 253
 .
 (pdftex.def)             Requested size: 386.95749pt x 185.6051pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-1}) has been already used, duplicate ignored
+ [20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.258 	\par
+                                                  \__shipout_drop_firstpage_...
+l.263 	\par
             MantisBT vyuÅ¾Ã­vÃ¡me pro nahlaÅ¡ovÃ¡nÃ­ objevenÃ½ch selhÃ¡nÃ­ n...
- <./img/rizeni_projektu/kanban.PNG>] [21]
+ <./img/rizeni_projektu/kanban.png>] [21]
 Kapitola 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--266
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
 
  []
 
 [22
 
 ] [23] [24] [25] [26] [27]
-<img/use_case/use_case_diagram.png, id=598, 1184.425pt x 1204.5pt>
+<img/use_case/use_case_diagram.png, id=593, 1184.425pt x 1204.5pt>
 File: img/use_case/use_case_diagram.png Graphic file (type png)
 <use img/use_case/use_case_diagram.png>
 Package pdftex.def Info: img/use_case/use_case_diagram.png  used on input line 
-351.
+356.
 (pdftex.def)             Requested size: 309.56717pt x 314.81674pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28] [29pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.4.1}) has been already used, duplicate ignored
+[28] [29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.355 	\chapter
+                                                  \__shipout_drop_firstpage_...
+l.360 	\chapter
                {Architektura aplikace} <./img/use_case/use_case_diagram.png (PN
 G copy)>]
 Kapitola 5.
@@ -818,64 +908,67 @@ Kapitola 5.
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 367.
+nput line 372.
 
-Overfull \hbox (1.08696pt too wide) in paragraph at lines 382--383
+Overfull \hbox (1.08696pt too wide) in paragraph at lines 387--388
 \T1/lmr/m/n/12 nému kódu. Prin-cip to-hoto zp·-sobu pro-gra-mo-vání spo-£ívá v 
 p°e-dá-vání zdroj·|
  []
 
 [31] [32] [33] [34]
-<img/database/database_model.png, id=668, 1302.8675pt x 1353.055pt>
+<img/database/database_model.png, id=663, 1302.8675pt x 1353.055pt>
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
 Package pdftex.def Info: img/database/database_model.png  used on input line 43
-4.
+9.
 (pdftex.def)             Requested size: 309.56717pt x 321.47777pt.
- [35] [36pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.5.1}) has been already used, duplicate ignored
+ [35] [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.447 				\item \texttt
+                                                  \__shipout_drop_firstpage_...
+l.452 				\item \texttt
                        {MEETING} -- tabulka pro evidenci schÅ¯zek tÃ½mÅ¯ <./img
 /database/database_model.png>] [37]
-Overfull \hbox (1.01947pt too wide) in paragraph at lines 481--482
+Overfull \hbox (1.01947pt too wide) in paragraph at lines 486--487
 \T1/lmr/m/n/12 Responzivní desing spo-£ívá v p°i-zp·-so-bení zob-ra-zení ob-sah
 u ²í°ce okna webo-|
  []
 
 [38]
-<img/logo/prototype_logo.png, id=692, 326.72063pt x 239.89626pt>
+<img/logo/prototype_logo.png, id=686, 326.72063pt x 239.89626pt>
 File: img/logo/prototype_logo.png Graphic file (type png)
 <use img/logo/prototype_logo.png>
-Package pdftex.def Info: img/logo/prototype_logo.png  used on input line 492.
+Package pdftex.def Info: img/logo/prototype_logo.png  used on input line 497.
 (pdftex.def)             Requested size: 154.78062pt x 113.64807pt.
 
-Underfull \hbox (badness 1331) in paragraph at lines 493--493
+Underfull \hbox (badness 1331) in paragraph at lines 498--498
 []\T1/lmr/m/n/12 Obrázek 5.2: []Prvotní ná-vrh
  []
 
-<img/logo/transparent_bg_logo.png, id=693, 1608.79305pt x 1608.79305pt>
+<img/logo/transparent_bg_logo.png, id=687, 1608.79305pt x 1608.79305pt>
 File: img/logo/transparent_bg_logo.png Graphic file (type png)
 <use img/logo/transparent_bg_logo.png>
-Package pdftex.def Info: img/logo/transparent_bg_logo.png  used on input line 4
-97.
+Package pdftex.def Info: img/logo/transparent_bg_logo.png  used on input line 5
+02.
 (pdftex.def)             Requested size: 154.78062pt x 154.77623pt.
 
-Underfull \hbox (badness 3646) in paragraph at lines 498--498
+Underfull \hbox (badness 3646) in paragraph at lines 503--503
 []\T1/lmr/m/n/12 Obrázek 5.3: []Finální verze
  []
 
-[39] [40pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.5.2}) has been already used, duplicate ignored
+[39] [40
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.507 \chapter
-              {Realizace}pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.5.3}) has been already used, duplicate ignored
+                                                  \__shipout_drop_firstpage_...
+l.512 \chapter
+              {Realizace}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.507 \chapter
+                                                  \__shipout_drop_firstpage_...
+l.512 \chapter
               {Realizace} <./img/logo/prototype_logo.png> <./img/logo/transpare
 nt_bg_logo.png>]
 Kapitola 6.
@@ -886,7 +979,7 @@ Kapitola 7.
 [44
 
 ]
-Overfull \hbox (3.66666pt too wide) in paragraph at lines 578--579
+Overfull \hbox (3.66666pt too wide) in paragraph at lines 583--584
 \T1/lmr/m/n/12 fekt· byla zp·-so-bena ne-do-kon-£e-ným o²et-°e-ním p°í-stupu na
  jed-not-livé stránky|
  []
@@ -895,20 +988,19 @@ Overfull \hbox (3.66666pt too wide) in paragraph at lines 578--579
 Kapitola 8.
 [46
 
-] (./bachelor_thesis.lof)
-\tf@lof=\write6
-\openout6 = `bachelor_thesis.lof'.
+] (bachelor_thesis.lof)
+\tf@lof=\write5
+\openout5 = `bachelor_thesis.lof'.
 
  [47
 
-] (./bachelor_thesis.lol)
-\tf@lol=\write7
-\openout7 = `bachelor_thesis.lol'.
+] (bachelor_thesis.lol)
+\tf@lol=\write6
+\openout6 = `bachelor_thesis.lol'.
 
  [48
 
-]
-(./bachelor_thesis.bbl [49
+] (bachelor_thesis.bbl [49
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -917,50 +1009,65 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 P\v {r}\'{\i }loha A.
+<img/use_case/use_case_example.png, id=777, 1651.16875pt x 2182.1525pt>
+File: img/use_case/use_case_example.png Graphic file (type png)
+<use img/use_case/use_case_example.png>
+Package pdftex.def Info: img/use_case/use_case_example.png  used on input line 
+635.
+(pdftex.def)             Requested size: 348.25937pt x 460.23007pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 625.
-
-
-LaTeX Warning: Float too large for page by 335.61273pt on input line 690.
+               Default added (so using `tbp') on input line 640.
 
 [51
 
-] [52]
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.A.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.715 \chapter
+              {Obsah CD} <./img/use_case/use_case_example.png>] [52
+pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.715 \chapter
+              {Obsah CD}] [53]
 P\v {r}\'{\i }loha B.
-[53
+[54
 
-]
-
-LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     694.
-
- (./bachelor_thesis.aux)
+] (bachelor_thesis.aux)
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 2D0CE9740752EAE9284E26F7606F3FCC;11489.
  ) 
 Here is how much of TeX's memory you used:
- 16811 strings out of 480432
- 251723 string characters out of 5891250
- 969041 words of memory out of 5000000
- 33330 multiletter control sequences out of 15000+600000
- 488229 words of font info for 72 fonts, out of 8000000 for 9000
- 429 hyphenation exceptions out of 8191
- 113i,17n,116p,1049b,2996s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/shar
-e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (53 pages, 1459922 bytes).
+ 17391 strings out of 478659
+ 278526 string characters out of 2845447
+ 891680 words of memory out of 3000000
+ 34974 multiletter control sequences out of 15000+600000
+ 491117 words of font info for 86 fonts, out of 8000000 for 9000
+ 1142 hyphenation exceptions out of 8191
+ 70i,17n,76p,1061b,2967s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
+{C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C
+:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
+:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><
+C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+<C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
+><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
+b>
+Output written on bachelor_thesis.pdf (54 pages, 1855820 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 798 compressed objects within 8 object streams
- 217 named destinations out of 1000 (max. 500000)
- 691 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
+ 696 words of extra memory for PDF output out of 10000 (max. 10000000)
 

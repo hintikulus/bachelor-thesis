@@ -33,7 +33,7 @@
 \abstracttexten{The text of the abstract (in English). It contains the English translation of the thesis title and a short description of the thesis.}
 
 \abstracttextcz{
-	Bakalářská práce se zabývá návrhem systému pro podporu organizace předmětů TSP. Cílem je navrhnout a implementovat robustní webovou aplikaci s řízeným přístupem, která vychází ze specifikace předmětu. Součástí práce je zvolení vhodného frameworku, popsání případů užití a sestavení struktury modelu databáze. Návrh aplikace zohledňuje požadavky na modularitu, responzivitu a možnosti budoucího rozšíření. Při vývoji aplikace je pohlíženo zejména na použitelnost, spolehlivost a bezpečnost. Výsledná aplikace je důkladně otestována připravenými testy.
+	Bakalářská práce se zabývá návrhem systému pro podporu organizace předmětů TSP. Cílem je navrhnout a implementovat robustní webovou aplikaci s řízeným přístupem, která vychází ze specifikace předmětu. Součástí práce je zvolení vhodného frameworku, popsání případů užití a sestavení struktury modelu databáze. Návrh aplikace zohledňuje požadavky na modularitu, responzivitu a možnosti budoucího rozšíření. Při vývoji aplikace byl kladen důraz zejména na použitelnost, spolehlivost a bezpečnost. Výsledná aplikace je důkladně otestována připravenými testy.
 }
 
 % Na titulní stranu a do textu prohlášení se automaticky vkládá 
@@ -84,7 +84,8 @@
 \usepackage{float}
 \usepackage{dirtree}
 
-\usepackage{nomencl}
+\usepackage{blindtext}
+\usepackage{multicol}
 
 % Barvičky
 \usepackage{xcolor}
@@ -92,6 +93,9 @@
 \colorlet{mygreen}{green!60!blue}
 \colorlet{mymauve}{red!60!blue}
 % Vkládání formátovaného zdrojového kódu
+
+\usepackage{amssymb}
+\usepackage{booktabs,xltabular}
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Ukázka kódu}
 \renewcommand\lstlistlistingname{Seznam ukázek kódu}
@@ -120,7 +124,9 @@
 	stringstyle=\color{mymauve},    
 	tabsize=3,                      
 	title=\lstname,
-	numbers=left      
+	numbers=left,      
+	extendedchars=true,
+	literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1
 }
 \overfullrule 10pt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +135,6 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-	\makenomenclature
 %
 \maketitle
 %\includepdf[pages=-]{include/zadani.pdf}[H]
@@ -610,6 +615,9 @@ database:
 	\item[MVC] Třívrstvá architektura Model-View-Controller
 	\item[MVP] Třívrstvá architektura Model-View-Presenter
 	\item[SQL] Structured Query Language
+	\item[KIV] Katedra informatiky a výpočetní techniky
+	\item[TSP] Týmový softwarový projekt
+	\item[PSTSP] Podpůrný software TSP
 \end{description}
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
@@ -620,73 +628,89 @@ database:
 
 \appendix
 \chapter{Případy užití}
-Případy užití jsou sestaveny v originální XML struktuře následně vygenerované do čitelné HTML podoby. Následující obrázek ?? představuje ukázku těchto vygenerovaných výstupů. Veškeré sepsané případy užití jsou součástí obsahu odevzdané práce. Případy jsou očíslovány dle tabulky ??.
+Případy užití jsou sestaveny v originální XML struktuře následně vygenerované do čitelné HTML podoby. Následující obrázek ?? představuje ukázku těchto vygenerovaných výstupů. Veškeré sepsané případy užití jsou součástí obsahu odevzdané práce. Případy jsou očíslovány dle tabulky \ref{tab:use-case-table}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{img/use_case/use_case_example}
+	\caption{Ukázka sepsaného UC (zdroj: vlastní)}
+	\label{fig:uc_example}
+\end{figure}
 
 \begin{table}[]
+	\caption{Seznam případů užití}
+	\label{tab:use-case-table}
 	\centering
-	\begin{tabular}{lll}
-		Číslo UC & Popis & Role\\
-		UC.01	& Přihlášení	&    \\
-		UC.02	&       &    \\
-		UC.02	&       &   \\
-		UC.03	&       &    \\
-		UC.04	&       &    \\
-		UC.05	&       &    \\
-		UC.06	&       &    \\
-		UC.07	&       &    \\
-		UC.08	&       &    \\
-		UC.09	&       &    \\
-		UC.10	&       &    \\
-		UC.11	&       &    \\
-		UC.12	&       &    \\
-		UC.13	&       &    \\
-		UC.14	&       &    \\
-		UC.15	&       &    \\
-		UC.16	&       &    \\
-		UC.17	&       &    \\
-		UC.18	&       &    \\
-		UC.19	&       &    \\
-		UC.20	&       &    \\
-		UC.21	&       &    \\
-		UC.22	&       &    \\
-		UC.23	&       &    \\
-		UC.24	&       &    \\
-		UC.25	&       &    \\
-		UC.26	&       &    \\
-		UC.27	&       &    \\
-		UC.28	&       &    \\
-		UC.29	&       &    \\
-		UC.30	&       &    \\
-		UC.31	&       &    \\
-		UC.32	&       &    \\
-		UC.33	&       &    \\
-		UC.34	&       &    \\
-		UC.35	&       &    \\
-		UC.36	&       &    \\
-		UC.37	&       &    \\
-		UC.38	&       &    \\
-		UC.39	&       &    \\
-		UC.40	&       &    \\
-		UC.41	&       &    \\
-		UC.42	&       &    \\
-		UC.43	&       &    \\
-		UC.44	&       &    \\
-		UC.45	&       &    \\
-		UC.46	&       &    \\
-		UC.47	&       &    \\
-		UC.48	&       &    \\
-		UC.49	&       &    \\
-		UC.50	&       &    \\
-		UC.51	&       &    \\
-		UC.52	&       &    \\
-		UC.53	&       &    \\
-		UC.54	&       &    \\
-		UC.55	&       &    \\
-		UC.56	&       &    \\
-		UC.57	&       &    \\
-		UC.58	&       &    \\
-		UC.59	&       &    \\
-	\end{tabular}
+	\begin{xltabular}{\textwidth}{|r|X|}\hline
+		Číslo UC & Popis\\\hline\hline
+		UC.01	& Přihlášení do aplikace\\\hline
+		UC.02	& Zobrazení seznamu témat\\\hline
+		UC.02	& Zobrazení detailu tématu\\\hline
+		UC.03	& Zobrazení neúplných týmů\\\hline
+		UC.04	& Odhlášení přihlášeného uživatele\\\hline
+		UC.05	& Zobrazení schůzek týmu\\\hline
+		UC.06	& Přidání schůzky týmu\\\hline
+		UC.07	& Zobrazení podrobného zápisu ze schůzky\\\hline
+		UC.08	& Zobrazení podrobného zápisu ze schůzky\\\hline
+		UC.09	& Přidání podrobného zápisu ze schůzky\\\hline
+		UC.10	& Zobrazení stavu řešení projektu\\\hline
+		UC.11	& Změna stavu řešení projektu\\\hline
+		UC.12	& Změna stavu řešení projektu - přidání využité zkušennosti\\\hline
+		UC.13	& Úprava odkazů k projektu\\\hline
+		UC.14	& Manipulace se členy týmu\\\hline
+		UC.15	& Nastavení informací o členech týmu\\\hline
+		UC.16	& Nastavení profilu týmu\\\hline
+		UC.17	& Projevení zájmu o téma pro svůj tým\\\hline
+		UC.18	& Zobrazení témat, o které tým projevil zájem\\\hline
+		UC.19	& Zobrazení přiděleného tématu\\\hline
+		UC.20	& Změna kontaktních informací u mentora\\\hline
+		UC.21	& Zobrazení mentorovaných projektů\\\hline
+		UC.22	& Zobrazení stavu řešení projektu u mentorovaného týmu\\\hline
+		UC.23	& Změna stavu řešení projektu u mentorovaného týmu\\\hline
+		UC.24	& Zobrazení týmu řešící mentorovaný projekt\\\hline
+		UC.25	& Zobrazení tématu u mentorovaného týmu\\\hline
+		UC.26	& Přidání schůzky k mentorovanému týmu\\\hline
+		UC.27	& Zobrazení nementorovaných témat\\\hline
+		UC.28	& Přiřazení tématu mentorovi\\\hline
+		UC.29	& Zobrazení témat bez týmu\\\hline
+		UC.30	& Stanovení vhodnosti tématu k týmu, který o toto téma projevil zájem\\\hline 
+	\end{xltabular}
+
+\end{table}
+\begin{table}
+	\begin{xltabular}{\textwidth}{|r|X|}\hline
+		Číslo UC & Popis\\\hline\hline
+		UC.31	& Zobrazení historie mentorovaných témat\\\hline
+		UC.32	& Zobrazení témat bez mentora\\\hline
+		UC.33	& Zobrazení seznamu týmů\\\hline
+		UC.34	& Editace týmů ze seznamu týmů\\\hline
+		UC.35	& Editace zápočtů týmu ze seznamu týmů\\\hline
+		UC.36	& Přidání záznamu o obhajobě\\\hline
+		UC.37	& Zobrazení tabulky projektů mentorů\\\hline
+		UC.38	& Zobrazení pohledu mentora\\\hline
+		UC.39	& Správa uživatelů - zobrazení\\\hline
+		UC.40	& Odebrání uživatele\\\hline
+		UC.41	& Přidání mentora\\\hline
+		UC.42	& Správa zadání\\\hline
+		UC.43	& Přidání nového tématu\\\hline
+		UC.44	& Zobrazení správy štítků\\\hline
+		UC.45	& Přidání týmové role\\\hline
+		UC.46	& Úprava týmové role\\\hline
+		UC.47	& Přidání profilu týmu\\\hline
+		UC.48	& Úprava profilu týmu\\\hline
+		UC.49	& Zobrazení tabulky přidělení\\\hline
+		UC.50	& Přiřazení tématu týmu\\\hline
+		UC.51	& Zobrazení správy studentů\\\hline
+		UC.52	& Přidání studenta\\\hline
+		UC.53	& Import studentů z CSV souboru\\\hline
+		UC.54	& Smazání studenta\\\hline
+		UC.55	& Vytvoření týmu\\\hline
+		UC.56	& Vytvoření nového ročníku\\\hline
+		UC.57	& Nastavení aktuální ročníku\\\hline
+		UC.58	& Zobrazení záznamu logu\\\hline
+		UC.59	& Stažení záznamu logu\\\hline
+		
+	\end{xltabular}
 \end{table}
 \chapter{Obsah CD}
 }

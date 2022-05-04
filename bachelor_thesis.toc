@@ -1,9 +1,9 @@
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {british}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {british}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
 \contentsline {chapter}{\numberline {1}Úvod}{10}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Specifikace požadavků}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Organizace předmětů TSP}{11}{section.2.1}%
@@ -112,4 +112,4 @@
 \contentsline {section}{\numberline {8.1}Další možný vývoj}{46}{section.8.1}%
 \contentsline {chapter}{Literatura}{50}{chapter*.37}%
 \contentsline {chapter}{\numberline {A}Případy užití}{51}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Obsah CD}{53}{appendix.B}%
+\contentsline {chapter}{\numberline {B}Obsah CD}{54}{appendix.B}%
