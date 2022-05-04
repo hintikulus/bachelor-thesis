@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  5 MAY 2022 00:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.9)  5 MAY 2022 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,7 +834,7 @@ Kapitola 1.
 
 Overfull \hbox (0.54141pt too wide) in paragraph at lines 145--146
 \T1/lmr/m/n/12 Na Ka-ted°e in-for-ma-tiky a vý-po-£etní tech-niky vzniká nový p
-°ed-m¥t Týmový|
+°ed-m¥t Týmový
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -916,7 +916,7 @@ nput line 374.
 
 Overfull \hbox (1.08696pt too wide) in paragraph at lines 389--390
 \T1/lmr/m/n/12 nému kódu. Prin-cip to-hoto zp·-sobu pro-gra-mo-vání spo-£ívá v 
-p°e-dá-vání zdroj·|
+p°e-dá-vání zdroj·
  []
 
 [31] [32] [33] [34]
@@ -936,7 +936,7 @@ l.454 				\item \texttt
 /database/database_model.png>] [37]
 Overfull \hbox (1.01947pt too wide) in paragraph at lines 488--489
 \T1/lmr/m/n/12 Responzivní desing spo-£ívá v p°i-zp·-so-bení zob-ra-zení ob-sah
-u ²í°ce okna webo-|
+u ²í°ce okna webo-
  []
 
 [38]
@@ -1050,7 +1050,7 @@ Kapitola 7.
 ]
 Overfull \hbox (3.66666pt too wide) in paragraph at lines 679--680
 \T1/lmr/m/n/12 fekt· byla zp·-so-bena ne-do-kon-£e-ným o²et-°e-ním p°í-stupu na
- jed-not-livé stránky|
+ jed-not-livé stránky
  []
 
 [50]
@@ -1082,11 +1082,11 @@ P\v {r}\'{\i }loha A.
 File: img/use_case/use_case_example.png Graphic file (type png)
 <use img/use_case/use_case_example.png>
 Package pdftex.def Info: img/use_case/use_case_example.png  used on input line 
-732.
+733.
 (pdftex.def)             Requested size: 348.25937pt x 460.23007pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 737.
+               Default added (so using `tbp') on input line 738.
 
 [56
 
@@ -1095,20 +1095,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.A.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.812 \chapter
+l.813 \chapter
               {DatabÃ¡zovÃ½ EER model} <./img/use_case/use_case_example.png>]
 [57
 pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.812 \chapter
+l.813 \chapter
               {DatabÃ¡zovÃ½ EER model}] [58]
 P\v {r}\'{\i }loha B.
 File: img/database/database_model.png Graphic file (type png)
 <use img/database/database_model.png>
 Package pdftex.def Info: img/database/database_model.png  used on input line 81
-6.
+7.
 (pdftex.def)             Requested size: 386.95749pt x 401.85239pt.
 [59
 
@@ -1117,7 +1117,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.B.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.820 \chapter
+l.821 \chapter
               {Obsah elektronickÃ© pÅ™Ã­lohy}]
 P\v {r}\'{\i }loha C.
 [60
@@ -1131,7 +1131,7 @@ Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 723 ({)
+### simple group (level 1) entered at line 724 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  17557 strings out of 478659
@@ -1157,7 +1157,7 @@ m/lmri10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 lm/lmsy10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /lm/lmtt10.pfb><C:/Users/hintik/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (60 pages, 1410910 bytes).
+Output written on bachelor_thesis.pdf (60 pages, 1410483 bytes).
 PDF statistics:
  1068 PDF objects out of 1200 (max. 8388607)
  277 named destinations out of 1000 (max. 500000)
